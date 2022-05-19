@@ -1,0 +1,38 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "1ac68398-2aea-4a3f-8147-8288976c397f",
+  "label" : "Quarterly Report Related List",
+  "regions" : [ {
+    "id" : "d767ac82-8047-4f57-a890-1b596e832f82",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "161ed442-50a1-457e-a59f-e66eef92a9df",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b7a067ff-fb51-4486-a3cf-02f83e0793b3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ccde9364-8132-4d6b-a683-faa59fbf91fb",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a7Z"
+}

@@ -1,0 +1,4 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="sroPartnerCommunityCustomLogo" access="global">
+    <ltng:require scripts="{!$Resource.Jquery_Min}" afterScriptsLoaded="{!c.handleAfterScriptsLoaded}" />
+    <aura:attribute name="documentLink" type="String" />
+</aura:component>

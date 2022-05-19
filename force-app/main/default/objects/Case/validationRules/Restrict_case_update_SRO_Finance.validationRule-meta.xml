@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_case_update_SRO_Finance</fullName>
+    <active>true</active>
+    <errorConditionFormula>($RecordType.DeveloperName=&quot;Refinance&quot; || $RecordType.DeveloperName=&quot;Windfall_Gains&quot; ||
+ $RecordType.DeveloperName=&quot;Long_Term_Absence&quot; ||
+ $RecordType.DeveloperName=&quot;Property_Sale&quot; || $RecordType.DeveloperName=&quot;Voluntary_Payments&quot;)
+&amp;&amp;
+$Profile.Name=&quot;SRO Finance&quot; &amp;&amp;
+NOT( ISNEW() )</errorConditionFormula>
+    <errorMessage>You don&apos;t have permissions to update this case!</errorMessage>
+</ValidationRule>

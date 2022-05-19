@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Previous_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+
+AND(OR(TEXT(PRIORVALUE(Status))=&apos;Provisionally Approved&apos;, TEXT(PRIORVALUE(Status))=&apos;Cancelled&apos;,TEXT(PRIORVALUE(Status))=&apos;Expired&apos;,TEXT(PRIORVALUE(Status))=&apos;Rejected&apos;),ISPICKVAL(Status, &apos;Provisional Application Submitted&apos;)),
+
+AND( OR(TEXT(PRIORVALUE(Status))=&apos;Expired&apos;,TEXT(PRIORVALUE(Status))=&apos;Cancelled&apos;, TEXT(PRIORVALUE(Status))=&apos;Rejected&apos;), ISPICKVAL(Status,&apos;Provisionally Approved&apos;)),
+
+AND( OR(TEXT(PRIORVALUE(Status))=&apos;Expired&apos;,TEXT(PRIORVALUE(Status))=&apos;Cancelled&apos;, TEXT(PRIORVALUE(Status))=&apos;Provisionally Approved&apos;), ISPICKVAL(Status,&apos;Rejected&apos;)),
+
+AND( TEXT(PRIORVALUE(Status))=&apos;Expired&apos;, ISPICKVAL(Status,&apos;Cancelled&apos;)),
+
+AND( TEXT(PRIORVALUE(Status))=&apos;Expired&apos;, ISPICKVAL(Status,&apos;Settled&apos;))
+
+)</errorConditionFormula>
+    <errorMessage>Provisional Application can not be moved back to previous stage!</errorMessage>
+</ValidationRule>

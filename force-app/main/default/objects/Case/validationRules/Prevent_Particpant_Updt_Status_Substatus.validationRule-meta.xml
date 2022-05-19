@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Particpant_Updt_Status_Substatus</fullName>
+    <active>true</active>
+    <description>VHF-5396</description>
+    <errorConditionFormula>AND( OR(ISCHANGED( Status ),ISCHANGED(  Sub_Status__c  ) ),  
+NOT(ISCHANGED(BypassValidation__c)) , 
+OR($RecordType.DeveloperName=&quot;Property_Sale&quot;,$RecordType.DeveloperName=&quot;Refinance&quot;,$RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;),
+$Profile.Name = &quot;VHF Participant Community Plus User&quot;)</errorConditionFormula>
+    <errorMessage>You don&apos;t have permission to update the record!</errorMessage>
+</ValidationRule>

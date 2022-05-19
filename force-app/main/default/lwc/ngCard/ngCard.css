@@ -1,0 +1,22 @@
+.ng-card {
+  background-color: var(--text-light);
+  border: 1px solid var(--light-grey);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 384px;
+  vertical-align:middle;
+}
+
+.ng-card .profile-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.forceCommunitySection .cb-section_column:first-child {
+  width:420px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins__CoverageId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Id of the health plan coverage</description>
+    <externalId>false</externalId>
+    <label>Coverage Id</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Product2.vlocity_ins__RecordTypeName__c</field>
+            <operation>equals</operation>
+            <value>CoverageSpec</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Coverage Id</relationshipLabel>
+    <relationshipName>CoverageId</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

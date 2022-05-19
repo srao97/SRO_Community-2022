@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funds_Transferred_Date_Validation_Future</fullName>
+    <active>true</active>
+    <description>Funds transferred date cannot be after today.</description>
+    <errorConditionFormula>AND(
+NOT(BypassValidation__c),
+ISCHANGED(Funds_Transferred_Date__c ),
+(Funds_Transferred_Date__c &gt;  TODAY())
+)</errorConditionFormula>
+    <errorDisplayField>Funds_Transferred_Date__c</errorDisplayField>
+    <errorMessage>Funds transferred date cannot be after today.</errorMessage>
+</ValidationRule>

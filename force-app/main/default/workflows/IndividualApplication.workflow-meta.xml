@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Application_Cancellation_Panel_Financier</fullName>
+        <description>Application Cancellation - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Application_Cancellation_Panel_Financier_1623110253321</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Expired_Panel_Financier</fullName>
+        <description>Application Expired - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Provisional_Application_Expiry_Panel_Financier_1631230915249</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Extended_Panel_Financier</fullName>
+        <description>Application Extended - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Provisional_Application_Extension_Panel_Financier_1631773360926</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Rejection_Panel_Financier</fullName>
+        <description>Application Rejection - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Application_Rejection_Panel_Financier_1623110301266</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Submission_Confirmation_Panel_Financier</fullName>
+        <description>Application Submission Confirmation - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Application_Submission_Confirmation_Panel_Financier_1622694675663</template>
+    </alerts>
+    <alerts>
+        <fullName>Provisional_Application_Approval_Panel_Financier</fullName>
+        <description>Provisional Application Approval - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Provisional_Application_Approval_Panel_Financier_1623110178141</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ApplicationQueue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>VHF_Application_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>VHF Allocate to Application Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Bypass_Validation</fullName>
+        <field>BypassValidation__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Bypass Validation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Reset Provisional Validation Bypass</fullName>
+        <actions>
+            <name>Uncheck_Bypass_Validation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>IndividualApplication.BypassValidation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Resets BypassValidation checkbox that was set by process builder[VHF-1685]</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>VHF New Application Submitted Workflow</fullName>
+        <actions>
+            <name>ApplicationQueue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>IndividualApplication.Status</field>
+            <operation>equals</operation>
+            <value>Submitted</value>
+        </criteriaItems>
+        <description>Allocate a new VHF application to a Queue</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

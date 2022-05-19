@@ -1,0 +1,27 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="SRO Custom Theme Layout">
+
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false" />
+    <aura:attribute name="themeHeader" type="Aura.Component[]" required="false" />
+    <aura:attribute name="customNavigation" type="Aura.Component[]" required="false" />
+    <aura:attribute name="themeFooter" type="Aura.Component[]" required="false" />
+
+    <div class="compactHeader">
+        {!v.themeHeader}
+    </div>
+
+    <div class="compactHeader">
+        {!v.newHeader}
+    </div>
+
+
+    <div class="customContentArea" style="max-width: 1400px; margin: 20px auto;">
+        {!v.body}
+    </div>
+
+
+
+    <div class="compactHeader">
+        {!v.themeFooter}
+    </div>
+
+</aura:component>

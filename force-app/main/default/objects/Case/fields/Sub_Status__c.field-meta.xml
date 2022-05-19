@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <defaultValue>&quot;Pending&quot;</defaultValue>
+    <description>sub status specific to victorian homebuyer fund</description>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>true</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>To Do</fullName>
+                <default>false</default>
+                <label>To Do</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Notification Sent</fullName>
+                <default>false</default>
+                <label>Notification Sent</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mortgage Discharged</controllingFieldValue>
+            <controllingFieldValue>Loan Increase Rejected</controllingFieldValue>
+            <controllingFieldValue>Early Payment Required</controllingFieldValue>
+            <controllingFieldValue>Awaiting Information</controllingFieldValue>
+            <controllingFieldValue>Final Payment Received</controllingFieldValue>
+            <controllingFieldValue>Payment Received</controllingFieldValue>
+            <controllingFieldValue>Cancelled Settlement</controllingFieldValue>
+            <controllingFieldValue>Approved - Awaiting Contract of Sale</controllingFieldValue>
+            <controllingFieldValue>Provisional Approval</controllingFieldValue>
+            <controllingFieldValue>Loan Increase Approved</controllingFieldValue>
+            <controllingFieldValue>Refinanced - New PF</controllingFieldValue>
+            <controllingFieldValue>Final Approval Requested</controllingFieldValue>
+            <controllingFieldValue>Refinanced - Non PF</controllingFieldValue>
+            <controllingFieldValue>Funds Transfer</controllingFieldValue>
+            <controllingFieldValue>Confirmed</controllingFieldValue>
+            <controllingFieldValue>Settlement</controllingFieldValue>
+            <controllingFieldValue>Refinanced - Same PF</controllingFieldValue>
+            <controllingFieldValue>Mortgage Re-registered</controllingFieldValue>
+            <controllingFieldValue>Valuation Requested</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Not Confirmed</controllingFieldValue>
+            <controllingFieldValue>Payment Requested</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan Increase Requested</controllingFieldValue>
+            <controllingFieldValue>Awaiting Information</controllingFieldValue>
+            <controllingFieldValue>Provisional Approval</controllingFieldValue>
+            <controllingFieldValue>Awaiting Final Application</controllingFieldValue>
+            <controllingFieldValue>Final Approval Requested</controllingFieldValue>
+            <controllingFieldValue>Settlement</controllingFieldValue>
+            <controllingFieldValue>In Review</controllingFieldValue>
+            <valueName>Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Settlement</controllingFieldValue>
+            <controllingFieldValue>To do</controllingFieldValue>
+            <controllingFieldValue>In progress</controllingFieldValue>
+            <controllingFieldValue>Provisional Approval</controllingFieldValue>
+            <controllingFieldValue>Final Approval Requested</controllingFieldValue>
+            <controllingFieldValue>Funds Transfer</controllingFieldValue>
+            <controllingFieldValue>Settlement</controllingFieldValue>
+            <valueName>In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Provisional Approval</controllingFieldValue>
+            <controllingFieldValue>Final Approval Requested</controllingFieldValue>
+            <controllingFieldValue>Funds Transfer</controllingFieldValue>
+            <controllingFieldValue>Settlement</controllingFieldValue>
+            <controllingFieldValue>New</controllingFieldValue>
+            <valueName>To Do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Final Approval Requested</controllingFieldValue>
+            <valueName>Notification Sent</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

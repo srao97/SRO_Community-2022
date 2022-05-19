@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_Remediation</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Refinancing_bank__c</columns>
+    <columns>Property__c</columns>
+    <columns>Submitted_Date__c</columns>
+    <columns>OwnerName__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Refinanced - Non PF</value>
+    </filters>
+    <filters>
+        <field>Refinance_Remediation_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Refinance Remediation</label>
+    <sharedTo>
+        <group>All_Operations_Profile_Users</group>
+        <group>All_SRO_Operations_Users</group>
+    </sharedTo>
+</ListView>

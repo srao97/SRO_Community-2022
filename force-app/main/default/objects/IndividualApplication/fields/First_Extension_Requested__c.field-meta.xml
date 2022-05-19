@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Extension_Requested__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The checkbox is an indicator for 1st extension of Provisional Application</description>
+    <externalId>false</externalId>
+    <label>First Extension Requested</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

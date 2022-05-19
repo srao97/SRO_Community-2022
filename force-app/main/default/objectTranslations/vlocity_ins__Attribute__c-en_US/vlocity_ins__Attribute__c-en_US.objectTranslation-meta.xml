@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ListAttributesForExport</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__NewAttribute</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__VlocityAdmin</name>
+    </fieldSets>
+    <layouts>
+        <layout>Attribute (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Attribute Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vlocity Attribute Detail Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__BooleanType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__DateTimeType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__DateType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__NumberType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__PicklistType</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__Export</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

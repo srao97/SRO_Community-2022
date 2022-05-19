@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SRO_Address_Validation_UAT</label>
+    <protected>false</protected>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">https://partner.cloud.non-production.sro.vic.gov.au/sys-address-lookup/v1/v1.0/search</value>
+    </values>
+    <values>
+        <field>Token_URL__c</field>
+        <value xsi:type="xsd:string">https://sro-uat.auth.ap-southeast-2.amazoncognito.com/oauth2/token</value>
+    </values>
+    <values>
+        <field>client_id__c</field>
+        <value xsi:type="xsd:string">1ovlkpn1kj9fm3t87sufnbbfth</value>
+    </values>
+    <values>
+        <field>client_secret__c</field>
+        <value xsi:type="xsd:string">isnpf7pj3ptrvnbsm9eagfib9l3pas4hvnn13smhr1od87hf9id</value>
+    </values>
+    <values>
+        <field>grant_type__c</field>
+        <value xsi:type="xsd:string">client_credentials</value>
+    </values>
+</CustomMetadata>

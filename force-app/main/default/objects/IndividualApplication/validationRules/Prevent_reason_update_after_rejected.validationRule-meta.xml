@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_reason_update_after_rejected</fullName>
+    <active>true</active>
+    <description>Prevent rejection reason update once application is rejected, only system admins can update it</description>
+    <errorConditionFormula>NOT(IsNew())
+&amp;&amp;
+NOT($Profile.Name = &quot;System Administrator&quot;)
+&amp;&amp;
+NOT(ISCHANGED(Status))
+&amp;&amp; 
+ISPICKVAL( Status ,&quot;Rejected&quot;)
+&amp;&amp;
+ISCHANGED( Rejection_Reason__c )</errorConditionFormula>
+    <errorDisplayField>Rejection_Reason__c</errorDisplayField>
+    <errorMessage>Rejection reason can&apos;t be updated after the application has been rejected!</errorMessage>
+</ValidationRule>

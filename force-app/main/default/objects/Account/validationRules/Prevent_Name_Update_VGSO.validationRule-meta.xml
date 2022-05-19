@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Name_Update_VGSO</fullName>
+    <active>true</active>
+    <description>VHF-2403</description>
+    <errorConditionFormula>$Profile.Name = &apos;VHF VGSO Community Plus User&apos; &amp;&amp;
+ISCHANGED( Name ) &amp;&amp;
+RecordType.DeveloperName = &apos;PersonAccount&apos;</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>You can&apos;t update the Account Name!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "d0b44b31-95e5-4f86-8dbb-d1214b135f85",
+    "propertyOverrides" : {
+      "activeViewId" : "b940de29-42fc-49b3-b7d3-a89e1a7933cb"
+    },
+    "targetId" : "ade4cb25-7e45-49cb-b582-83dd0cec195e",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_Renovations_Case_Page",
+  "id" : "de16d889-aa73-43bb-b138-b64cf246cddd",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "4c8b1d39-a50d-4fc9-a3d0-2e96e4c6e5f9",
+    "propertyOverrides" : {
+      "activeViewId" : "a8aa0032-c1bc-4040-8183-32aabe5a93c9"
+    },
+    "targetId" : "ade4cb25-7e45-49cb-b582-83dd0cec195e",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_Refinance_PF_Page",
+  "id" : "365b1b55-c0e2-4e35-9504-264fc030fdda",
+  "type" : "experienceVariation"
+}

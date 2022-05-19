@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6f63438d-b8fa-4898-b12c-3464097df3c2",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "f4b46994-9247-4014-8382-b21b6c673600",
+  "label" : "UploadContractOfSale",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-uploadcontractofsale",
+  "type" : "route",
+  "urlPrefix" : "uploadcontractofsale"
+}

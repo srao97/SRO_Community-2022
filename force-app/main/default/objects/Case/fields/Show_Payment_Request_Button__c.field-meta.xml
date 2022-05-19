@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_Payment_Request_Button__c</fullName>
+    <description>Dynamic action can support only 9 filters, this formula field allows more filters to be applied as a workaround</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Status, &apos;Payment Received&apos;), false ,
+     IF( Record_Type_Name__c  = &apos;Windfall Gains&apos;, true , 
+         IF( Record_Type_Name__c  = &apos;Early Payment&apos;, true , 
+              IF( Record_Type_Name__c  = &apos;Final Payment&apos;, true ,  
+                    IF( Record_Type_Name__c  = &apos;Income Threshold Exceeded&apos;, true ,
+                           IF( Record_Type_Name__c  = &apos;Voluntary Payments&apos;, true, false )
+                    )
+              )
+         )
+     )
+)</formula>
+    <label>Show Payment Request Button</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

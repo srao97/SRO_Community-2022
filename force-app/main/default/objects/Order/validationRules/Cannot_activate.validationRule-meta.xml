@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_activate</fullName>
+    <active>true</active>
+    <description>Status is not used for a property and should not be activated, otherwise certain fields are locked due to standard order behaviour which is to be avoided</description>
+    <errorConditionFormula>ISPICKVAL( Status , &quot;Activated&quot;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>This field is unused and should not be changed</errorMessage>
+</ValidationRule>

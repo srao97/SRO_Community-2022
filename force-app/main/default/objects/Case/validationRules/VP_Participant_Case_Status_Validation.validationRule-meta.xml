@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VP_Participant_Case_Status_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( Status ),
+NOT(ISCHANGED(BypassValidation__c)) ,
+$RecordType.DeveloperName=&quot;Voluntary_Payments&quot;,
+$Profile.Name = &quot;VHF Participant Community Plus User&quot;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Invalid status update</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+/*.THIS.btnNewApp {
+    
+    border-color:rgba(10, 50, 198, 0);
+    padding: 0px 24px;
+    min-width: 135px;
+    float: right;
+    margin-top: 22px;
+    margin-left:3px;
+    z-index: 1;
+}*/
+
+.THIS .btnNewApp {
+    border-radius:0px; 
+    border-color:rgba(10, 50, 198, 0);
+    padding: 1px 24px;
+    min-width: 135px;
+    float: right;
+    margin-top: 18.5px;
+    z-index: 1;
+    margin-left:3px;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .THIS .btnNewApp {
+    border-radius:0px; 
+    border-color: rgba(10, 50, 198, 0);
+    padding: 1px 24px;
+    min-width: 135px;
+    float: right;
+    margin-top: 22.5px;
+    z-index: 1;
+    margin-left:3px;
+    border-radius: 4px;
+  }
+}

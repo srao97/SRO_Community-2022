@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_update_after_expiry</fullName>
+    <active>true</active>
+    <description>VHF-1791,1714</description>
+    <errorConditionFormula>NOT(ISNEW())
+&amp;&amp; (OR(ISPICKVAL(Status,&quot;Expired&quot;),ISPICKVAL(Status,&quot;Cancelled&quot;),ISPICKVAL(Status,&quot;Rejected&quot;),ISPICKVAL(Status,&quot;Settled&quot;) ))
+&amp;&amp; NOT(ISCHANGED(Status))
+&amp;&amp; NOT ($Profile.Name = &quot;System Administrator&quot;)
+&amp;&amp; NOT(BypassValidation__c)</errorConditionFormula>
+    <errorMessage>Provisional Application can&apos;t be updated anymore because it might be Expired, Cancelled, Rejected or Settled.</errorMessage>
+</ValidationRule>

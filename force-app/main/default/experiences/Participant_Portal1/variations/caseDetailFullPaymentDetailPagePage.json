@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "4ea4c391-cae4-4c1b-823e-47acc455d10e",
+    "propertyOverrides" : {
+      "activeViewId" : "f71d278c-094d-4f43-a105-504b43e32079"
+    },
+    "targetId" : "c3f765e6-f7f6-4a2b-b04d-849a4b598f11",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_FullPayment_Detail_Page_Page",
+  "id" : "decb683c-37cb-4b63-858d-5459816c2db3",
+  "type" : "experienceVariation"
+}

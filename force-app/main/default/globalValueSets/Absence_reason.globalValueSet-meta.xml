@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Overseas/Interstate study</fullName>
+        <default>false</default>
+        <label>Overseas/Interstate study</label>
+    </customValue>
+    <customValue>
+        <fullName>Overseas/Interstate work</fullName>
+        <default>false</default>
+        <label>Overseas/Interstate work</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Treatment</fullName>
+        <default>false</default>
+        <label>Medical Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Caring responsibilities</fullName>
+        <default>false</default>
+        <label>Caring responsibilities</label>
+    </customValue>
+    <masterLabel>Absence reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

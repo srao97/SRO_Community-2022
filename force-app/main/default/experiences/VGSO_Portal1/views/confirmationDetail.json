@@ -1,0 +1,136 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "id" : "098d0199-cf56-45cb-81e3-6bfa8bce0c31",
+  "label" : "Confirmation Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "ff1f5c3b-d5eb-442d-bfe4-14e076551ab4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0e6f3a1c-213e-451f-850d-06a6c6cc30e8",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "4e69da44-10bb-4f2c-afb4-256842b4bfdb",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "b750a6eb-4ccb-4de9-809f-653f17ef042e",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "53603b2c-0809-473b-ba34-897f5430fac4",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "4e69da44-10bb-4f2c-afb4-256842b4bfdb",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:lwcRecordDetail",
+          "id" : "39038d0f-4ee1-44b4-8f5b-f2ba722b92f2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b750a6eb-4ccb-4de9-809f-653f17ef042e",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "69077249-d286-4b5d-8b64-b08fd9e4b802",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "53603b2c-0809-473b-ba34-897f5430fac4",
+        "regionLabel" : "Related",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2fefb96c-bdce-4b7e-81c6-d5833c55f7ee",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0ae1f571-458d-458b-a4dc-b391de058601",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c7012f6d-6dbc-4a97-aac7-9f6ef3fb00bd",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8ef90bd3-c5de-4fbc-831b-b061ba75bb96",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "columnAttributes" : "[{ label: 'Title', fieldName: 'fileUrl', hideDefaultActions:true, wrapText: true, type: 'url', typeAttributes: { label: {fieldName: 'Title'} }, cellAttributes: { iconName: {fieldName: 'icon'}, iconPosition: 'left' }}, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }, { type: 'action', typeAttributes: { rowActions: [{label: 'Download', name: 'download'}], menuAlignment: 'right'}} ]",
+        "listTitle" : "Files",
+        "listType" : "object",
+        "networkURL" : "/vgsos/s/",
+        "secondLookup" : false,
+        "showIcon" : true
+      },
+      "componentName" : "c:customListView",
+      "id" : "01d3779b-8518-45f2-b51b-0ad37d6a67e9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:activityPanel",
+      "id" : "1ba98bc0-f7e9-48e1-bcde-8e5ea4cd37dd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8d4d54b9-6462-4504-a65a-1269296f78c3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a7g"
+}

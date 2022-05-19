@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EZProtect4SF__All_Detected_Threats</fullName>
+    <columns>NAME</columns>
+    <columns>EZProtect4SF__TargetType__c</columns>
+    <columns>EZProtect4SF__Result__c</columns>
+    <columns>EZProtect4SF__Status__c</columns>
+    <columns>EZProtect4SF__RelatedRecord__c</columns>
+    <columns>EZProtect4SF__TargetCreatedById__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EZProtect4SF__Result__c</field>
+        <operation>equals</operation>
+        <value>Threat</value>
+    </filters>
+    <label>All Detected Threats</label>
+</ListView>

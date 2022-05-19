@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6caff3ee-50a4-4286-aff4-6e016e087876",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "0f856d1b-8894-45aa-bd37-d8322d513a26",
+  "label" : "Submit Renovation Request",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-submit-renovation-request",
+  "type" : "route",
+  "urlPrefix" : "submit-renovation-request"
+}

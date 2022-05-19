@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PP_Cant_update_by_participant</fullName>
+    <active>false</active>
+    <errorConditionFormula>$Profile.Name  = &apos;VHF Participant Community Plus User&apos;  &amp;&amp;   ISCHANGED( Primary_Participant__c )</errorConditionFormula>
+    <errorDisplayField>Primary_Participant__c</errorDisplayField>
+    <errorMessage>You don&apos;t have required privileges to update this field. Please contact SRO officer for further assistance.</errorMessage>
+</ValidationRule>

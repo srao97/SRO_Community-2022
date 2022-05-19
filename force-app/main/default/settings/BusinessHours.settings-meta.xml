@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>SRO Default Hrs</name>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Australia/Sydney</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2021-09-24</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>AFL Grand Final 21</name>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Anzac Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>April</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-04-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Australia Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2022-01-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Boxing Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-12-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-27</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day makeup 21</name>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Christmas</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-27</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Makeup 21</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-12-27</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Makeup 22</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-04-18</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday 22</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-04-15</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday 22</name>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Labour Day</name>
+        <recurrenceDayOfMonth>14</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>March</recurrenceMonthOfYear>
+        <recurrenceStartDate>2022-03-14</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Melbourne Cup</name>
+        <recurrenceDayOfMonth>2</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-11-02</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>New Year&apos;s Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2022-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2022-01-03</activityDate>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>New Year&apos;s Day Makeup 22</name>
+    </holidays>
+    <holidays>
+        <businessHours>SRO Default Hrs</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Queen&apos;s Birthday</name>
+        <recurrenceDayOfMonth>13</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>June</recurrenceMonthOfYear>
+        <recurrenceStartDate>2022-06-13</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+</BusinessHoursSettings>

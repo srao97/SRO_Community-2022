@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PPR_Purpose__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If property is planned to be used as PPR</description>
+    <externalId>false</externalId>
+    <label>PPR Purpose</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

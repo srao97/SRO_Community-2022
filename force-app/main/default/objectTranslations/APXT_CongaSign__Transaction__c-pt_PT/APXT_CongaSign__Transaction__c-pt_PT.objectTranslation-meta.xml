@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transação Conga Sign</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transações Conga Sign</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label>Personalizar Ligações</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome Transação</nameFieldLabel>
+    <quickActions>
+        <label></label>
+        <name>APXT_CongaSign__lightningCancel</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>APXT_CongaSign__lightningResend</name>
+    </quickActions>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__Cancel</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__Download_FinalVersion</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__Download_OriginalVersion</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__Edit_Draft</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__Resend</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__View_Audit_btn</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXT_CongaSign__View_ContentDocument</name>
+    </webLinks>
+</CustomObjectTranslation>

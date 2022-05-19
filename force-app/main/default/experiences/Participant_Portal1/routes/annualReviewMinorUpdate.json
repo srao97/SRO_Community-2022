@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0a4b6384-c847-49ef-ab2d-710e08f974e2",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "11136e1f-c9b8-43fe-bc75-99cad71cb9ad",
+  "label" : "AnnualReviewMinorUpdate",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-annualreviewminorupdate",
+  "type" : "route",
+  "urlPrefix" : "updateminorannualreview"
+}

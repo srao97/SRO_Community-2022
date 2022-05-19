@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ClaimantsDetails</name>
+    </fieldSets>
+    <layouts>
+        <layout>Involved Property (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Current Location</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Involved Vehicle (Vlocity 2.7)</layout>
+        <sections>
+            <label></label>
+            <section>Current Location</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Property</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Vehicle</name>
+    </recordTypes>
+</CustomObjectTranslation>

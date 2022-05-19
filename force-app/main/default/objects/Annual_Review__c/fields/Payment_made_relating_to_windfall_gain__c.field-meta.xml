@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_made_relating_to_windfall_gain__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Question: Did you make a payment to the Homebuyer Fund team in relation to the windfall gain</description>
+    <externalId>false</externalId>
+    <label>Payment made relating to windfall gain</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

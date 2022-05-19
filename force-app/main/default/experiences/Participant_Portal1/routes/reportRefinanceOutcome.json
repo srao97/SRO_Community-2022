@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "2922bfd3-a007-46a2-a5be-35a2f45c170a",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "051ad8a7-58e8-43c6-a9c3-78ebdea08ac9",
+  "label" : "ReportRefinanceOutcome",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-reportrefinanceoutcome",
+  "type" : "route",
+  "urlPrefix" : "reportrefinanceoutcome"
+}

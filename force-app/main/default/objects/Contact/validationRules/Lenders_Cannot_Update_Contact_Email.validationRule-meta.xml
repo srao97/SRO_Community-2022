@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lenders_Cannot_Update_Contact_Email</fullName>
+    <active>true</active>
+    <errorConditionFormula>Not(IsNew())
+&amp;&amp;
+IsChanged(Email)
+&amp;&amp;
+$Profile.Name = &quot;VHF Lender Community Plus User&quot;</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>This is the Email address used for email notifications. Please contact SRO to have it updated.</errorMessage>
+</ValidationRule>

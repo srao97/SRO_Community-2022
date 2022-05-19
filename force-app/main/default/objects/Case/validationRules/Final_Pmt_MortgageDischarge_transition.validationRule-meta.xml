@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Pmt_MortgageDischarge_transition</fullName>
+    <active>true</active>
+    <description>Only if status is &quot;Final Payment Received&quot;,
+VGSO can update the status to &quot;Mortgage discharge&quot;.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+$RecordType.DeveloperName=&quot;Final_Payment&quot;,
+ISPICKVAL(Status, &quot;Mortgage Discharged&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Final Payment Received&quot;),
+$Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>Case can be updated to mortgage discharged, only once the payment is received!</errorMessage>
+</ValidationRule>

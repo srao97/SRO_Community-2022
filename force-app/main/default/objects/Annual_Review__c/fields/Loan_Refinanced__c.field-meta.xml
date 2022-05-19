@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Refinanced__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Question: I / we confirm that I / we have either not refinanced my / our Loan (or amended the terms of my / our Loan Agreement) or that any refinance of my / our Loan (or amendment to the terms of my / our Loan Agreement) has not:
+a)     extended the maturity date beyond the End Payment Date (except where the refinancing or amendment is as a result of the application of the Panel Financier’s hardship policies);
+b)     changed the Loan from a principal and interest loan to an interest only loan; or
+c)     resulted in the loan to value ratio (determined by the Panel Financier) being greater than 80%.</description>
+    <externalId>false</externalId>
+    <label>Loan Refinanced</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overlapping_Absence__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( Origin , &quot;Participant Portal&quot;),FALSE,
+OR(
+AND(Absence_start_date__c&lt;Annual_Review__r.Annual_Review_Start_Date__c,Absence_end_date__c &gt;= Annual_Review__r.Annual_Review_Start_Date__c ),
+AND(Absence_start_date__c&lt;(ADDMONTHS(Annual_Review__r.Annual_Review_Start_Date__c,12)-1),Absence_end_date__c &gt;= (ADDMONTHS(Annual_Review__r.Annual_Review_Start_Date__c,12)-1) 
+)
+)
+)</formula>
+    <label>Overlapping Absence</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

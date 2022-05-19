@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "7429d63c-f7bb-42f6-aefd-55658cb342a9",
+    "propertyOverrides" : {
+      "activeViewId" : "ad9e4b65-22cd-42c4-a0b3-67710e42620b"
+    },
+    "targetId" : "c3f765e6-f7f6-4a2b-b04d-849a4b598f11",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_VoluntaryPaymentsParticipant_Detail_Page_Page",
+  "id" : "a395ebf9-b62d-478e-ab7b-feacc72e1602",
+  "type" : "experienceVariation"
+}

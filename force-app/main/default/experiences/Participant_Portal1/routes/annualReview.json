@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "22f0c966-ec7a-4802-8b03-45de509965ac",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "007a37d3-a84e-48b8-ab86-20d7fd34bc39",
+  "label" : "AnnualReview",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-submit-annual-review",
+  "type" : "route",
+  "urlPrefix" : "submit-annual-review"
+}

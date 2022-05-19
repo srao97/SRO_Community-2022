@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide users super access to all available VHF permission sets. For example Team Leader and Branch Managers would require all VHF permission sets whereas processing officer may belong to another group with restricted set of permissions</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>VHF Management Perm Group</label>
+    <permissionSets>Chatter_Permission</permissionSets>
+    <permissionSets>Delete_Accounts</permissionSets>
+    <permissionSets>Edit_FA_Details</permissionSets>
+    <permissionSets>PublicSectorAccessPSL</permissionSets>
+    <permissionSets>SRO_User_Delegated_External_User_Admin</permissionSets>
+    <permissionSets>Victorian_Homebuyer_Fund_Permission_Set</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

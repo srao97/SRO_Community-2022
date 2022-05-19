@@ -1,0 +1,241 @@
+/*.ng-site-footer-container {
+    background-position: right bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #3f3e40;
+}
+
+.ng-site-footer {
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight: 400;
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .ng-site-footer {
+        background-position: calc(100% + 37.5rem) bottom;
+        background-repeat: no-repeat;
+        background-size: 55rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .ng-site-footer {
+        background-position: calc(100% + 27.5rem) bottom;
+    }
+}
+
+.ng-site-footer__main {
+    border-bottom: 1px solid var(--text-light-blue);
+    padding: .25rem 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .ng-acknowledgement {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+.ng-site-footer__acknowledgement {
+    padding: 0.75rem 0 2.25rem;
+}
+
+@media screen and (min-width: 992px) {
+    .ng-site-footer__acknowledgement {
+        padding: 2rem 0 1rem;
+    }
+}
+
+.ng-acknowledgement__flag {
+    width: 3.3125rem;
+    height: 2.25rem;
+    border: 1px solid #c4c4c4;
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .ng-acknowledgement__flag {
+        margin-right: 0.75rem;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+}
+
+.ng-acknowledgement__text {
+    font-size: 16px;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .ng-acknowledgement__text {
+        margin-top: 0;
+        margin-left: 0.75rem;
+    }
+}
+
+.ng-site-footer__bottom {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 576px) {
+    .ng-site-footer__bottom {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ng-site-footer__bottom {
+        width: 100%;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+.ng-links-and-copyright__links {
+    font-size: 12px;
+    margin: 0;
+}
+
+.ng-site-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.ng-links-and-copyright__links li:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.ng-links-and-copyright__links li {
+    display: inline-block;
+    border-left: 1px solid #c4c4c4;
+    padding: 0 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.ng-links-and-copyright__copyright {
+    margin: 0 0 1rem;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+    .ng-links-and-copyright__copyright {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.ng-links-and-copyright__copyright p {
+    margin-top: 0;
+}
+
+.ng-site-footer__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    .ng-site-footer__logos {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.ng-site-footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 7rem;
+    max-height: 3.25rem;
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+    .ng-site-footer__logo {
+        width: auto;
+        margin-left: 2rem;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+.ng-site-footer a {
+    color: var(--text-light);
+}
+
+.ng-site-footer__logo:first-child {
+    margin-left: 0;
+}
+
+.footer-div1,
+.footer-div2,
+.footer-div3 {
+    flex-grow: 1;
+    width: 100%;
+    display: block;
+    border-bottom: solid 1px var(--light-neutral);
+}
+
+.footer-div3 {
+    border-bottom: none;
+}
+
+.footer_link_list li {
+    padding: 0.5rem 0rem;
+}
+
+.ng-site-footer h4 {
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .footer-div1,
+    .footer-div2,
+    .footer-div3 {
+        width: auto;
+    }
+    .footer-div1,
+    .footer-div2 {
+        border-right: solid 1px #c4c4c4;
+        border-bottom: transparent;
+    }
+}*/
+
+
+/*VSG CSS */

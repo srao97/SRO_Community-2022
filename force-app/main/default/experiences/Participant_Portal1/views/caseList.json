@@ -1,0 +1,47 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "459d0d80-f7dc-4627-a663-c25728016be1",
+  "label" : "Case List",
+  "regions" : [ {
+    "id" : "75b9b138-56df-4fbb-bd80-94910c4b789e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actionButtonLabel" : "New Request",
+        "actionButtonLink" : "/participants/s/submit-request",
+        "actionForPrimaryParticipant" : true,
+        "columnAttributes" : "[{ label: 'Case Id', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false }, { label: 'Case type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Case status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }, { label: 'Last modified', fieldName: 'LastModifiedDate', type: 'date',hideDefaultActions:true, wrapText: true,  sortable: false, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+        "fieldApiNames" : "Id,CaseNumber, Record_Type_Name__c, Status, CreatedDate,LastModifiedDate",
+        "listIcon" : "standard:case",
+        "listTitle" : "My Cases",
+        "listType" : "object",
+        "objectApiName" : "case",
+        "pageSize" : 10,
+        "recordFilter" : "Record_Type_Name__c NOT in ( 'VHF Applications' )",
+        "recordLimit" : 0,
+        "showIcon" : true,
+        "showListAction" : true,
+        "showPagination" : true,
+        "showViewAll" : false
+      },
+      "componentName" : "c:customListView",
+      "id" : "fcd7a783-1e71-4a09-864e-66f01ff71501",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "90b43ac3-6d63-48e0-9767-7e70d47dc5c4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "d1f56afa-920d-409a-b2ff-cfb4a045019c",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-500"
+}

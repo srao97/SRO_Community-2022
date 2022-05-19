@@ -1,0 +1,8 @@
+.THIS .forceCommunitySection .cb-section_column:only-child {
+    padding: 0rem;
+}
+
+
+.THIS .slds-large-nowrap:only-child {
+    max-width: 1440px !important;
+}

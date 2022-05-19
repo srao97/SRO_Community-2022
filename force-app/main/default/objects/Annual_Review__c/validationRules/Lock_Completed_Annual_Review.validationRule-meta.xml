@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Completed_Annual_Review</fullName>
+    <active>true</active>
+    <description>Lock Annual Review records with the Status of Completed. Admins are still able to make changes.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)), NOT($Profile.Name = &apos;VHF Participant Community Plus User&apos;), ISPICKVAL(Status__c, &apos;Completed&apos;), ISPICKVAL(PRIORVALUE(Status__c),&apos;Completed&apos;), NOT($Profile.Name = &quot;System Administrator&quot;))</errorConditionFormula>
+    <errorMessage>Completed Annual Review records are locked. Please contact Admin to make changes.</errorMessage>
+</ValidationRule>

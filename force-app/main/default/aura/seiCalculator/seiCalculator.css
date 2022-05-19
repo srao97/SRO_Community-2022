@@ -1,0 +1,9 @@
+.THIS .omni-text-grey-background {
+    background-color: #d8d8d8;
+    padding: 0.5rem !important;
+    font-weight: 600;
+}
+
+.THIS .omniscript-body[data-stepborder='right'][c-vHFSEICalculatorEnglish_vHFSEICalculatorEnglish] {
+    border-right: 0px solid rgb(217, 219, 221);
+}

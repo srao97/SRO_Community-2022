@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirm_Refinance</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Confirm Refinance</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/lenders/s/confirm-refinance?ContextId={!Confirmation__c.Id}</url>
+</WebLink>

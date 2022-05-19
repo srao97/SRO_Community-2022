@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_VGSO_cancel_case</fullName>
+    <active>true</active>
+    <description>When VGSO user updates the case status to &apos;Cancelled&apos;,
+
+Then display an error message &quot;Only the SRO can update the case to cancelled&quot;. [VHF-3360]</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ ISCHANGED(Status),
+ $RecordType.DeveloperName=&quot;Refinance&quot;,
+ ISPICKVAL(Status, &quot;Cancelled&quot;),
+ OR($Profile.Name = &quot;VHF VGSO Community Plus User&quot;, $Profile.Name=&quot;SRO Finance&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only the SRO can update the case to cancelled&apos;!</errorMessage>
+</ValidationRule>

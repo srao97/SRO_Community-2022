@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Names__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF(ISBLANK(Participant_Name_1__c), &quot;&quot;, Participant_Name_1__c))
++ (IF(ISBLANK(Participant_Name_2__c), &quot;&quot;, &quot;, &quot; +Participant_Name_2__c))
++ (IF(ISBLANK(Participant_Name_3__c), &quot;&quot;, &quot;, &quot; +Participant_Name_3__c))
++ (IF(ISBLANK(Participant_Name_4__c), &quot;&quot;, &quot;, &quot; +Participant_Name_4__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Participant Names</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

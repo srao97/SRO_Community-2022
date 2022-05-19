@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "02c8c668-9ed3-4328-9ca6-a0c053c5888d",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "dc708114-bfb8-4050-a362-fa8f0dd52666",
+  "label" : "Annual Review Related List",
+  "objectApiName" : "Annual_Review__c",
+  "routeType" : "relatedlist-a7X",
+  "type" : "route",
+  "urlPrefix" : "annual-review"
+}

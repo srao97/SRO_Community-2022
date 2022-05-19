@@ -1,0 +1,102 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <!-- Confirmation Screen Start -->
+    <template if:true={showConfirmation}>
+        <lightning-quick-action-panel header="Confirm payout document send">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={warningIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px" class="slds-m-around_small slds-text-heading_small"><b>Are you sure you want to send the payout document to the participant/s?</b></div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-layout horizontal-align="end">
+                    <lightning-layout-item>
+                        <lightning-button variant="neutral" label="Cancel" onclick={handleCancel}></lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item>
+                        <lightning-button variant="brand" class="slds-m-left_x-small" label="Send payout document" onclick={sendpayoutdocument}></lightning-button>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+    <!-- Confirmation Screen End -->
+
+    <template if:true={showSuccess}>
+        <lightning-quick-action-panel header="Payout document generation completed">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <lightning-icon icon-name="action:approval" alternative-text="Submitted" title="Submitted"></lightning-icon>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px" class="slds-m-around_small slds-text-heading_small">
+                            Payout document will be generated and sent shortly!
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+
+    <template if:true={validationError}>
+        <lightning-quick-action-panel header="Fix validations before generating payout document">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item  flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={errorIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px;" class="slds-m-around_small slds-text-heading_small">Sorry you cannot generate the Payout Document because:</div>
+                        <div class="slds-align_absolute-center">
+                            <ul style="text-align:left" class="slds-m-around_medium">
+                                <template for:each={errorList} for:item="error" for:index="index">
+                                    <li style="list-style-type:disc;font-size:14px;" class="slds-m-around_small" key={error.index}>{error}</li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+
+    <template if:true={hasError}>
+        <lightning-quick-action-panel header="Issue with generating payout document">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item  flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={errorIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px;" class="slds-m-around_small slds-text-heading_small">There is an issue with payout document generation.Please contact System Admin.</div>
+                        <div class="slds-align_absolute-center">
+                            <ul style="text-align:left" class="slds-m-around_medium">
+                                <template for:each={errorList} for:item="error" for:index="index">
+                                    <li style="list-style-type:disc;font-size:14px;" class="slds-m-around_small" key={error.index}>{error}</li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+
+</template>

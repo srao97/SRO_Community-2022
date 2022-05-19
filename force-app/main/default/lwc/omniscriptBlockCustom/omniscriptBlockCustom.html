@@ -1,0 +1,76 @@
+<template>
+    <ul class="slds-accordion">
+      <li class="slds-accordion__list-item">
+        <section class={blockClasses}>
+          <div class="slds-accordion__summary">
+            <h3 class="slds-accordion__summary-heading">
+              <template if:true={_propSetMap.repeat}>
+                <button if:true={blockLabel}
+                        aria-controls={blockLabel}
+                        class="slds-button slds-button_reset slds-accordion__summary-action"
+                        style="text-decoration: none;"
+                        onclick={toggleContent}>
+                  <vlocity_ins-icon extraclass="slds-accordion__summary-action-icon slds-m-right_x-small"
+                          iconposition="left"
+                          icon-name="utility:switch"
+                          alternative-text="accordion-title"
+                          size="x-small">
+                  </vlocity_ins-icon>
+                  <span class="slds-truncate"
+                        title={blockLabel}>
+                    {blockLabel}
+                  </span>
+                </button>
+              </template>
+<template if:false={_propSetMap.repeat}>
+                <button if:true={blockLabel}
+                        aria-controls={blockLabel}
+                        class="slds-button slds-button_reset slds-accordion__summary-action"
+                        style="text-decoration: none;"
+                        onclick={toggleContent}>
+                  <vlocity_ins-icon extraclass="slds-accordion__summary-action-icon slds-m-right_x-small"
+                          iconposition="left"
+                          icon-name="utility:switch"
+                          alternative-text="accordion-title"
+                          size="x-small">
+                  </vlocity_ins-icon>
+                  <span class="slds-truncate"
+                        title={blockLabel}>
+                    {blockLabel}
+                  </span>
+                </button>
+              </template>
+</h3>
+</div>
+<div if:true={showValidation} class="slds-has-error">
+    <div class="slds-form-element__help">
+        <span class="slds-text-link_faux" onclick={toggleContent}>
+                {allCustomLabelsUtil.OmniBlockError}
+              </span>
+    </div>
+</div>
+<div class={_blockContentContainer}>
+    <slot></slot>
+    <template if:true={_propSetMap.repeat}>
+                <div class="slds-m-top_medium">
+                  <div class="slds-button-group slds-p-right_large"
+                     role="group">
+                    <vlocity_ins-button if:true={canRepeat}
+                              variant="neutral"
+                              onclick={handleAdd}
+                              label={allCustomLabelsUtil.OmniAdd}>
+                    </vlocity_ins-button>
+                    <vlocity_ins-button if:true={canRemove}
+                              variant="neutral"
+                              onclick={handleRemove}
+                              label="Remove"
+                              class="slds-m-left_x-small">
+                    </vlocity_ins-button>
+                  </div>
+                </div>
+              </template>
+</div>
+</section>
+</li>
+</ul>
+</template>

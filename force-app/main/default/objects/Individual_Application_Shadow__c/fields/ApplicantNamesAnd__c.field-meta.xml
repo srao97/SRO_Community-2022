@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApplicantNamesAnd__c</fullName>
+    <description>Concatenation of applicants&apos; full names with &quot;and&quot; preceding the last applicant.</description>
+    <externalId>false</externalId>
+    <formula>Given_Name_Applicant_1__c &amp;
+&quot; &quot; &amp;
+Family_Name_Applicant_1__c &amp;
+if (AND(!isblank(Family_Name_Applicant_2__c),isblank(Family_Name_Applicant_3__c),isblank(Family_Name_Applicant_4__c)),&quot; and &quot;,&quot;&quot;) &amp;
+if (AND(isblank(Family_Name_Applicant_2__c),!isblank(Family_Name_Applicant_3__c),isblank(Family_Name_Applicant_4__c)),&quot; and &quot;,&quot;&quot;) &amp;
+if (AND(isblank(Family_Name_Applicant_2__c),isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot; and &quot;,&quot;&quot;) &amp;
+if (AND(!isblank(Family_Name_Applicant_2__c),!isblank(Family_Name_Applicant_3__c),isblank(Family_Name_Applicant_4__c)),&quot;, &quot;,&quot;&quot;) &amp;
+if (AND(!isblank(Family_Name_Applicant_2__c),isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot;, &quot;,&quot;&quot;) &amp;
+if (AND(isblank(Family_Name_Applicant_2__c),!isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot;, &quot;,&quot;&quot;) &amp;
+if (AND(!isblank(Family_Name_Applicant_2__c),!isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot;, &quot;,&quot;&quot;) &amp;
+Given_Name_Applicant_2__c &amp;
+if(isblank(Family_Name_Applicant_2__c),&quot;&quot;,&quot; &quot;) &amp;
+Family_Name_Applicant_2__c &amp;
+if (AND(!isblank(Family_Name_Applicant_3__c),isblank(Family_Name_Applicant_4__c)),&quot; and &quot;,&quot;&quot;) &amp;
+if (AND(isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot; and &quot;,&quot;&quot;) &amp;
+if (AND(!isblank(Family_Name_Applicant_3__c),!isblank(Family_Name_Applicant_4__c)),&quot;, &quot;,&quot;&quot;) &amp;
+Given_Name_Applicant_3__c &amp;
+if(isblank(Family_Name_Applicant_3__c),&quot;&quot;,&quot; &quot;) &amp;
+Family_Name_Applicant_3__c &amp;
+if (isblank(Family_Name_Applicant_4__c),&quot;&quot;,&quot; and &quot;) &amp;
+Given_Name_Applicant_4__c &amp;
+if(isblank(Family_Name_Applicant_4__c),&quot;&quot;,&quot; &quot;) &amp;
+Family_Name_Applicant_4__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Applicant Names And</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

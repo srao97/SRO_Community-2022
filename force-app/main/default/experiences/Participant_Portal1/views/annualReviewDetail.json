@@ -1,0 +1,73 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "id" : "bd7d5ebf-4c5b-43cc-8098-940e804ae324",
+  "label" : "Annual Review Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:lwcRecordHeadline",
+      "id" : "012e08be-21d0-4495-8842-db35e30c2718",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1fd230ad-2018-422a-b25e-b2e2b0d2a168",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:lwcRecordDetail",
+      "id" : "92ca8cdd-f32f-4944-b187-28e89d014646",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eddeca21-59f4-4c2b-84a5-08fd775b8b60",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7f2ae7aa-2e50-40f5-b294-76a33d5170e7",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d64f485d-7911-40ae-8610-62cc25b739cc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "00a16477-6bc6-4a63-bbf5-0337d7b3815b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "relatedListApiName" : "AttachedContentDocuments",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "100e4fbf-0ea0-48a1-82e6-dddabe31d9a8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fe9c4a97-d172-4ee6-b618-b5c98ac30625",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a7X"
+}

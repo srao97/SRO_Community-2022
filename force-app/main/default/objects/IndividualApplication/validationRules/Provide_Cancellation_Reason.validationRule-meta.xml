@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Cancellation_Reason</fullName>
+    <active>true</active>
+    <description>Provide Application Cancellation reason</description>
+    <errorConditionFormula>AND((OR(ISPICKVAL(Status, &quot;Cancelled&quot;),ISPICKVAL(Status, &quot;Rejected&quot;))), (ISBLANK(Cancellation_Reason__c)))</errorConditionFormula>
+    <errorDisplayField>Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Please provide a Cancellation/Rejection reason before cancelling/rejecting the application</errorMessage>
+</ValidationRule>

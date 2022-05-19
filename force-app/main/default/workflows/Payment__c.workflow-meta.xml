@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <outboundMessages>
+        <fullName>Letter_of_Partial_Payment_To_Applicants</fullName>
+        <apiVersion>53.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Letter_of_Partial_Payment_To_Applicants__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Letter of Partial Payment To Applicants</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Payout_Document</fullName>
+        <apiVersion>54.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Payout_Document__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Payout Document</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Letter of Partial Payment To Applicants</fullName>
+        <actions>
+            <name>Letter_of_Partial_Payment_To_Applicants</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  OR(    Case__r.Record_Type_Name__c =&apos;Windfall Gains&apos;,    Case__r.Record_Type_Name__c =&apos;Income Threshold Exceeded&apos;,    Case__r.Record_Type_Name__c =&apos;Voluntary Payments&apos;   ),  ISPICKVAL(Status__c, &apos;Payment Received&apos;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Payout Document Generation</fullName>
+        <actions>
+            <name>Payout_Document</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( Case_Type__c == &apos;Final Payment&apos;, ISPICKVAL(Status__c, &apos;Payment Registered&apos;)  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

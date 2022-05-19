@@ -1,0 +1,52 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "22f0c966-ec7a-4802-8b03-45de509965ac",
+  "label" : "AnnualReview",
+  "regions" : [ {
+    "id" : "8aa2e5a3-efec-4cf2-8a77-cbd74b150f4b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/AnnualReview",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFAnnualReviewEnglish",
+      "id" : "b025affb-c85d-41b8-b30a-aca8e079d55f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c860efe5-6351-4542-8f5f-02660832960b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1ce6c6c9-f316-48d9-b95f-57745c4338f0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AnnualReview"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4a10d22a-bf2b-493b-86bb-35a737c751a6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f321438d-d126-458b-93fa-74b1cb4a5701",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-submit-annual-review"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Term_Input_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+NOT(ISBLANK( Loan_Term_Years__c )),
+AND(OR(
+Loan_Term_Years__c&lt;2,
+Loan_Term_Years__c&gt;30)),
+($Profile.Name = &apos;Operations&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Loan_Term_Years__c</errorDisplayField>
+    <errorMessage>Property Loan term should be between 2 to 30 years</errorMessage>
+</ValidationRule>

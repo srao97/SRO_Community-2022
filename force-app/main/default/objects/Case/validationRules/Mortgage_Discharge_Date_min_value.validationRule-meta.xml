@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mortgage_Discharge_Date_min_value</fullName>
+    <active>true</active>
+    <description>If date entered is &lt; Payment Received date , then error message</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ $RecordType.DeveloperName=&quot;Final_Payment&quot;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+  Mortgage_Discharge_Date__c &lt;  Payment_Received_Date__c  
+)</errorConditionFormula>
+    <errorMessage>Mortgage discharge date must be after the payment received date!</errorMessage>
+</ValidationRule>

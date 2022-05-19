@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Editor_not_Additional_Participant</fullName>
+    <active>false</active>
+    <description>Prevent additional/secondary participants from editing Annual Review record</description>
+    <errorConditionFormula>AND( NOT(ISNEW()), NOT(ISBLANK($User.ContactId)), ISPICKVAL(Status__c, &apos;Submitted&apos;), PRIORVALUE(Status__c) = &apos;Awaiting Verification&apos;,
+OR(
+$User.ContactId = Participant_Two__r.PersonContactId,
+$User.ContactId = Participant_Three__r.PersonContactId,
+$User.ContactId = Participant_Four__r.PersonContactId)
+)</errorConditionFormula>
+    <errorDisplayField>Absence_details__c</errorDisplayField>
+    <errorMessage>Only the Primary Participant can change the annual review record</errorMessage>
+</ValidationRule>

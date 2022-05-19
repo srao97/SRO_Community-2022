@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Account</object>
+        <objectField>Panel_Finance_Officer__c.Account</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Case</object>
+        <objectField>Contact.Account</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Confirmation__c</object>
+        <objectField>New_PF__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>IndividualApplication</object>
+        <objectField>Lender_Account__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Order</object>
+        <objectField>Panel_Financier_Name__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <description>VHF-3105, VHF-3245, VHF-2764</description>
+    <name>Share Applicant with lender</name>
+    <profiles>VHF Lender Community Plus User</profiles>
+</SharingSet>

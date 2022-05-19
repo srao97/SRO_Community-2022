@@ -1,0 +1,59 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "37bc281c-044b-4033-ad9d-7c8328bf8fe1",
+  "label" : "Annual Review",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4b6c6a3c-757f-4cf8-a613-a63870f9c293",
+          "columns" : [ {
+            "UUID" : "8f56580e-579f-4c48-b910-f16cfe772649",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4b6c6a3c-757f-4cf8-a613-a63870f9c293",
+      "regions" : [ {
+        "id" : "8f56580e-579f-4c48-b910-f16cfe772649",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "89e93a09-2d9c-45cd-a49b-eebdac4d8388",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Annual Review"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ad2fbb77-f150-4531-aa35-24f58e36c35c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "34644497-1006-4dec-b602-1857a160d9f2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-annual-review"
+}

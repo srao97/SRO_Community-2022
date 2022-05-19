@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Orchestration Item (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity Insurance) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity Insurance) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity Insurance) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity Insurance) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Item Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Timestamps</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__TimeoutMinValueValidation</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__CompleteItem</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__RetryItem</name>
+    </webLinks>
+</CustomObjectTranslation>

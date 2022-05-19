@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "64317b91-8fc3-401a-adaf-e86893c18a01",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "69f81fcf-b5aa-4dbc-abe5-bff20467e1cc",
+  "label" : "PropertySale",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-propertysale",
+  "type" : "route",
+  "urlPrefix" : "propertysale"
+}

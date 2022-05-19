@@ -1,0 +1,57 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "vlocity_ins:vlocityNewportFullWidthLayout",
+  "id" : "217c1f91-ca03-4ac9-8ea5-c7c290053ff3",
+  "label" : "MakePayment",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/MakePayment",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFMakePaymentEnglish",
+      "id" : "2afafaa0-88a1-4013-93f3-3898c74d7a73",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "97769db0-529f-4489-b4d6-f6a2e991bbbb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "cdd7ce2a-d8a5-4da6-a6da-c49f95c0080f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "db8d406a-a7b9-4906-8ccb-8701000f96a4",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "66c1c999-10ea-4654-8159-a887f97c909b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "MakePayment"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8bae64d3-da13-4261-8f3e-24bfdd669fcb",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "61dbae0e-956d-41a9-b844-1d96aff6ac41",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-makepayment"
+}

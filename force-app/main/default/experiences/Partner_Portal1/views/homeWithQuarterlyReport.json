@@ -1,0 +1,217 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "600ed165-ade3-4e55-b581-8352b0099c09",
+  "label" : "Home_WithQuarterlyReport",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "b2c40640-5b65-4060-ad28-d434fe274e96",
+          "columns" : [ {
+            "UUID" : "1c4101bc-0b4f-4216-81eb-942932c35b46",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "b2c40640-5b65-4060-ad28-d434fe274e96",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"action_new_application\" style=\"margin-top:-8rem; z-index:999;\">\n    <a href=\"https://www.youtube.com/watch?v=YGE5euSZnbI\" target=\"_blank\">\n        <button class=\"ctaBtnOne slds-button slds-truncate\" style=\"color:white;font-size:18px;text-decoration:underline;\">Lender's Portal Demo Video\n        </button>&nbsp;&nbsp;<img style=\"color:white;\" src=\"/sfsites/c/resource/VideoIcon\" />\n    </a>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "033e54e4-7218-4b63-bebc-71a8e736dd25",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1c4101bc-0b4f-4216-81eb-942932c35b46",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "7a7adfb0-83f7-42b5-9b44-c6cac46787d6",
+          "columns" : [ {
+            "UUID" : "7a2434be-aebb-40cf-93be-c085d2b8f144",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "9",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "00b38285-616a-4130-af9f-b22287fbd4d6",
+            "columnKey" : "d49f0",
+            "columnName" : "Column 2",
+            "columnWidth" : "3",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "7a7adfb0-83f7-42b5-9b44-c6cac46787d6",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O2P000000XpgE",
+            "showRefreshButton" : false,
+            "showTitle" : true
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "824ec695-d8e9-4cbe-be50-5be9a71f4381",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7a2434be-aebb-40cf-93be-c085d2b8f144",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O2P000000XpgN",
+            "showRefreshButton" : false,
+            "showTitle" : true
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "44212c5f-640a-4808-b790-16b0065e860d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:cfQuarterlyReportDue",
+          "id" : "70569fcd-8abc-4520-8688-f85b911edf05",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "00b38285-616a-4130-af9f-b22287fbd4d6",
+        "regionLabel" : "Column 2",
+        "regionName" : "d49f0",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a9bb9e21-8dc8-47e5-bd06-2004b0e9a08c",
+          "columns" : [ {
+            "UUID" : "92449be5-8b37-4856-a573-70ee6716620e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a9bb9e21-8dc8-47e5-bd06-2004b0e9a08c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : false,
+            "filterName" : "00B2P000000VfIJUA0",
+            "layout" : "STANDARD",
+            "pageSize" : 3,
+            "scope" : "IndividualApplication",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : false,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "0f5681d6-2dd9-4b76-a698-dfa74e0a81f5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "columnAttributes" : "[{ label: 'Refinance Confirmation Number', initialWidth: 240, fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'Name'}}, sortable: false }, { label: 'Property address', fieldName: 'Property_Address__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Status', fieldName: 'Status__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Current PF', fieldName: 'Current_PF__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+            "fieldApiNames" : "Id, Name, Property_Address__c, Status__c, Current_PF__c, CreatedDate",
+            "listTitle" : "Awaiting Refinance Confirmation",
+            "listType" : "object",
+            "networkURL" : "/lenders/s/",
+            "objectApiName" : "confirmation__c",
+            "recordFilter" : "",
+            "recordId" : "{!recordId}",
+            "recordLimit" : 5,
+            "secondLookup" : false,
+            "showViewAll" : true,
+            "viewAllUrl" : "/lenders/s/confirmation/Confirmation__c/Default?Confirmation__c-filterId=Awaiting_Refinance_Confirmation"
+          },
+          "componentName" : "c:customListView",
+          "id" : "2c3d0766-9880-46ae-bb3a-18446306a052",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "92449be5-8b37-4856-a573-70ee6716620e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e507363b-548e-4063-80bf-4f70504ba4be",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "efa6055d-741f-4305-8b3a-a5c707239191",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8604cc1e-81a1-4101-bc38-149e16aca2f4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

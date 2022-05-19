@@ -1,0 +1,12 @@
+<template>
+  <template if:true={link}>
+      <a href={buttonLink} class={buttonClassStyle}>
+          <span class="">{buttonLabel}</span>
+        </a>
+  </template>
+  <template if:true={button}>
+      <button type={type} onclick={handleButtonClick} class={buttonClassStyle}>
+          {buttonLabel}
+      </button>
+  </template>
+</template>

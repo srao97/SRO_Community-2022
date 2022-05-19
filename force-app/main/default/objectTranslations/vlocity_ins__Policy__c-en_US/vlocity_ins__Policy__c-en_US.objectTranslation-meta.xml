@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ClientPolicyList</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ClientPolicyListSF1</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__InteractionFieldList</name>
+    </fieldSets>
+    <layouts>
+        <layout>Mobile Policy (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Commercial Lines (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Individual Annuity (Vlocity 2.7)</layout>
+        <sections>
+            <label></label>
+            <section>Annuity Values</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Individual Life (Vlocity 2.7)</layout>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Personal Lines (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insured Items/People</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Explorer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policy Values</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__CommercialLines</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Default</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__IndividualAnnuity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__IndividualLife</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__MobilePhonePolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__PersonalLines</name>
+    </recordTypes>
+</CustomObjectTranslation>

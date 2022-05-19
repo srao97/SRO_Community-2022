@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "24eaf7cf-ea1d-4bef-98fa-a02a598cf581",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "navigationMenuEditorRefresh" : "Lender_Manager_Navigation_Bar"
+      }
+    },
+    "targetId" : "4afff2e9-d1bb-4c5f-a869-e6055b37fc9e",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Default_Theme_Navigation_Menu_Component_Properties",
+  "id" : "40f235f6-df33-4e47-b498-563fe5c1ef12",
+  "type" : "experienceVariation"
+}

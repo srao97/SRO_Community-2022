@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "800d18d5-4a15-48ca-ab0a-a12cada010cb",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "dac1dc9a-b106-47ce-bffd-df7ffe01f020",
+  "label" : "Confirmation List",
+  "objectApiName" : "Confirmation__c",
+  "routeType" : "list-a7g",
+  "type" : "route",
+  "urlPrefix" : "confirmation"
+}

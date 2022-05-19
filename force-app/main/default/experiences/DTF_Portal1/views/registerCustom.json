@@ -1,0 +1,120 @@
+{
+  "appPageId" : "e841f6c0-3e2c-4657-b253-81adb470ae15",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "8b1c923d-b253-446e-b712-88494337c214",
+  "label" : "register-custom",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "f711f35a-78a5-433a-976c-6da560c86f2c",
+          "columns" : [ {
+            "UUID" : "b615746c-fa61-4d7c-8119-5e11071d8187",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "3",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "d53c3f4e-479b-4bc0-bfaf-eba41cbeb371",
+            "columnKey" : "914cf",
+            "columnName" : "Column 2",
+            "columnWidth" : "6",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "2c0084cd-42e4-427d-9636-1f21659510a8",
+            "columnKey" : "feff0",
+            "columnName" : "Column 3",
+            "columnWidth" : "3",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "f711f35a-78a5-433a-976c-6da560c86f2c",
+      "regions" : [ {
+        "id" : "b615746c-fa61-4d7c-8119-5e11071d8187",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"formHeaderCustom\"> \n    <h2>Register</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "06a8404c-2ddd-4dce-abce-86fbff005016",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "confirmPasswordLabel" : "Confirm Password",
+            "emailLabel" : "Email",
+            "extraFieldsFieldSet" : "",
+            "firstnameLabel" : "First Name",
+            "includePasswordField" : false,
+            "lastnameLabel" : "Last Name",
+            "passwordLabel" : "Create Password",
+            "regConfirmUrl" : "./CheckPasswordResetEmail",
+            "startUrl" : "",
+            "submitButtonLabel" : "Sign Up"
+          },
+          "componentName" : "salesforceIdentity:selfRegister2",
+          "id" : "cffe3077-b567-4ecb-89f1-4c13bec2e1b4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"formFooterCustom\">\n    <h2 class=\"slds-p-bottom_large\">Already have an account?</h2>\n    <button class=\"slds-button slds-button_brand slds-size_12-of-12 slds-p-around_xx-small slds-m-bottom_x-large\" type=\"button\" >\n        <span class=\"label bBody\">Log In</span>\n    </button>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "1b446bfb-d919-43b8-bc45-bfc7e86dc62f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d53c3f4e-479b-4bc0-bfaf-eba41cbeb371",
+        "regionLabel" : "Column 2",
+        "regionName" : "914cf",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "2c0084cd-42e4-427d-9636-1f21659510a8",
+        "regionLabel" : "Column 3",
+        "regionName" : "feff0",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c87fce41-906d-41ab-bb39-e710a9e1a627",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1eb3b5ea-6194-45ea-ac59-8e3d80f4f75f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2dc7f7c8-8a04-49d5-9e70-07b9b3da5f52",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "6GeCvqFbh6JkAmgsNSjk7bb2ML42Pf",
+  "type" : "view",
+  "viewType" : "self-register"
+}

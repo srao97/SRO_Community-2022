@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Account__r.PersonContact.MobilePhone!=Null,
+Account__r.PersonContact.MobilePhone,
+IF(Account__r.PersonContact.HomePhone!=Null,
+Account__r.PersonContact.HomePhone,
+IF(Account__r.PersonContact.Phone!=Null,
+Account__r.PersonContact.Phone,
+NULL)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Phone</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

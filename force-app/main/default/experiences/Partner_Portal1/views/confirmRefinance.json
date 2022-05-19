@@ -1,0 +1,53 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "4ac3cb54-1af7-4e41-899f-fe13f6a4b191",
+  "label" : "Confirm Refinance",
+  "regions" : [ {
+    "id" : "c187426a-ab37-445e-b14f-21c7ec605718",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/ConfirmRefinance",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFConfirmRefinanceEnglish",
+      "id" : "b13e4683-27b5-4160-8521-2824cceb9990",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c13b6231-fb7a-4f93-9af0-0fbe81fe05fa",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c4888717-a4fc-49fb-994f-e4f1016c42dc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Confirm Refinance"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8a4f1d47-b5ba-4832-a969-bda132c365bc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cc620a7e-4847-477d-9b60-b3b3c9fedc94",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-confirm-refinance"
+}

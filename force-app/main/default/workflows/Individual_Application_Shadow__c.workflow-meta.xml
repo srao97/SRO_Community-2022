@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Manual_Button_Checkbox</fullName>
+        <field>Updated_by_Button__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Manual Button Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Letter_of_Sup_ProvAppl_1_Ext_Applicants</fullName>
+        <apiVersion>53.0</apiVersion>
+        <description>This Outbound message sends emails to applicants on 1st prov appl expiry extension.</description>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Letter_of_Support_1st_Extens_Applicants__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Letter of Sup ProvAppl 1 Ext Applicants</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Letter_of_Support_Provisional_Apl_Second</fullName>
+        <apiVersion>53.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Letter_of_Support_Second_Extend_Expiry__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Letter of Support Provisional Apl Second</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Letter_of_Support_Provisional_Appll</fullName>
+        <apiVersion>53.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Letter_of_Support_Extend_Expiry__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Letter of Support Provisional Appll</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Manual_Generation_Provisional_Documents</fullName>
+        <apiVersion>52.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Manual_Provisional_Documents_Generation__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Manual Generation Provisional Documents</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>SendCongaEmail</fullName>
+        <apiVersion>52.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Participation_Agreement__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Send Conga Email</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Letter of Support Provisional Application Expiry</fullName>
+        <actions>
+            <name>Letter_of_Sup_ProvAppl_1_Ext_Applicants</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <actions>
+            <name>Letter_of_Support_Provisional_Appll</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Individual_Application_Shadow__c.First_Extension_Requested__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This WF rule fires when the 1st extension on Provisional expiry is successfull.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Letter of Support Provisional Application Expiry-secondExtension</fullName>
+        <actions>
+            <name>Letter_of_Support_Provisional_Apl_Second</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <actions>
+            <name>Letter_of_Support_Provisional_Appll</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Individual_Application_Shadow__c.Second_Extension_Requested__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manual_Document_Generation_ProvisionalApplication</fullName>
+        <actions>
+            <name>Update_Manual_Button_Checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Manual_Generation_Provisional_Documents</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Individual_Application_Shadow__c.Updated_by_Button__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send_Participation_Agreement_Conga</fullName>
+        <actions>
+            <name>SendCongaEmail</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>WF rule to trigger emails to applicants to send Participation Agreement.</description>
+        <formula>(Prior_Application_Status__c != Individual_Application_Status__c &amp;&amp; Individual_Application_Status__c == &apos;Awaiting Final Application&apos; &amp;&amp; Prior_Application_Status__c == &apos;Provisional Approval&apos; &amp;&amp; ISCHANGED(Individual_Application_Status__c)) ||(Prior_Application_Status__c != Individual_Application_Status__c &amp;&amp; ISNEW() &amp;&amp; Individual_Application_Status__c == &apos;Awaiting Final Application&apos; &amp;&amp; Prior_Application_Status__c == &apos;Provisional Approval&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

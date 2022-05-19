@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Payment_Received_Manual_Update</fullName>
+    <active>true</active>
+    <description>When any user updates a final payment status to &quot;Final Payment received&quot; then display the error message</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ ISCHANGED(Status),
+ $RecordType.DeveloperName=&quot;Final_Payment&quot;,
+ ISPICKVAL(Status, &quot;Final Payment Received&quot;),
+ NOT(TEXT(PRIORVALUE(Status)) = &quot;Mortgage Discharged&quot;),
+ $Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>Case is automatically updated to Final payment received when the payment is actually received and allocated!</errorMessage>
+</ValidationRule>

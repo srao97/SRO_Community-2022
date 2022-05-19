@@ -1,0 +1,170 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "cba4f7ce-e67c-4947-aa58-d346e1c27a1d",
+  "label" : "Home New",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "0201fe30-4953-48fd-b3fd-a77bb36a52fd",
+          "columns" : [ {
+            "UUID" : "deada67e-1af7-431f-a4eb-cbbaf1bb659a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "40b20967-dc6a-42fd-97f3-09de4f732cb0",
+            "columnKey" : "19b1a",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "0201fe30-4953-48fd-b3fd-a77bb36a52fd",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:cfAnnualReviewCTACard",
+          "id" : "53f8c5ec-f02f-4b58-9b5f-e3a6d3e4e1e0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "actionButtonLabel" : "New Request",
+            "actionButtonLink" : "/participants/s/submit-request",
+            "actionForPrimaryParticipant" : true,
+            "columnAttributes" : "[{ label: 'Case Id', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false }, { label: 'Case type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Case status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+            "fieldApiNames" : "Id, CaseNumber, Record_Type_Name__c, Status, CreatedDate",
+            "listTitle" : "My Cases",
+            "listType" : "object",
+            "networkURL" : "/participants/s/",
+            "objectApiName" : "case",
+            "recordFilter" : "Record_Type_Name__c NOT in ( 'VHF Applications' )",
+            "recordLimit" : 4,
+            "secondLookup" : false,
+            "showListAction" : true,
+            "showViewAll" : true,
+            "viewAllUrl" : "/participants/s/case/Case/Default"
+          },
+          "componentName" : "c:customListView",
+          "id" : "c56157be-8b13-45d5-a294-2b5ce09ebc9f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "deada67e-1af7-431f-a4eb-cbbaf1bb659a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "column1ApiName" : "OrderNumber",
+            "column1HelpText" : "",
+            "column1Label" : "Property ID",
+            "column2ApiName" : "Property_Address__c",
+            "column2HelpText" : "",
+            "column2Label" : "Property address",
+            "column3ApiName" : "Shared_Equity_Interest__c",
+            "column3HelpText" : "The proportion of your property the Government owns, expressed as a percentage",
+            "column3Label" : "Shared Equity Interest",
+            "filterFieldApiName" : "Account.Parent_Account__c",
+            "hightlightColumn3" : false,
+            "objectName" : "Order",
+            "showViewAll" : false,
+            "title" : "My property details",
+            "viewAllUrl" : "/participants/s/property-valuation/Property_Valuation__c/Default"
+          },
+          "componentName" : "c:propertyDetailsCard",
+          "id" : "d3dd4866-479e-4068-8c52-27f6c7dd16ce",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "column1ApiName" : "Free_Valuations_Remaining__c",
+            "column1HelpText" : "You get 5 free valuations over the course of your participation of the Scheme",
+            "column1Label" : "Free valuations left",
+            "column2ApiName" : "Paid_Valuations_Consumed__c",
+            "column2HelpText" : "Number of valuations that you are required to pay at your exit of the Scheme.",
+            "column2Label" : "Paid valuation consumed",
+            "column3ApiName" : "Valuation_Fees_Chargeable__c",
+            "column3HelpText" : "When you exit the scheme, you will need to pay the cost of any valuations over your 5 free valuation limit.",
+            "column3Label" : "Valuation fees payable at Scheme exit",
+            "filterFieldApiName" : "Account.Parent_Account__c",
+            "objectName" : "Order",
+            "showViewAll" : true,
+            "title" : "My property valuations",
+            "viewAllUrl" : "/participants/s/property-valuation/Property_Valuation__c/Default"
+          },
+          "componentName" : "c:propertyDetailsCard",
+          "id" : "bab278b1-302d-4194-85ac-39ca8611c5b0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "column1ApiName" : "Panel_Financier_Bank_Name__c",
+            "column1HelpText" : "This is the financial institution holding your mortgage",
+            "column1Label" : "Panel financier name",
+            "column2ApiName" : "",
+            "column2HelpText" : "",
+            "column2Label" : "",
+            "column3ApiName" : "",
+            "column3HelpText" : "",
+            "column3Label" : "",
+            "filterFieldApiName" : "Account.Parent_Account__c",
+            "objectName" : "Order",
+            "showViewAll" : false,
+            "title" : "My panel financier",
+            "viewAllUrl" : ""
+          },
+          "componentName" : "c:propertyDetailsCard",
+          "id" : "5534a77a-73ae-4db2-80a5-1b16126f231d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "40b20967-dc6a-42fd-97f3-09de4f732cb0",
+        "regionLabel" : "Column 2",
+        "regionName" : "19b1a",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2d111e80-8be7-4bdf-a98b-f63530a39348",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3643b028-2168-4e5f-8391-b1e3509210df",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3f34fb63-1b2f-40eb-bc56-03090e6c65e4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

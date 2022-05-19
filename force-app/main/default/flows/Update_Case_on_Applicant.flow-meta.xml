@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Check_if_status_changed</name>
+        <label>Check if status changed</label>
+        <locationX>196</locationX>
+        <locationY>303</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_ID_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.ApplicationCaseId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.ApplicationCaseId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Applicant</targetReference>
+            </connector>
+            <label>Case ID changed</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Update Case on Applicant {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Case on Applicant</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Applicant</name>
+        <label>Update Applicant</label>
+        <locationX>602</locationX>
+        <locationY>310</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IndividualApplication__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.ApplicationCaseId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Applicant__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Check_if_status_changed</targetReference>
+        </connector>
+        <object>IndividualApplication</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

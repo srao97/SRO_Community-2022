@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__CustomerCommunityFLSCheckFields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Census (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Census Members</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Census Large Group (Vlocity 3.0)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Census Small Group (Vlocity 3.0)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Data</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__LargeGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__SmallGroup</name>
+    </recordTypes>
+</CustomObjectTranslation>

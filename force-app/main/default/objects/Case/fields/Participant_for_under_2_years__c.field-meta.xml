@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_for_under_2_years__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATEVALUE(CreatedDate) &lt; 
+
+IF(
+  AND(
+    MONTH( Property__r.Actual_Settlement_Date__c ) = 2,
+    DAY( Property__r.Actual_Settlement_Date__c ) = 29,
+    NOT( 
+      OR( 
+        MOD( YEAR( Property__r.Actual_Settlement_Date__c ) + 2, 400 ) = 0, 
+        AND( 
+          MOD( YEAR( Property__r.Actual_Settlement_Date__c ) + 2, 4 ) = 0,
+          MOD( YEAR( Property__r.Actual_Settlement_Date__c ) + 2, 100 ) != 0
+        )
+      )
+    ) 
+  ),
+  DATE( YEAR( Property__r.Actual_Settlement_Date__c ) + 2, 3, 1),
+  DATE( YEAR( Property__r.Actual_Settlement_Date__c ) + 2, MONTH( Property__r.Actual_Settlement_Date__c ), DAY( Property__r.Actual_Settlement_Date__c ) )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Participant for under 2 years?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

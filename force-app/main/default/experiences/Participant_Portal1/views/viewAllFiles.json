@@ -1,0 +1,74 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "5f90883b-31fc-4075-bb1b-edefc89e0173",
+  "label" : "ViewAllFiles",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "24c271f5-edb8-4318-ae8a-6ce2753da0da",
+          "columns" : [ {
+            "UUID" : "08c07ee4-80dd-40bf-be24-cb3f50b0ba1f",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "24c271f5-edb8-4318-ae8a-6ce2753da0da",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "columnAttributes" : "[{ label: 'Title', fieldName: 'fileUrl', hideDefaultActions:true, wrapText: true, type: 'url', typeAttributes: { label: {fieldName: 'Title'} }, cellAttributes: { iconName: {fieldName: 'icon'}, iconPosition: 'left' }}, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} } ]",
+            "listIcon" : "standard:file",
+            "listTitle" : "Files",
+            "listType" : "files",
+            "recordId" : "{!recordId}",
+            "showIcon" : true
+          },
+          "componentName" : "c:customListView",
+          "id" : "96900de3-3221-416d-bc34-fb81ea3abb5b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "08c07ee4-80dd-40bf-be24-cb3f50b0ba1f",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "527075c6-0512-46d9-8b70-130a12ea189e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "ViewAllFiles"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "996721a9-be3a-44ec-93a5-afdc25a4cc7c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "622aae38-39ce-4a55-9eee-5c442e56915f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-viewallfiles"
+}

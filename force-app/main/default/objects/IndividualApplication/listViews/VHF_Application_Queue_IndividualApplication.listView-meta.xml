@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_Application_Queue_IndividualApplication</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>LicenseType</columns>
+    <columns>AppliedDate</columns>
+    <columns>Status</columns>
+    <filterScope>Queue</filterScope>
+    <label>VHF Application Queue</label>
+    <queue>VHF_Application_Queue</queue>
+    <sharedTo>
+        <group>Admin_Users</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ab225611-3e37-4c93-8ff7-642830d5f7da",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "824f6691-5ed0-45bc-9fb6-2cb7ad93be38",
+  "label" : "TutorialVideo",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-tutorialvideo",
+  "type" : "route",
+  "urlPrefix" : "tutorialvideo"
+}

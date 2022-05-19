@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Template_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Individual_Application__r.Number_Of_Applicants__c ,1,&quot;a0M5P000001O05CUAS&quot;,2,&quot;a0M5P000001O05EUAS&quot;,3,&quot;a0M5P000001O05GUAS&quot;,4,&quot;a0M5P000001O05FUAS&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Template_ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

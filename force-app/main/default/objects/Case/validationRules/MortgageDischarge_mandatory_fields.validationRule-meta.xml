@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MortgageDischarge_mandatory_fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+$RecordType.DeveloperName=&quot;Final_Payment&quot;,
+ISPICKVAL(Status, &quot;Mortgage Discharged&quot;),
+OR( ISBLANK( Dealing_Number__c ),ISBLANK(  Mortgage_Discharge_Date__c ) ),
+$Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>Dealing number and Mortgage discharge date are mandatory!</errorMessage>
+</ValidationRule>

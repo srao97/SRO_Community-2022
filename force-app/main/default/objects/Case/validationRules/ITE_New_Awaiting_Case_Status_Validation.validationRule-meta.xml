@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITE_New_Awaiting_Case_Status_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+$RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;,
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Awaiting Information&quot;),
+OR(ISPICKVAL(PRIORVALUE(Status),&quot;Valuation Requested&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;New&quot;)),
+NOT(OR($Profile.Name = &quot;VHF VGSO Community Plus User&quot;,$Profile.Name = &quot;VHF Participant Community Plus User&quot; ,$Profile.Name = &quot;System Administrator&quot;,$Profile.Name =&quot;SRO Finance&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Invalid status update</errorMessage>
+</ValidationRule>

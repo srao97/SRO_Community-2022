@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <vlocity_ins:vlocityLWCOmniWrapper target="c:vHFPIACalculatorEnglish" layout="lightning" recordId="{!v.recordId}" params="c__layout=lightning"/>
+</aura:component>

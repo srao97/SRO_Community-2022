@@ -1,0 +1,134 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "b317aa6d-b816-4732-a269-44d06513b6dd",
+  "label" : "Final Application Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "ead51121-169f-4142-9a44-b7611c712fa2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "fieldName" : "Status"
+      },
+      "componentName" : "c:ReadyOnlyPath",
+      "id" : "2e0cd2a3-b826-4c05-a713-a7db523476fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7650c000-01e0-42c9-b45c-b260cf857703",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "a170b058-bab3-4734-a6b5-72b3a7c9c68b",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "ffff4171-9b37-4f8b-beb1-8fc914944bc4",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "a1e406e5-dabc-46d8-bdcf-4cabc657d171",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "149a0",
+            "tabName" : "Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "a170b058-bab3-4734-a6b5-72b3a7c9c68b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:lwcRecordDetail",
+          "id" : "0a9de758-11d0-477d-a6f8-8002ba895ae3",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ffff4171-9b37-4f8b-beb1-8fc914944bc4",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "Histories",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "2dc5adf0-2b34-4578-9a36-4e5267226e9d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a1e406e5-dabc-46d8-bdcf-4cabc657d171",
+        "regionLabel" : "Related",
+        "regionName" : "149a0",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "246c9872-5c15-45a9-b385-7ba1840fbbd1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "96c68449-a24e-4249-accd-86e7cd074189",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "148f2f98-cce1-459d-941e-6575487f05d4",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d72268e1-a3a3-4a7b-9946-2d60580df7e8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "relatedListApiName" : "AttachedContentNotes",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "SMALL"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "05f4fc02-c45a-47a0-a08c-42ebf3c78236",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f951514c-09bf-450a-8084-8a6b3536644b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "6GeCvqFbh6JkAmgsNSjk7bb2ML42Pf",
+  "type" : "view",
+  "viewType" : "detail-800"
+}

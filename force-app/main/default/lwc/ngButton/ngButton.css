@@ -1,0 +1,42 @@
+.ng-button {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 7px 26px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-family: 'VIC-Regular';
+    font-size: 16px;
+}
+
+.ng-button--default {
+    background-color: var(--text-light);
+    color: var(--primary);
+    border: solid 1px var(--border-light);
+}
+
+.ng-button--default:hover {
+    background-color: var(--light-grey);
+}
+
+.ng-button--primary {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.ng-button--primary:hover {
+    background-color: var(--primary-light);
+}
+
+.ng-button--secondary {
+    background-color: var(--header-light);
+    color: var(--primary-color);
+}
+
+.ng-button--secondary:hover {
+    background-color: var(--header-dark);
+}

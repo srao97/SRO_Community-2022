@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maintained_and_protected_the_property__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Question: Over the past 12 months I / we have in accordance with clause 10.6 of the Participation Agreement and as prudent owners would have maintained and protected the Property and will continue to maintain and protect the Property</description>
+    <externalId>false</externalId>
+    <label>Maintained and protected the property</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

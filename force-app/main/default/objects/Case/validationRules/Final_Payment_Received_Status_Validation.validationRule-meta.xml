@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Payment_Received_Status_Validation</fullName>
+    <active>true</active>
+    <description>Given a Final Payment case status = Final Payment Received
+When Status is Updated to anything other than &quot;Mortgage Discharged&quot;
+Then display an error message</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ ISCHANGED(Status),
+ $RecordType.DeveloperName=&quot;Final_Payment&quot;,
+ NOT(OR(ISPICKVAL(Status, &quot;Mortgage Discharged&quot;),ISPICKVAL(Status, &quot;Payment Requested&quot;),ISPICKVAL(Status, &quot;New&quot;),ISPICKVAL(Status, &quot;Awaiting Information&quot;),ISPICKVAL(Status, &quot;Valuation Requested&quot;),ISPICKVAL(Status, &quot;Cancelled&quot;),ISPICKVAL(Status, &quot;Rejected&quot;),ISPICKVAL(Status, &quot;In Review&quot;))),
+ TEXT(PRIORVALUE(Status)) = &quot;Final Payment Received&quot;,
+ $Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>Invalid status update!</errorMessage>
+</ValidationRule>

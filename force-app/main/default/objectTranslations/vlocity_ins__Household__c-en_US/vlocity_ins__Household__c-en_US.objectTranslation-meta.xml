@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Group (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Group Members</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policies/Annuities</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Relationships</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Stories</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Household</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Household (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Contacts</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Policies/Annuities</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Relationships</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Stories</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Household</name>
+    </recordTypes>
+</CustomObjectTranslation>

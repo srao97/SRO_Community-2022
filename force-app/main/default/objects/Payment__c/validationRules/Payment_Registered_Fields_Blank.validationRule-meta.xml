@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Registered_Fields_Blank</fullName>
+    <active>true</active>
+    <description>Used to validate Payment Gateway Responses</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status__c,&quot;Payment Registered&quot;), OR(ISBLANK(DemandID__c), ISBLANK(Payment_Link__c), ISBLANK( iCRN__c)))</errorConditionFormula>
+    <errorMessage>When Payment is registered, the Demand ID, Payment Link, and iCRN fields must be populated</errorMessage>
+</ValidationRule>

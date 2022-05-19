@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Case_Sub_Status_Update</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Profile.Name = &quot;System Administrator&quot;)
+&amp;&amp;
+NOT(ISCHANGED(BypassValidation__c))
+&amp;&amp;
+ISCHANGED(Sub_Status__c) &amp;&amp;
+ISPICKVAL(Sub_Status__c, &apos;Completed&apos;) &amp;&amp; 
+ISPICKVAL(Status, &apos;Awaiting Information&apos;) &amp;&amp;
+(RecordType.DeveloperName = &apos;Windfall_Gains&apos; ||
+RecordType.DeveloperName = &apos;Long_Term_Absence&apos; ||
+RecordType.DeveloperName = &apos;Final_Payment&apos; ||
+RecordType.DeveloperName = &apos;Income_Threshold_Exceeded&apos; ||
+RecordType.DeveloperName = &apos;Property_Sale&apos; ||
+RecordType.DeveloperName = &apos;Refinance&apos; ||
+RecordType.DeveloperName = &apos;Voluntary_Payments&apos;)</errorConditionFormula>
+    <errorMessage>You can not update Case Sub Status!</errorMessage>
+</ValidationRule>

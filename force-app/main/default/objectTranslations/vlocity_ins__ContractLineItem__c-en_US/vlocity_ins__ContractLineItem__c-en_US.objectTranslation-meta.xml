@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__GetContractDetailFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__GetPlans</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__QuoteDetail</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contract Line Item (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__ValidateEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__ValidateStartDate</name>
+    </validationRules>
+</CustomObjectTranslation>

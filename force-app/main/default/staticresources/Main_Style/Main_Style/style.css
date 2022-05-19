@@ -1,0 +1,630 @@
+:root {
+    --text-light: #fff;
+    --text-dark: #011A3c;
+    --primary: #0052C2;
+    --primary-light: #0069D9;
+    --primary-base: #212121;
+    --primary-base-light: #3e3e3c;
+    --header-light: #a8303a;
+    --header-dark: #841627;
+    --footer-light: #b1afb2;
+    --footer-bg-light: #3F3E40;
+    --footer-bg-dark: #333234;
+    --success: #007B4B;
+    --focus: #3E94CF;
+    --warning: #FFB75D;
+    --visited: #4C2C92;
+    --danger: #AF272F;
+    --table-header-row: #585858;
+    --table-border: #CCCCCC;
+    --table-row: #F1F1F1;
+    --footer-row: #D9D9D9;
+    --border-light: #DDDBDA;
+    --border-medium: #d8d8d8;
+    --toggle-bg: #f3f5f6;
+    --body-bg: #f6f6f9;
+    --icon-fill1: #514f4d;
+}
+
+@font-face {
+    font-family: 'VIC_Regular';
+    src: url('/sfsites/c/resource/VICFonts/VIC-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'VIC_Bold';
+    src: url('/sfsites/c/resource/VICFonts/VIC-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'VIC_Semi_Bold';
+    src: url('/sfsites/c/resource/VICFonts/VIC-SemiBold.woff') format('woff');
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width :1024px) {
+    html {
+        font-size: calc(16px + 2 * ((100vw - 320px) / 1080)) !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 125% !important;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    color: var(--text-dark);
+    min-width: 320px !important;
+    background: var(--body-bg) !important;
+}
+
+
+/* Typography */
+
+p,
+.p,
+a,
+span,
+label,
+.slds-progress__item_content,
+th,
+td {
+    font-size: 0.875rem;
+}
+
+.slds-hyphenate a {
+    color: var(--primary);
+}
+
+
+.themeNavContainer a,
+.comm-user-profile-menu__trigger-p,.linkBtn {
+    font-family: VIC_Bold !important;
+    font-size: 0.875rem !important;
+}
+
+h1,
+.h1 {
+    font-size: 1.75rem !important;
+    line-height: 2rem !important;
+    color: var(--text-dark);
+}
+
+h1.contentCaption {
+    font-family: VIC_Bold !important;
+}
+
+h2,
+.h2 {
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+    font-family: VIC_Bold !important;
+    color: var(--text-dark);
+}
+
+.forceCommunityRecordListStandard h2.listTitle {
+    font-size: 1.25rem !important;
+}
+
+.forceCommunityReportChart .analyticsEmbeddedReportChart .reportTitle h2 {
+    font-size: 1rem !important;
+    font-family: VIC_Regular !important;
+}
+
+h3,
+.h3 {
+    font-size: 1.25rem !important;
+    line-height: 32px !important;
+    font-family: VIC_Bold !important;
+}
+
+h4,
+.h4 {
+    font-size: 1.1rem !important;
+    line-height: 16px;
+}
+
+h5,
+.h5 {
+    font-size: 0.875rem !important;
+    line-height: 20px;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+hr,
+.hr {
+    border: 1px solid;
+    margin: 1rem 0rem !important;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:visited {
+    color: var(--visited);
+}
+
+.body .ui-widget {
+    max-width: 1440px !important;
+}
+
+.ui-widget .uiTabBar{
+     margin-left: 10px !important; /* VHF-2743:2-11-2021*/
+}
+
+.uiTab .forceRelatedListCardDesktop{
+     margin: 10px !important; /* VHF-2743:2-11-2021*/
+}
+
+
+.error {
+    background: var(--danger);
+    padding: 1rem 0rem;
+    color: var(--text-light) !important;
+    font-family: VIC_Semi_Bold;
+}
+
+
+/* Header starts*/
+
+.forceCommunityThemeHeaderBase {
+    padding: 0rem !important;
+}
+
+.forceCommunityThemeHeaderCompact .themeHeaderInner {
+    background: var(--header-light) !important;
+    padding: 0rem 1rem;
+}
+
+.page_heading1 {
+    font-size: 3rem !important;
+    padding: 0.5rem 0rem !important;
+}
+
+.comm-user-profile-menu__login-button {
+    background: transparent !important;
+    border: solid 1px var(--text-light) !important;
+    border-radius: 4px !important;
+    font-family: VIC_Semi_Bold;
+}
+
+.forceCommunityThemeNav.jepsonHomeHeader .mainNavItem .linkBtn.comm-navigation__top-level-item-link--active,
+.comm-page-login-home .themeNav-align-right li.mainNavItem:first-child a,
+.forceCommunityThemeNav.jepsonInnerHeader .mainNavItem .linkBtn.comm-navigation__top-level-item-link--active,
+.comm-page-custom-form-submit .themeNav-align-right li.mainNavItem:nth-child(2) a {
+    border-bottom: 4px solid var(--text-light) !important;
+}
+
+.forceCommunityThemeHeaderCompact .themeUtils .themeUtil {
+    margin-left: 16px !important;
+}
+
+.forceCommunityThemeHeaderStacked .themeHeaderTopRow {
+    padding: 0rem !important;
+    background: var(--header-light) !important;
+}
+
+.mainNavItem a {
+    font-family: VIC_Semi_Bold !important;
+    font-size: 0.875rem !important;
+}
+
+.forceCommunityThemeNav .mainNavItem {
+    padding-left: 1.75rem !important;
+}
+
+.siteforceContentArea .comm-layout-column .ui-widget:not(:last-child), .siteforceContentArea .cb-section_column .ui-widget:not(:last-child) {
+    margin-bottom: var(--lwc-uiWidgetMarginBottom,1rem) !important;
+}
+
+.siteforceContentArea .comm-layout-column .ui-widget:not(:last-child), .siteforceContentArea .cb-section_column .ui-widget:not(:last-child) {
+    margin-bottom: var(--lwc-uiWidgetMarginBottom,1rem) !important;
+}
+
+/*.themeUtilsContainer .themUtil .themeSearch,
+.themeUtilsContainer .themeUtil .themeNotifications 
+{
+    padding-right: 16px !Important;
+}*/
+
+
+/*Header ends*/
+
+
+/* Body css start */
+
+.salesforceIdentityLoginForm2 .inputContainer {
+    border: 1px solid var(--border-medium) !important;
+}
+
+.forceListViewManager,
+.forceCommunityReportChart {
+    border: solid 1px var(--table-border) !important;
+    border-radius: 5px;
+    padding: 10px !important;
+}
+
+.forceCommunityReportChart {
+    min-height: 370px;
+}
+
+.forceCommunityRecordHeadline .forceRecordLayout.slds-page-header,
+.userHeaderDetail,
+.userStats,
+.forceCommunityUserSettingsCustomizable,
+.forceChatterMessages,
+.skip-feed-wrapper,
+.folderNavigator {
+    background: var(--text-light) !important;
+}
+
+button[community_user-userprofilemenu_userprofilemenu].slds-button {
+    border-color: transparent !important;
+}
+
+.action_new_application {
+    z-index: 1;
+    position: absolute;
+    right: 0.7rem;
+    top: 3.2rem;
+}
+
+.action_new_application a button:hover,
+.action_new_application a:hover {
+    text-decoration: none !important;
+    font-family: VIC_Regular !important;
+}
+
+button.slds-progress__marker {
+    margin-top: 5px;
+}
+
+
+/* Body CSS end */
+
+.formHeaderCustom {
+    border: solid 1px var(--border-light);
+    background: var(--text-light);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: none;
+    padding: 2rem 4rem 0rem 4rem;
+}
+
+.formHeaderCustom h2 {
+    font-size: 1.5rem !important;
+}
+
+.salesforceIdentityLoginForm2 .uiButton,
+.salesforceIdentitySelfRegister2 .uiButton {
+    background: var(--primary) !important;
+    border-radius: 4px;
+}
+
+.salesforceIdentityLoginForm2 .inverseTextColor,
+.salesforceIdentitySelfRegister2 .inverseTextColor {
+    color: var(--primary) !important;
+}
+
+.siteforceThemeLayoutStarter>.body.isPageWidthFixed-true,
+.siteforceContentArea {
+    min-height: 500px;
+}
+
+.forceCommunityRecordListStandard,
+.forceCommunityUserSettingsInternal {
+    background: var(--text-light) !important;
+    padding: 1rem;
+}
+
+
+/* Flow Input elements end */
+
+
+/* Footer start*/
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.footer,
+.footer_bottom {
+    background-color: var(--footer-bg-dark);
+    color: var(--footer-light);
+}
+
+.footer h2 {
+    font-size: 1.25rem !important;
+}
+
+.footer a,
+.footer a:hover,
+.footer_bottom a,
+.footer_bottom a:hover {
+    color: var(--footer-light);
+}
+
+.site-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 2.5rem;
+    margin: 0px auto;
+}
+
+.footer_site_info_label {
+    border-bottom: solid 1px;
+}
+
+.footer_container {
+    display: flex;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.footer_logo {
+    padding: 10px;
+}
+
+
+/* Footer end*/
+
+
+/* Accordian */
+
+.slds-accordion__section div.slds-accordion__summary h3.slds-accordion__summary-heading {
+    background: var(--toggle-bg);
+    padding: 6px 10px;
+}
+
+span[c-omniscriptblockcustom_omniscriptblockcustom] {
+    font-size: 1rem !important;
+    color: var(--primary-base-light) !important;
+}
+
+
+/* Login or Register Pages form starts*/
+
+.salesforceIdentityLoginForm2,
+.salesforceIdentitySelfRegister2 {
+    border: solid 1px var(--border-light);
+    padding: 1.5rem 4rem;
+    background: var(--text-light);
+    border-top: none;
+}
+
+.salesforceIdentityLoginForm2>span:first-child::after {
+    content: "Email";
+    font-family: VIC_Regular;
+    font-size: 0.75rem;
+}
+
+#sfdc_username_container+#sfdc_password_container::before {
+    content: 'Password';
+    display: block;
+    height: 10px;
+    position: relative;
+    top: -20px;
+    font-family: VIC_Regular;
+    font-size: 0.75rem;
+}
+
+#sfdc_username_container {
+    margin-bottom: 1.5rem;
+}
+
+#sfdc_username_container>.inputIcon,
+#sfdc_password_container>.inputIcon,
+.btn-top .text,
+.selfRegister,
+.comm-page-custom-my-applications .test-lvmForceActionsContainer,
+.vlc-separator,
+.omni-hz-stepchart-label {
+    display: none;
+}
+
+#sfdc_username_container .inputBox::placeholder,
+#sfdc_password_container .inputBox::placeholder {
+    color: var(--text-light);
+}
+
+#sfdc_username_container .inputBox,
+#sfdc_password_container .inputBox {
+    width: 100%;
+    padding: 1rem !important;
+    margin: 0rem !important;
+    height: 50px;
+}
+
+#sfdc_username_container,
+#sfdc_password_container {
+    height: 52px;
+    padding: 0rem;
+}
+
+#sfdc_password_container>div.uiInput {
+    position: relative;
+    top: -10px;
+}
+
+.salesforceIdentityLoginForm2 {
+    padding-bottom: 4rem !important;
+}
+
+
+/* Login or Register Pages form ends*/
+
+
+/* Omni Script Components starts*/
+
+.omniscript-article p,
+.omniscript-article span,
+.omniscript-article a {
+    font-size: 0.813rem !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    font-family: VIC_Regular;
+}
+
+.omniscript-article label {
+    font-size: 0.813rem !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    font-family: VIC_Regular;
+    /*removed font weight: vhf-3450*/
+    /*font-weight: var(--lwc-fontWeightBold,700) !important;*/
+}
+
+.omniscript-article h1.slds-page-header__title {
+    font-size: 1.5rem !important;
+    font-family: VIC_Bold;
+    color: var(--text-dark);
+    text-align: center;
+    margin-top: 0rem !important;
+}
+
+.omniscript-article .vlocity-btn {
+    min-width: 140px;
+    text-align: center;
+}
+
+.omniscript-article .slds-button_neutral,
+.omniscript-article.slds-button_base {
+    border-color: var(--primary);
+}
+
+.omniscript-article .vlocity-btn span.btnLabel {
+    margin: 0px auto;
+}
+
+.slds-omniscript_stepform {
+    margin-top: 2rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.omniscript-article input {
+    color: var(--text-dark);
+    border: solid 1px var(--border-medium) !important;
+    font-size: 0.875rem;
+}
+
+.omniscript-article .slds-scoped-notification--warning {
+    background: var(--warning) !important;
+}
+
+.omniscript-article .slds-scoped-notification--warning>div.slds-media__figure>span.slds-icon_container svg {
+    fill: var(--icon-fill1) !important;
+}
+/*
+vhf-3405 , removing background for all the text blocks
+.omniscript-article .slds-text-block,
+.omniscript-article .vlc-disclosure {
+    background: var(--body-bg) !important;
+    padding: 1rem !important;
+}
+*/
+/*
+vhf-3405, created a new background class for using in vlocity omniscripts.
+*/
+.omni-text-grey-background {
+    background: var(--body-bg) !important;
+    padding: 1rem !important;
+}
+
+.omniscript-article .vlc-disclosure .slds-box {
+    border-color: transparent !important;
+}
+
+.omniscript-article vlocity_ins-omniscript-step[data-omni-key="SubmissionCompleteStep"] {
+    background: var(--body-bg) !important;
+}
+
+@media (min-width: 768px) {
+    button[label="Cancel"]{
+        position: relative;
+        top: 60px;
+    }
+    }
+
+
+/* Omni Script Components end*/
+
+.slds-button_base {
+    border: solid 1px var(--primary) !important;
+}
+
+.forceCommunityAnalyticsObjectHome .folderNavigator {
+    max-width: 1440px !important;
+}
+
+:focus {
+    outline: 4px solid var(--border-light);
+    transition: outline-width .35s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    /* Code follows here */
+}
+
+@media (min-width: 1024px) {
+    .forceCommunityThemeHeaderStacked .themeHeaderTopRow {
+        background: var(--header-dark) !important;
+    }
+    .forceCommunityThemeHeaderStacked .themeHeaderTopRowInner {
+        background: var(--header-light) !important;
+        padding: 1rem !important;
+    }
+    .forceCommunityThemeHeaderStacked .themeHeaderBottomRowInner {
+        padding: 0rem !important;
+    }
+}
+
+/**
+*Community CSS Start
+/**/
+.viewAllLink {
+    visibility: hidden;
+}
+/********/
+/*****VHF-6594****/
+.forceCommunityRecordHeadline .forceHighlightsStencilDesktop.slds-page-header { background: transparent !important;}
+.slds-page-header__title {font-weight: bold !important}
+.forceCommunityLwcRecordDetail {border: 1px solid rgb(212, 212, 212) !important; border-radius:5px}
+.forceHighlightsPanel {border: 1px solid rgb(212, 212, 212) !important; border-radius:5px; padding-bottom:1.5px}
+.slds-page-header__detail-row {border-top: 1px solid rgb(212, 212, 212) !important}
+.slds-section__title .slds-button {background-color: rgb(239, 239, 239) !important}
+div[data-region-name="content"] .uiTabset--default {border: 1px solid rgb(212, 212, 212) !important; border-radius:5px}
+.uiTabset--default .forceCommunityLwcRecordDetail {border: 0px !important;padding:10px}
+.uiTabset--default c-custom-list-view .slds-card {border: 0px !important;}
+/********/

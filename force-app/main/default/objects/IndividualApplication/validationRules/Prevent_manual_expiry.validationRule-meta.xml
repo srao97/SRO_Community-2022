@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_manual_expiry</fullName>
+    <active>true</active>
+    <description>VHF-1802</description>
+    <errorConditionFormula>AND( ISCHANGED( Status ) ,
+ISPICKVAL(Status, &apos;Expired&apos;),
+NOT(BypassValidation__c) ,
+NOT($Profile.Name = &quot;System Administrator&quot;)
+)</errorConditionFormula>
+    <errorMessage>Provisional Application is automatically Expired based on Expiry date and Final Application status!</errorMessage>
+</ValidationRule>

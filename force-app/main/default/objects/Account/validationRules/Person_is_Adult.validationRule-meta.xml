@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Person_is_Adult</fullName>
+    <active>true</active>
+    <description>Person Account must be 17.5 years of age to be eligible, assume settlement is half a year away</description>
+    <errorConditionFormula>(TODAY() -  PersonBirthdate ) &lt; (365 * 17.5)</errorConditionFormula>
+    <errorDisplayField>PersonBirthdate</errorDisplayField>
+    <errorMessage>Applicants must be at least 18 years of age at the settlement date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "9b0b8105-d41e-4c34-8548-51deabc20715",
+    "propertyOverrides" : {
+      "activeViewId" : "600ed165-ade3-4e55-b581-8352b0099c09"
+    },
+    "targetId" : "c118db73-d220-4074-9209-76172e8f40e8",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Home_WithQuarterlyReport_Page",
+  "id" : "812b1ee1-e856-4a82-886a-d90a1c8c7689",
+  "type" : "experienceVariation"
+}

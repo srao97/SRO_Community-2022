@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Annual Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Annual Reviews</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin Layout</layout>
+        <sections>
+            <label></label>
+            <section>Absence 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Admin Hidden Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Agreement Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Occupancy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Annual Review Layout</layout>
+        <sections>
+            <label></label>
+            <section>Absence 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Occupancy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Participant Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Maintenance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Annual Review ReadOnly Layout</layout>
+        <sections>
+            <label></label>
+            <section>Absence 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Occupancy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Maintenance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of Annual Review Layout</layout>
+        <sections>
+            <label></label>
+            <section>Absence details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Agreement Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financing details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Maintenance details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Annual Review Layout</layout>
+        <sections>
+            <label></label>
+            <section>Absence 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Absence 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial Review</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Occupancy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Maintenance</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Create_Replacement_Record</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Generate_Cases</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Request_Annual_Review_Updates</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Rerun_Annual_Review_Batch</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Annual_Review</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Annual_Review_ReadOnly</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_create_when_property_inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Editor_is_Primary_Participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Editor_not_Additional_Participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Editor_not_Additional_Participant_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Annual_Review_After_Submission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Cancelled_Annual_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Completed_Annual_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PP_Cant_update_by_participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Edit_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Edit_Primary_Participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Edit_Property</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_direct_edit_by_participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_updates_to_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_cant_update_by_participant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Require_Cancellation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Require_Completion_Comments</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "217c1f91-ca03-4ac9-8ea5-c7c290053ff3",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "26405d8a-49a7-4d81-bcfb-0379ff1697a6",
+  "label" : "MakePayment",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-makepayment",
+  "type" : "route",
+  "urlPrefix" : "makepayment"
+}

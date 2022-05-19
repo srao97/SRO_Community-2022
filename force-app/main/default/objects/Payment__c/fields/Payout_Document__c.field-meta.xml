@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payout_Document__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; +
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;queryid=[Property]a0E5P000000dTpgUAE&quot; +
+&quot;&amp;templateid=[Payout+Detail]a0M5P000001a0YMUAY&quot; +
+&quot;&amp;qmode=SalesforceFile&quot; +
+&quot;&amp;sc0=1&quot; +
+&quot;&amp;sc1=SalesforceFile&quot; +
+&quot;&amp;apdf=0&quot; +
+&quot;&amp;fp0=1&quot;</formula>
+    <label>Payout Document</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

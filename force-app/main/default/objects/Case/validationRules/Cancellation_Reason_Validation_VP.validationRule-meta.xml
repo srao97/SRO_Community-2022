@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_Validation_VP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(BypassValidation__c),
+AND(ISPICKVAL(Status , &quot;Cancelled&quot;), ISBLANK(TEXT(Cancellation_Reason__c)),
+(($RecordType.DeveloperName=&quot;Voluntary_Payments&quot;)),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Final Payment Received&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Mortgage Discharged&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Payment Received&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Payment Requested&quot;),
+NOT(
+$Profile.Name = &apos;VHF Participant Community Plus User&apos; ||$Profile.Name =&apos;SRO Finance&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Please populate Cancellation Reason</errorMessage>
+</ValidationRule>

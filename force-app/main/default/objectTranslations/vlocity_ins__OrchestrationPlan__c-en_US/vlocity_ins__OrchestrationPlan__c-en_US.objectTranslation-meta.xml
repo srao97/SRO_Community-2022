@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Orchestration Plan (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Plan</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Plan (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Plan</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Plan (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Orchestration Plan</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__ViewOrder</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__ViewOrderDecomposition</name>
+    </webLinks>
+</CustomObjectTranslation>

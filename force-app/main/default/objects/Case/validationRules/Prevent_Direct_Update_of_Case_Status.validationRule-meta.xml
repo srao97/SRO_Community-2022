@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Direct_Update_of_Case_Status</fullName>
+    <active>true</active>
+    <description>VHF-1821, VHF-2956</description>
+    <errorConditionFormula>AND(ISCHANGED( Status ),  
+NOT(BypassValidation__c) , 
+$RecordType.DeveloperName=&quot;VHF_Application_Record_Type&quot;,
+NOT($Profile.Name = &quot;System Administrator&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You can&apos;t directly update the Case status!</errorMessage>
+</ValidationRule>

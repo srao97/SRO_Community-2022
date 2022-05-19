@@ -1,0 +1,10 @@
+<design:component label="Flow Footer">
+    <design:attribute name="canPause" label="Enable Pause" default="true" />
+  	<design:attribute name="canBack" label="Enable Back" default="true" />
+  	<design:attribute name="canNext" label="Enable Next" default="true" />
+  	<design:attribute name="canFinish" label="Enable Finish" default="true" />
+    <design:attribute name="pauseLabel" label="Pause Button Label" default="Pause" />
+    <design:attribute name="backLabel" label="Back Button Label" default="Previous" />
+    <design:attribute name="nextLabel" label="Next Button Label" default="Next" />
+    <design:attribute name="finishLabel" label="Finish Button Label" default="Done" />
+</design:component>

@@ -1,0 +1,70 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_ins-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_ins-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_ins-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element0block_element0_child"     record={record}  card={card}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2014pt;%22%3E%3Cstrong%3EMy%20Requests%3C/strong%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element0block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element0block_element1_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="outline-brand"  data-conditions='\{"group":[{"field":"IsPrimaryParticipant","id":"state-new-condition-0","operator":"==","type":"custom","value":"true"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  hide-action-icon="true"  state-action='\{"Community Named Page":{"targetName":"SubmitRequest__c"},"displayName":"New Request","id":"flex-action-1638407236502","openUrlIn":"Current Window","targetType":"Community Named Page","type":"Custom","vlocityIcon":"standard-default"}'  theme="slds" ></vlocity_ins-action>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><c-cf-requests-table data-style-id="state0element1block_element0_child"  tracking-obj={_childCardTrackingObj}  is-inside-parent={insideParent} parent-uniquekey={uniqueKey}  card-node=""  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  is-child-card-tracking-enabled="false"  theme="slds"  onupdateparent={updateParentData}></c-cf-requests-table>
+    </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element1block_element1_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  hide-action-icon="true"  state-action='\{"Web Page":{"targetName":"/participants/s/case/Case/{listViewId}"},"displayName":"View All","id":"flex-action-1638407674840","openUrlIn":"Current Window","targetType":"Web Page","type":"Custom","vlocityIcon":"standard-default"}'  styles='\{"label":{"color":"#544DD7","fontSize":""}}'  theme="slds" ></vlocity_ins-action>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_ins-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element0block_element0_child"     record={record}  card={card}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2014pt;%22%3E%3Cstrong%3EMy%20Requests%3C/strong%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element0block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element0block_element1_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="outline-brand"  data-conditions='\{"group":[{"field":"IsPrimaryParticipant","id":"state-new-condition-0","operator":"==","type":"custom","value":"true"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  hide-action-icon="true"  state-action='\{"Community Named Page":{"targetName":"SubmitRequest__c"},"displayName":"New Request","id":"flex-action-1638407236502","openUrlIn":"Current Window","targetType":"Community Named Page","type":"Custom","vlocityIcon":"standard-default"}'  theme="slds" ></vlocity_ins-action>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><c-cf-requests-table data-style-id="state0element1block_element0_child"  tracking-obj={_childCardTrackingObj}  is-inside-parent={insideParent} parent-uniquekey={uniqueKey}  card-node=""  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  is-child-card-tracking-enabled="false"  theme="slds"  onupdateparent={updateParentData}></c-cf-requests-table>
+    </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element1block_element1_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  hide-action-icon="true"  state-action='\{"Web Page":{"targetName":"/participants/s/case/Case/{listViewId}"},"displayName":"View All","id":"flex-action-1638407674840","openUrlIn":"Current Window","targetType":"Web Page","type":"Custom","vlocityIcon":"standard-default"}'  styles='\{"label":{"color":"#544DD7","fontSize":""}}'  theme="slds" ></vlocity_ins-action>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_ins-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+      
+      </vlocity_ins-action>
+  
+            <vlocity_ins-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+            
+            </vlocity_ins-action>
+            </div>
+          </template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancelled_Settlements</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>ApplicantNames__c</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>ApplicationCaseId__c</columns>
+    <columns>Case_Status__c</columns>
+    <columns>Application_Submission_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTRACT.STATUS</field>
+        <operation>equals</operation>
+        <value>Cancelled Settlement</value>
+    </filters>
+    <label>Cancelled Settlements</label>
+    <sharedTo>
+        <group>All_VGSO_Portal_users</group>
+    </sharedTo>
+</ListView>

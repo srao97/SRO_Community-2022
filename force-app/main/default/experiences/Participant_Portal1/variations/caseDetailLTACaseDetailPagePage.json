@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "655fb204-505d-4ed5-aef5-9b4af0a3abf1",
+    "propertyOverrides" : {
+      "activeViewId" : "4e109202-0210-4567-a34d-42713a1e52b1"
+    },
+    "targetId" : "c3f765e6-f7f6-4a2b-b04d-849a4b598f11",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_LTACase_Detail_Page_Page",
+  "id" : "90e4c9a4-1200-4d99-89d6-28c576606be7",
+  "type" : "experienceVariation"
+}

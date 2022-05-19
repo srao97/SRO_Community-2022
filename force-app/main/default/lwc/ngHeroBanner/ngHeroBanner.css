@@ -1,0 +1,28 @@
+.heroBanner {
+  background: url(/s/sfsites/c/resource/NextgenAssets/NextgenAssets/banner1.png) !important;
+}
+
+.stellaInnerHero {
+  padding: 130px 30px;
+}
+.bgOverlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.contentCaption {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.contentTitle {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.contentSubtitle {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.widthContainer {
+  width: 1280px;
+}

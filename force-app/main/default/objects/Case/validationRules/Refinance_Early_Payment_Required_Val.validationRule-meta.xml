@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_Early_Payment_Required_Val</fullName>
+    <active>true</active>
+    <description>SRO Officer/VGSO update the case status manually [VHF-3360]</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+$RecordType.DeveloperName=&quot;Refinance&quot;,
+OR((TEXT(PRIORVALUE(Status)) = &quot;Refinanced - New PF&quot;),
+(TEXT(PRIORVALUE(Status)) = &quot;Confirmed&quot;)),
+ISPICKVAL(Status, &quot;Early Payment Required&quot;),
+NOT($Profile.Name =&apos;System Administrator&apos;)
+)</errorConditionFormula>
+    <errorMessage>Invalid status update!</errorMessage>
+</ValidationRule>

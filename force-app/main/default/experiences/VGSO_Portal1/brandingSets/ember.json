@@ -1,0 +1,28 @@
+{
+  "definitionName" : "ember:branding-ember",
+  "id" : "f5346b9a-2458-4a60-a25f-c75499178e44",
+  "label" : "Ember",
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "rgb(183, 31, 55)",
+    "BorderColor" : "rgb(212, 212, 212)",
+    "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
+    "CompanyLogo" : "/file-asset/logo?v=1",
+    "DetailTextColor" : "rgba(0, 0, 0, 0.6)",
+    "ErrorFontColor" : "#ff9e9e",
+    "HeaderFonts" : "VIC_Regular",
+    "LinkColor" : "rgb(0, 76, 151)",
+    "LoginBackgroundColor" : "#F4F4F4",
+    "LoginBackgroundImage" : "../../../../sfsites/picasso/core/external/salesforceIdentity/images/background.jpg?v=1",
+    "OverlayTextColor" : "rgb(255, 255, 255)",
+    "PageBackgroundColor" : "rgb(255, 255, 255)",
+    "PrimaryFont" : "VIC_Regular",
+    "TextColor" : "rgba(0, 0, 0, 0.8)",
+    "TextTransformStyle" : "none",
+    "_ActionColorDarker" : "#8b182a",
+    "_ActionColorTrans" : "rgba(183, 31, 55, 0.9)",
+    "_HoverColor" : "rgba(183, 31, 55, 0.05)",
+    "_LinkColorDarker" : "#00376e",
+    "_OverlayTextColorShadow" : "#000000"
+  }
+}

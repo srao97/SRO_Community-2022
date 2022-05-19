@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Managers or Admin</audienceName>
+    <container>Partner Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>UserRole.PortalRole</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Manager</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>admin</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AnyCriterionMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>c86ee755-99dc-4323-b8df-d686ac145da8$#$197d4c0b-8263-430a-a34a-d81671305d58</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>c118db73-d220-4074-9209-76172e8f40e8</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Home_WithQuarterlyReport_Page</targetValue>
+        </target>
+        <target>
+            <groupName>f5d772e1-81f4-43a5-9e13-e5f4f0756665$#$4afff2e9-d1bb-4c5f-a869-e6055b37fc9e</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>5be7c7ec-485d-4cd8-aac4-e98827e8e4da$#$b1f9ddc7-2bb2-4e22-85b5-d4f5c9403620</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>SRO_Custom_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

@@ -1,0 +1,9 @@
+.THIS .omni-text-grey-background{
+    background-color: #e5e5e5; 
+    padding: 0.5rem !important;
+    font-weight: 600;
+}
+
+.THIS .omniscript-body[data-stepborder='right'][c-vHFGenerateCasesEnglish_vHFGenerateCasesEnglish] {
+    border-right: 0px solid rgb(217, 219, 221);
+}

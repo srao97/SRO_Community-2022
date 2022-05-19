@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins__SpecialtyType__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Specialty Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001 – General Practice</fullName>
+                <default>false</default>
+                <label>001 – General Practice</label>
+            </value>
+            <value>
+                <fullName>002 – Family Practice</fullName>
+                <default>false</default>
+                <label>002 – Family Practice</label>
+            </value>
+            <value>
+                <fullName>003 – Internal Medicine</fullName>
+                <default>false</default>
+                <label>003 – Internal Medicine</label>
+            </value>
+            <value>
+                <fullName>004 – Geriatrics</fullName>
+                <default>false</default>
+                <label>004 – Geriatrics</label>
+            </value>
+            <value>
+                <fullName>005 – Primary Care – Physician Assistants</fullName>
+                <default>false</default>
+                <label>005 – Primary Care – Physician Assistants</label>
+            </value>
+            <value>
+                <fullName>006 – Primary Care – Nurse Practitioners</fullName>
+                <default>false</default>
+                <label>006 – Primary Care – Nurse Practitioners</label>
+            </value>
+            <value>
+                <fullName>007 – Allergy and Immunology</fullName>
+                <default>false</default>
+                <label>007 – Allergy and Immunology</label>
+            </value>
+            <value>
+                <fullName>008 – Cardiology</fullName>
+                <default>false</default>
+                <label>008 – Cardiology</label>
+            </value>
+            <value>
+                <fullName>009 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>009 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>010 – Chiropractor</fullName>
+                <default>false</default>
+                <label>010 – Chiropractor</label>
+            </value>
+            <value>
+                <fullName>011 – Dermatology</fullName>
+                <default>false</default>
+                <label>011 – Dermatology</label>
+            </value>
+            <value>
+                <fullName>012 – Endocrinology</fullName>
+                <default>false</default>
+                <label>012 – Endocrinology</label>
+            </value>
+            <value>
+                <fullName>013 – ENT/Otolaryngology</fullName>
+                <default>false</default>
+                <label>013 – ENT/Otolaryngology</label>
+            </value>
+            <value>
+                <fullName>014 – Gastroenterology</fullName>
+                <default>false</default>
+                <label>014 – Gastroenterology</label>
+            </value>
+            <value>
+                <fullName>015 – General Surgery</fullName>
+                <default>false</default>
+                <label>015 – General Surgery</label>
+            </value>
+            <value>
+                <fullName>016 – Gynecology, OB/GYN</fullName>
+                <default>false</default>
+                <label>016 – Gynecology, OB/GYN</label>
+            </value>
+            <value>
+                <fullName>017 – Infectious Diseases</fullName>
+                <default>false</default>
+                <label>017 – Infectious Diseases</label>
+            </value>
+            <value>
+                <fullName>018 – Nephrology</fullName>
+                <default>false</default>
+                <label>018 – Nephrology</label>
+            </value>
+            <value>
+                <fullName>019 – Neurology</fullName>
+                <default>false</default>
+                <label>019 – Neurology</label>
+            </value>
+            <value>
+                <fullName>020 – Neurosurgery</fullName>
+                <default>false</default>
+                <label>020 – Neurosurgery</label>
+            </value>
+            <value>
+                <fullName>021 – Oncology - Medical, Surgical</fullName>
+                <default>false</default>
+                <label>021 – Oncology - Medical, Surgical</label>
+            </value>
+            <value>
+                <fullName>022 – Oncology - Radiation/Radiation Oncology</fullName>
+                <default>false</default>
+                <label>022 – Oncology - Radiation/Radiation Oncology</label>
+            </value>
+            <value>
+                <fullName>023 – Ophthalmology</fullName>
+                <default>false</default>
+                <label>023 – Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>024 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>024 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>025 – Orthopedic Surgery</fullName>
+                <default>false</default>
+                <label>025 – Orthopedic Surgery</label>
+            </value>
+            <value>
+                <fullName>026 – Physiatry, Rehabilitative Medicine</fullName>
+                <default>false</default>
+                <label>026 – Physiatry, Rehabilitative Medicine</label>
+            </value>
+            <value>
+                <fullName>027 – Plastic Surgery</fullName>
+                <default>false</default>
+                <label>027 – Plastic Surgery</label>
+            </value>
+            <value>
+                <fullName>028 – Podiatry</fullName>
+                <default>false</default>
+                <label>028 – Podiatry</label>
+            </value>
+            <value>
+                <fullName>029 – Psychiatry</fullName>
+                <default>false</default>
+                <label>029 – Psychiatry</label>
+            </value>
+            <value>
+                <fullName>030 – Pulmonology</fullName>
+                <default>false</default>
+                <label>030 – Pulmonology</label>
+            </value>
+            <value>
+                <fullName>031 – Rheumatology</fullName>
+                <default>false</default>
+                <label>031 – Rheumatology</label>
+            </value>
+            <value>
+                <fullName>032 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>032 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>033 – Urology</fullName>
+                <default>false</default>
+                <label>033 – Urology</label>
+            </value>
+            <value>
+                <fullName>034 – Vascular Surgery</fullName>
+                <default>false</default>
+                <label>034 – Vascular Surgery</label>
+            </value>
+            <value>
+                <fullName>035 – Cardiothoracic Surgery</fullName>
+                <default>false</default>
+                <label>035 – Cardiothoracic Surgery</label>
+            </value>
+            <value>
+                <fullName>040 – Acute Inpatient Hospitals</fullName>
+                <default>false</default>
+                <label>040 – Acute Inpatient Hospitals</label>
+            </value>
+            <value>
+                <fullName>041 – Cardiac Surgery Program</fullName>
+                <default>false</default>
+                <label>041 – Cardiac Surgery Program</label>
+            </value>
+            <value>
+                <fullName>042 – Cardiac Catheterization Services</fullName>
+                <default>false</default>
+                <label>042 – Cardiac Catheterization Services</label>
+            </value>
+            <value>
+                <fullName>043 – Critical Care Services – Intensive Care Units (ICU)</fullName>
+                <default>false</default>
+                <label>043 – Critical Care Services – Intensive Care Units (ICU)</label>
+            </value>
+            <value>
+                <fullName>044 – Outpatient Dialysis</fullName>
+                <default>false</default>
+                <label>044 – Outpatient Dialysis</label>
+            </value>
+            <value>
+                <fullName>045 – Surgical Services (Outpatient or ASC)</fullName>
+                <default>false</default>
+                <label>045 – Surgical Services (Outpatient or ASC)</label>
+            </value>
+            <value>
+                <fullName>046 – Skilled Nursing Facilities</fullName>
+                <default>false</default>
+                <label>046 – Skilled Nursing Facilities</label>
+            </value>
+            <value>
+                <fullName>047 – Diagnostic Radiology</fullName>
+                <default>false</default>
+                <label>047 – Diagnostic Radiology</label>
+            </value>
+            <value>
+                <fullName>048 – Mammography</fullName>
+                <default>false</default>
+                <label>048 – Mammography</label>
+            </value>
+            <value>
+                <fullName>049 – Physical Therapy</fullName>
+                <default>false</default>
+                <label>049 – Physical Therapy</label>
+            </value>
+            <value>
+                <fullName>050 – Occupational Therapy</fullName>
+                <default>false</default>
+                <label>050 – Occupational Therapy</label>
+            </value>
+            <value>
+                <fullName>051 – Speech Therapy</fullName>
+                <default>false</default>
+                <label>051 – Speech Therapy</label>
+            </value>
+            <value>
+                <fullName>052 – Inpatient Psychiatric Facility Services</fullName>
+                <default>false</default>
+                <label>052 – Inpatient Psychiatric Facility Services</label>
+            </value>
+            <value>
+                <fullName>053 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>053 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>054 – Orthotics and Prosthetics</fullName>
+                <default>false</default>
+                <label>054 – Orthotics and Prosthetics</label>
+            </value>
+            <value>
+                <fullName>055 – Home Health</fullName>
+                <default>false</default>
+                <label>055 – Home Health</label>
+            </value>
+            <value>
+                <fullName>056 – Durable Medical Equipment</fullName>
+                <default>false</default>
+                <label>056 – Durable Medical Equipment</label>
+            </value>
+            <value>
+                <fullName>057 – Outpatient Infusion/Chemotherapy</fullName>
+                <default>false</default>
+                <label>057 – Outpatient Infusion/Chemotherapy</label>
+            </value>
+            <value>
+                <fullName>058 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>058 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>059 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>059 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>060 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>060 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>061 – Heart Transplant Program</fullName>
+                <default>false</default>
+                <label>061 – Heart Transplant Program</label>
+            </value>
+            <value>
+                <fullName>062 – Heart/Lung Transplant Program</fullName>
+                <default>false</default>
+                <label>062 – Heart/Lung Transplant Program</label>
+            </value>
+            <value>
+                <fullName>063 – NOT IN USE</fullName>
+                <default>false</default>
+                <label>063 – NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>064 – Kidney Transplant Program</fullName>
+                <default>false</default>
+                <label>064 – Kidney Transplant Program</label>
+            </value>
+            <value>
+                <fullName>065 – Liver Transplant Program</fullName>
+                <default>false</default>
+                <label>065 – Liver Transplant Program</label>
+            </value>
+            <value>
+                <fullName>066 – Lung Transplant Program</fullName>
+                <default>false</default>
+                <label>066 – Lung Transplant Program</label>
+            </value>
+            <value>
+                <fullName>067 – Pancreas Transplant Program</fullName>
+                <default>false</default>
+                <label>067 – Pancreas Transplant Program</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_Annual_Review_Queue_Annual_Review</fullName>
+    <columns>NAME</columns>
+    <columns>Property__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>VHF Annual Review Queue</label>
+    <queue>VHF_Annual_Review_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

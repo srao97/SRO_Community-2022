@@ -1,0 +1,75 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "6caff3ee-50a4-4286-aff4-6e016e087876",
+  "label" : "Submit Renovation Request",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "0525e33d-5c33-4d94-92d4-d5c14fc781bd",
+          "columns" : [ {
+            "UUID" : "ab5d6de4-aada-4af8-9596-80d1864330cf",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "0525e33d-5c33-4d94-92d4-d5c14fc781bd",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "dir" : "ltr",
+            "flexipageRegionWidth" : "LARGE",
+            "inline" : false,
+            "inlineLabel" : "Launch VHF/SubmitRenovationRequest",
+            "inlineVariant" : "brand",
+            "layout" : "lightning",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:vHFSubmitRenovationRequestEnglish",
+          "id" : "f5fa47ba-ed69-47d1-8c6e-b45e61c912e2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ab5d6de4-aada-4af8-9596-80d1864330cf",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "96d24150-9331-42b3-a081-e9c02b3f8bd9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Submit Renovation Request"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2cfb9fc6-2855-49a7-b219-7e4698c174ce",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abf82f62-6ed6-4a6c-89e8-919d4278d01c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-submit-renovation-request"
+}

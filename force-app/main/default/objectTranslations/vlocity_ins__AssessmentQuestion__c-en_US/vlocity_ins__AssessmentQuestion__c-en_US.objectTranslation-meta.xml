@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Assessment Question Checkbox Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Date Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question FreeText Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Instruction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question MultiSelect Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Number Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Select Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Table MultiSelect Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assessment Question Table Select Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Checkbox</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Date</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__FreeText</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Instruction</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__MultiSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Number</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__QuestionTableMultiSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__QuestionTableSingleSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__SingleSelect</name>
+    </recordTypes>
+</CustomObjectTranslation>

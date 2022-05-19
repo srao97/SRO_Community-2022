@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTA_Case_Status_Change_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(BypassValidation__c),
+ISCHANGED(Status),
+ISPICKVAL(PRIORVALUE(Status), &quot;New&quot;), 
+NOT(OR(ISPICKVAL(Status, &quot;In Review&quot;),ISPICKVAL(Status, &quot;Cancelled&quot;))),
+$RecordType.DeveloperName=&quot;Long_Term_Absence&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Update the status to In review first</errorMessage>
+</ValidationRule>

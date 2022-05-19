@@ -1,0 +1,11 @@
+<template>
+    <slot>
+        <div if:true={_isEmptyTextBlockInDesignMode} class="slds-text-font_monospace" style="padding-top: 0px !important;">
+            &lt;{jsonDef.name} /&gt;
+        </div>
+        <div class={_themeClass} style="padding-top:0px!important;">
+            <vlocity_ins-omniscript-formatted-rich-text value={mergeVal}>
+            </vlocity_ins-omniscript-formatted-rich-text>
+        </div>
+    </slot>
+</template>

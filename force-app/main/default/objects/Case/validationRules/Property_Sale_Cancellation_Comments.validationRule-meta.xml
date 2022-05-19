@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sale_Cancellation_Comments</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+AND(ISPICKVAL(Status, &quot;Cancelled&quot;),
+ISBLANK(Cancellation_Reason_Comments__c ),
+$RecordType.DeveloperName=&quot;Property_Sale&quot;),
+NOT($Profile.Name = &apos;VHF Participant Community Plus User&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please specify Cancellation Comments</errorMessage>
+</ValidationRule>

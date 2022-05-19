@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Account</object>
+        <objectField>Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Annual_Review__c</object>
+        <objectField>Primary_Participant__c.Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Case</object>
+        <objectField>Account.Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Confirmation__c</object>
+        <objectField>Primary_Participant__c.Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>IndividualApplication</object>
+        <objectField>Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Order</object>
+        <objectField>Account.Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Payment__c</object>
+        <objectField>Primary_Participant__c.Parent_Account__c</objectField>
+        <userField>Account.Parent_Account__c</userField>
+    </accessMappings>
+    <description>VHF-3825:15/12/2021</description>
+    <name>Share Cases with Particpant Portal</name>
+    <profiles>VHF Participant Community Plus User</profiles>
+</SharingSet>

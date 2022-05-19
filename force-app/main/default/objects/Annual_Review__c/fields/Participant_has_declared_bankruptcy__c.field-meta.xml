@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_has_declared_bankruptcy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Question: I am / we are not bankrupt and have not committed an act of bankruptcy or executed a deed of assignment, deed of arrangement, debt agreement or personal insolvency agreement under the Bankruptcy Act 1966 (Clth).</description>
+    <externalId>false</externalId>
+    <label>Participant has declared bankruptcy</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

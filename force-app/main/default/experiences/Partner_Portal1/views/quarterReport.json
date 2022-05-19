@@ -1,0 +1,52 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "d6c05a7b-b0c3-41aa-a9a9-b35eadfad6b2",
+  "label" : "QuarterReport",
+  "regions" : [ {
+    "id" : "c39d7e89-34ae-4a4f-921c-4c72038de4ea",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/QuarterlyReport",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFQuarterlyReportEnglish",
+      "id" : "4ba2b440-3cc7-44a1-a91a-427237d5e9e4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c8e4bb90-43e9-405f-94bb-9756b9ef0e09",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "003b35cf-f817-4baf-8f54-62849577637e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "QuarterReport"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "94fa0d31-be0e-4e3f-9b95-1dce792089cc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cfebc9a0-f142-4695-acf1-8edb0558cf97",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-upload-quarterly-report"
+}

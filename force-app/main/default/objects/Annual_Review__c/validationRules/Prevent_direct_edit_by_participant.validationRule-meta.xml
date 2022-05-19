@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_direct_edit_by_participant</fullName>
+    <active>true</active>
+    <description>Prevent participants from updating fields directly on Annual Review.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),  $Profile.Name = &apos;VHF Participant Community Plus User&apos;, NOT(ISNEW()))</errorConditionFormula>
+    <errorMessage>You don&apos;t have required privileges to update this field. Please contact SRO officer for further assistance.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__NewPriceList</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ProductTaxAndFeeAdminFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__TaxAndFeeAdminFields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Vlocity EPC Price List Layout</layout>
+        <sections>
+            <label></label>
+            <section>Availability</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__EffectiveFromDate_Greater_UntilDate</name>
+    </validationRules>
+</CustomObjectTranslation>

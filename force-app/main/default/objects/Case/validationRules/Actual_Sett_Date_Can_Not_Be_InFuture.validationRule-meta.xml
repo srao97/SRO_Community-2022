@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Sett_Date_Can_Not_Be_InFuture</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ISPICKVAL(Status,&quot;Settlement&quot;),
+$Profile.Name = &quot;VHF VGSO Community Plus User&quot;,
+ISPICKVAL(Sub_Status__c,&quot;Completed&quot;),
+NOT(BypassValidation__c),
+Actual_Settlement_Date__c &gt;TODAY()
+)</errorConditionFormula>
+    <errorDisplayField>Actual_Settlement_Date__c</errorDisplayField>
+    <errorMessage>Actual settlement date can not be in the future.</errorMessage>
+</ValidationRule>

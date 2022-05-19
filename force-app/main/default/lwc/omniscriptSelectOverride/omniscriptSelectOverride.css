@@ -1,0 +1,12 @@
+.mb-label{
+    margin-bottom: -1.8rem;
+}
+.pd-label{
+    padding-left: 10px;
+}
+@media (min-width: 1240px)
+{
+    .pd-label{
+        padding: 0 200px;
+    }
+}

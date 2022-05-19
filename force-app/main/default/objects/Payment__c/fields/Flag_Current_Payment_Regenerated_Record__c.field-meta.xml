@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Current_Payment_Regenerated_Record__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Please do not use this field for reporting purpose. Only for backend logic purpose</description>
+    <externalId>false</externalId>
+    <label>Flag_Current_Payment_Regenerated_Record</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

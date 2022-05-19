@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Completion_Comments</fullName>
+    <active>true</active>
+    <description>Completion comments field must be filled before record status can be changed to Completed.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)), NOT($Profile.Name = &apos;VHF Participant Community Plus User&apos;), ISPICKVAL(Status__c,&apos;Completed&apos;),  Completion_Comments__c = &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Completion_Comments__c</errorDisplayField>
+    <errorMessage>Completion Comments field must be populated before Annual Review Status can be changed to Completed.</errorMessage>
+</ValidationRule>

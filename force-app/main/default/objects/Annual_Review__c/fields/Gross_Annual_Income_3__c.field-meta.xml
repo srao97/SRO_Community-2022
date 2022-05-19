@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gross_Annual_Income_3__c</fullName>
+    <description>Income of Participant Name 3 which also rolls up to the Combined Gross Annual Income</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Gross annual income is the sum of your ‘assessable’ (or taxable) income and your ‘exempt’ income (as defined on the ATO website). If you have a salary sacrifice arrangement, your Gross Annual Income needs to be adjusted to reflect the arrangement.</inlineHelpText>
+    <label>Gross Annual Income 3</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

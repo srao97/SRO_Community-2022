@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Please_Specify_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(BypassValidation__c),
+AND(ISPICKVAL(Absence_reason__c, &quot;Other&quot;), ISBLANK(Please_specify__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Please_specify__c</errorDisplayField>
+    <errorMessage>Please specify the absence reason</errorMessage>
+</ValidationRule>

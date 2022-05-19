@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins__ClaimantId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Claimant, whose earning is represented in this record.</description>
+    <externalId>false</externalId>
+    <label>Claimant</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>vlocity_ins__InsuranceClaimPartyRelationship__c.vlocity_ins__ClaimId__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.vlocity_ins__ClaimId__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>vlocity_ins__InsuranceClaimPartyRelationship__c</referenceTo>
+    <relationshipLabel>Claimant Earnings</relationshipLabel>
+    <relationshipName>ClaimantEarnings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Case_Close_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+( OR(ISPICKVAL(Status,&quot;Closed&quot;),ISPICKVAL( Reason ,&quot;Resolved&quot;),ISPICKVAL( Reason ,&quot;Rejected&quot;) ),
+ $RecordType.DeveloperName=&apos;Duplicate_Application_Check&apos;,
+ISBLANK(Case_Close_Reason__c))</errorConditionFormula>
+    <errorDisplayField>Case_Close_Reason__c</errorDisplayField>
+    <errorMessage>Please provide case close reason</errorMessage>
+</ValidationRule>

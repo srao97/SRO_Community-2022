@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "1ac68398-2aea-4a3f-8147-8288976c397f",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "4c0be250-a9a9-43e3-934d-10fbae914b57",
+  "label" : "Quarterly Report Related List",
+  "objectApiName" : "Quarterly_Report__c",
+  "routeType" : "relatedlist-a7Z",
+  "type" : "route",
+  "urlPrefix" : "quarterly-report"
+}

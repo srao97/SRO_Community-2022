@@ -1,0 +1,103 @@
+<template>
+    <lightning-card>  
+        <div slot="title">
+            <template if:true={showIcon}>
+                <span class="slds-m-right_small"><lightning-icon icon-name={listIcon}></lightning-icon></span>
+            </template>
+            <span class="slds-text-heading_small" >{listTitle}</span>
+        </div>
+        <template if:true={showListAction}>
+            <template if:true={actionForPrimaryParticipant}>
+                <template if:true={primaryOnly}>
+                    <a href={actionButtonLink} slot="actions" class="slds-m-left_medium slds-button slds-button_neutral">{actionButtonLabel}</a>
+                </template>
+            </template>
+            <template if:false={actionForPrimaryParticipant}>
+                <a href={actionButtonLink} slot="actions" class="slds-m-left_medium slds-button slds-button_neutral">{actionButtonLabel}</a>
+            </template>
+        </template>
+        <template if:true={objRecords}>
+            <template if:true={dataList}>
+                <div class="slds-m-top_medium slds-m-left_x-small slds-m-right_medium">
+                    <lightning-datatable
+                    key-field="id"
+                    data={dataList}
+                    hide-checkbox-column="true"
+                    columns={columnsList}
+                    resize-column-disabled="true"
+                    onsort={handleSort}
+                    default-sort-direction={defaultSortDirection}
+                    sorted-direction={sortDirection}
+                    sorted-by={sortedBy}
+                    >
+                    </lightning-datatable> 
+                </div>
+            </template> 
+            <template if:false={dataList}>
+                <div class="slds-text-body_small slds-m-around_medium">There are no records found.</div>
+            </template>
+        </template>
+        <template if:true={fileRecords}>
+            <template if:true={dataList}>
+                <template for:each={dataList} for:item="item">
+                    <div key={item.Id} class="slds-m-around_xxx-small">
+                        <!-- With an avatar -->
+                        <div class="slds-p-around_medium">
+                            <lightning-tile label={item.Title} href={item.fileUrl} type="media">
+                                <lightning-avatar slot="media" src={item.thumbnailUrl} fallback-icon-name="standard:file" alternative-text={item.Title}></lightning-avatar>
+                                <ul class="slds-list_horizontal slds-has-dividers_right">
+                                    <li class="slds-item">{item.ContentDocument.FileType}</li>
+                                    <li class="slds-item">
+                                    <lightning-formatted-date-time value={item.CreatedDate} year="numeric" month="short" day="2-digit"></lightning-formatted-date-time>
+                                    </li>
+                                    
+                                </ul>
+                                <ul class="slds-list_horizontal slds-has-dividers_right">
+                                    <li class="slds-item">
+                                        <a style="color:var(--primary);" href={item.downloadUrl}>Download</a>
+                                    </li>
+                                </ul>
+                            </lightning-tile>
+                        </div>
+                    </div>
+                </template>
+                
+
+               <!-- <div class="slds-m-top_medium slds-m-left_x-small slds-m-right_medium">
+                    <lightning-datatable
+                    key-field="id"
+                    data={dataList}
+                    hide-checkbox-column="true"
+                    columns={columnsList}
+                    resize-column-disabled="true"
+                    >
+                    </lightning-datatable> 
+                </div> --> 
+            </template> 
+            <template if:false={dataList}>
+                <div class="slds-text-body_small slds-m-around_medium">There are no records found.</div>
+            </template>
+        </template>
+        <template if:true={dataList}>
+            <template if:true={showViewAll}>
+                <p class="slds-m-top_xxx-small slds-m-left_medium"><a style="color:var(--primary);" href={viewAllUrl}>View All</a></p>
+            </template>
+        </template>
+        <template if:true={dataList}>
+            <template if:true={showPagination}>
+                <lightning-layout>
+                    <lightning-layout-item>&nbsp;&nbsp;&nbsp;
+                        <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={previousHandler} disabled={disablePrevious}></lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="grow">
+                        <p class="slds-text-align_center">Displaying {recordStart} - {recordEnd} of {totalRecords} | {currentPage} of {totalPages} Pages</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item>
+                        <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={nextHandler} disabled={disableNext}></lightning-button>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </template>
+    </lightning-card>      
+</template>

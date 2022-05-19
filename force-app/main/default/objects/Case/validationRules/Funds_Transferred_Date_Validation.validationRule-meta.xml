@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funds_Transferred_Date_Validation</fullName>
+    <active>true</active>
+    <description>Funds transferred date cannot be before the provisional approval date</description>
+    <errorConditionFormula>AND(
+NOT(BypassValidation__c), 
+ISCHANGED(Funds_Transferred_Date__c ), 
+(Funds_Transferred_Date__c &lt;  Provisional_Approval_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>Funds_Transferred_Date__c</errorDisplayField>
+    <errorMessage>Funds transferred date cannot be before the provisional approval date</errorMessage>
+</ValidationRule>

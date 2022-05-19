@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_Finance_Officer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>VHF-3105</description>
+    <externalId>false</externalId>
+    <label>Panel Finance Officer</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Contact)</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

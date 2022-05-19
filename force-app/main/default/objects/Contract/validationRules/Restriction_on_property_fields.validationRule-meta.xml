@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriction_on_property_fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISCHANGED(Status)),
+NOT(ISNEW()),
+OR(
+ISPICKVAL(Status,&quot;Cancelled&quot;),
+ISPICKVAL(Status,&quot;Rejected&quot;),
+ISPICKVAL(Status,&quot;Cancelled Settlement&quot;),
+ISPICKVAL(Status,&quot;Settled&quot;)),
+
+OR (ISCHANGED ( Assessed_Property_Value__c),
+ISCHANGED ( Volume__c),
+ISCHANGED ( Folio__c),
+ISCHANGED ( Loan_Account_Number__c),
+ISCHANGED ( Plan_Number__c),
+ISCHANGED ( Loan_Term_Years__c),
+ISCHANGED (Lot_Number__c))
+)</errorConditionFormula>
+    <errorMessage>Volume/Folio, Lot/Plan, Assessed Property Value, Loan Account Number, Loan Term and Settlement date fields can be updated till the Application Status &quot;Settled&quot;</errorMessage>
+</ValidationRule>

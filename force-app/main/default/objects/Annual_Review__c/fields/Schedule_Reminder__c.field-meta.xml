@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_Reminder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used as a condition in scheduled path configuration of Annual Review Reminder Notifications flow</description>
+    <externalId>false</externalId>
+    <label>Schedule Reminder</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

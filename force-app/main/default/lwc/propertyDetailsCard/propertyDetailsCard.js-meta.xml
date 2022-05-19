@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+
+            <property name="title" label="Card Tile" type="String" required="true"></property>
+            <property name="objectName" label="Object Api Name" type="String" required="true"></property>
+            <property name="filterFieldApiName" label="Filter Field Api Name" description="Property card works based on the current user. So give the api name of the field on the object that grabs the record based on the current user" type="String" required="true"></property>
+
+            
+            <property name="column1Label" label="Column1 Label" description="Please enter the label name." type="String" ></property>
+            <property name="column1HelpText" label="Column1 Help Text" description="Please enter the help text for column1." type="String"></property>
+            <property name="column1ApiName" label="Column1 Value (Field Api Name)" description="Please enter the field Api name." type="String" ></property>
+
+            <property name="column2Label" label="Column2 Label" description="Please enter the label name." type="String" ></property>
+            <property name="column2HelpText" label="Column2 Help Text" description="Please enter the help text for column2." type="String"></property>
+            <property name="column2ApiName" label="Column2 Value (Field Api Name)" description="Please enter the field Api name." type="String" ></property>
+
+            <property name="column3Label" label="Column3 Label" description="Please enter the label name." type="String"></property>
+            <property name="column3HelpText" label="Column3 Help Text" description="Please enter the help text for column3." type="String"></property>
+            <property name="column3ApiName" label="Column3 Value (Field Api Name)" description="Please enter the field Api name." type="String"></property>
+            <property name="hightlightColumn3" label="Hightlight column3" type="Boolean" ></property>
+            <property name="showViewAll" label="Show View All" type="Boolean"></property>
+            <property name="viewAllUrl" label="View All Link" type="String"></property>
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

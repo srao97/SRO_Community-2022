@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "7aa37c60-2916-4f8f-94a0-f341f04db091",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "4b5e11c2-70e7-4bf0-aa82-890fe00821c9",
+  "label" : "Annual Review List",
+  "objectApiName" : "Annual_Review__c",
+  "routeType" : "list-a7X",
+  "type" : "route",
+  "urlPrefix" : "annual-review"
+}

@@ -1,0 +1,30 @@
+<template>
+  <div class="loginOrRegister-div">
+    <div class="content-div">
+      <h1>{heading}</h1>
+      <p class="slds-p-top_small">{description}</p>
+
+      <div class="actions-div slds-p-top_xx-small">
+        <div class="slds-p-top_medium flex-inline">
+          <c-ng-button
+            button-label={button1Label}
+            button-style="primary"
+            link
+            type="button"
+            button-link={button1Link}
+          ></c-ng-button>
+        </div>
+
+        <div class="slds-p-left_small flex-inline">
+          <c-ng-button
+            button-label={button2Label}
+            button-style="default"
+            link
+            type="button"
+            button-link={button2Link}
+          ></c-ng-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

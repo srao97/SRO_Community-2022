@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessed_property_currency_input_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( Assessed_Property_Value__c )),
+AND ($Profile.Name =&apos;Operations&apos;),
+AND(
+OR(Assessed_Property_Value__c&lt;1 ,Assessed_Property_Value__c&gt;9999999
+))
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Assessed_Property_Value__c</errorDisplayField>
+    <errorMessage>Assessed property value should be between $1 to $9,999,999</errorMessage>
+</ValidationRule>

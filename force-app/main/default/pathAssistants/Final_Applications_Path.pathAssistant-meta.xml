@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contract</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Final Applications Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Cancellation_Reason__c</fieldNames>
+        <fieldNames>Rejection_Cancellation_Reason__c</fieldNames>
+        <fieldNames>Case_Status__c</fieldNames>
+        <picklistValueName>Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Cancellation_Reason__c</fieldNames>
+        <fieldNames>Rejection_Reason__c</fieldNames>
+        <fieldNames>Rejection_Cancellation_Reason__c</fieldNames>
+        <fieldNames>Case_Status__c</fieldNames>
+        <picklistValueName>Final Application Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Rejection_Cancellation_Reason__c</fieldNames>
+        <fieldNames>Case_Status__c</fieldNames>
+        <picklistValueName>Funds Transferred</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>VHFFinalApplication</recordTypeName>
+</PathAssistant>

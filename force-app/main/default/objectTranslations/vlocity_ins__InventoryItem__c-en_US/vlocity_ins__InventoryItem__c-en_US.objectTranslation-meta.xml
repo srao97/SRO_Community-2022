@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Inventory Item (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inventory Item Attributes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__InventoryItem</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__ServiceQualificationResult</name>
+    </recordTypes>
+</CustomObjectTranslation>

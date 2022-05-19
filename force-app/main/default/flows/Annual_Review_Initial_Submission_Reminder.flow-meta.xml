@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Submission_Reminder_to_Primary</name>
+        <label>Send Submission Reminder to Primary</label>
+        <locationX>242</locationX>
+        <locationY>408</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Create_Annual_Review_Email_Activity</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailMsgAnnualReviewReminder</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Primary_Participant__r.PersonEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <elementReference>True</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>no-reply@sro.vic.gov.au</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Annual review reminder: Victorian Homebuyer Fund</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <name>Status_is_Awaiting_Submission</name>
+        <label>Status is Awaiting Submission</label>
+        <locationX>374</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Awaiting Submission</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Submission_Reminder_to_Primary</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <description>time between when a review is updated and when a reminder is sent</description>
+        <name>ReviewUpdateOffset</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Record.Review_Updated_Time__c} + (3/1440)</expression>
+    </formulas>
+    <interviewLabel>Annual Review {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Annual Review Initial Submission Reminder</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Annual_Review_Email_Activity</name>
+        <label>Create Annual Review Email Activity</label>
+        <locationX>242</locationX>
+        <locationY>528</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>no-reply@sro.vic.gov.au</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FromName</field>
+            <value>
+                <stringValue>State Revenue Office Victoria</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>EmailMsgAnnualReviewReminder</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsTracked</field>
+            <value>
+                <elementReference>True</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Annual review reminder: Victorian Homebuyer Fund</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Primary_Participant__r.PersonEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Awaiting Submission</stringValue>
+            </value>
+        </filters>
+        <object>Annual_Review__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Initial_Submission</name>
+            <connector>
+                <targetReference>Status_is_Awaiting_Submission</targetReference>
+            </connector>
+            <label>Initial Submission</label>
+            <offsetNumber>14</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailMsgAnnualReviewReminder</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;5&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;table style=&quot;width:650px; height:70px; margin:0 0 24.8px; padding:25.6px 25px 24.4px; background-color:#004c97&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/sro_header_logologo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;sro_header_logologo&quot; height=&quot;71&quot; title=&quot;SRO Victoria&quot; width=&quot;110&quot; style=&quot;max-width:1191.68px; width:110px; height:71px&quot;&gt; &lt;p&gt;&lt;span style=&quot;width: 368px; height: 38px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 28px; color: rgb(255, 255, 254); margin: 29.4px 67px 4.9px 0px;&quot;&gt;Victorian Homebuyer Fund&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;table style=&quot;width:600px; margin:0 24px 0 24px; font-family:Calibri,Arial,Helvetica,sans-serif&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;span style=&quot;font-size:25px;Font-family: Calibri, Arial, Helvetica, sans-serif;;color: #004c97;&quot;&gt;Annual review submission reminder&lt;/span&gt;&lt;/b&gt;&lt;br&gt; &lt;br&gt;&lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt; Dear {!$Record.Primary_Participant_Firstname__c}&lt;/span&gt;&lt;br&gt; &lt;br&gt; &lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt;This is a reminder to submit your annual review for the property {!$Record.Property_Address__c} &lt;br&gt; &lt;br&gt;Please submit your annual review using the portal.&lt;/span&gt; &lt;br&gt; &lt;br&gt;&lt;hr style=&quot;width: 600px; border: 0px; border-top: solid 1.5px; color: #004c97;&quot; align=&quot;left&quot;&gt; &lt;br&gt; &lt;a href=&quot;{!$Setup.BaseURL__c.Portal_Base_URL__c}/participants/s/&quot;&gt;&lt;span style=&quot;padding: 9px 41px 8px 42px; margin: 10px 4px 10px 0px; background-color: #004c97; border: none; color: white; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; Font-family: Calibri, Arial, Helvetica, sans-serif;&quot;&gt;Submit annual review&amp;nbsp;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;&lt;br/&gt;
+&lt;span style=&quot;color:#212121; font-size:14px; width:600px; word-wrap:break-word; display: inline-block;&quot;&gt;If you have not logged into the portal before, please contact the State Revenue Office to finish setting up your account.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+
+
+&lt;table style=&quot;width:650px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;hr style=&quot;width:600px; border:0px; border-top:solid 1.5px; color: #004c97;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;width:650px; padding:0 24px 0 24px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;span style=&quot;width: 300px; height: 24px; margin: 0px 0px 8px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: 0px; color: rgb(0, 76, 151);&quot;&gt;sro.vic.gov.au&amp;nbsp; &amp;nbsp; &amp;nbsp; Phone (03) 7020 1549&lt;/span&gt; &lt;p&gt;&lt;span style=&quot;font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 14px; color: rgb(0, 76, 151); width: 300px; height: 19px; margin: 8px 0px 0px;&quot;&gt;© State of Victoria (State Revenue Office)&lt;br aria-hidden=&quot;true&quot;&gt;GPO Box 1641 Melbourne Victoria 3001&amp;nbsp; Australia&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;span style=&quot;width: 256px; height: 24px; margin: 0px 0px 8px 25px; padding: 0px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; color: rgb(0, 76, 151);&quot;&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/victoriastategovernmentlogo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;victoria-state-government-logo&quot; height=&quot;51&quot; title=&quot;victoria-state-government-logo&quot; width=&quot;90&quot; style=&quot;max-width:1191.68px; width:90px; height:51px&quot;&gt; &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UpdateVerificationReminder</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;5&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;table style=&quot;width:650px; height:70px; margin:0 0 24.8px; padding:25.6px 25px 24.4px; background-color:#004c97&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/sro_header_logologo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;sro_header_logologo&quot; height=&quot;71&quot; title=&quot;SRO Victoria&quot; width=&quot;110&quot; style=&quot;max-width:1191.68px; width:110px; height:71px&quot;&gt; &lt;p&gt;&lt;span style=&quot;width: 368px; height: 38px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 28px; color: rgb(255, 255, 254); margin: 29.4px 67px 4.9px 0px;&quot;&gt;Victorian Homebuyer Fund&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;table style=&quot;width:600px; margin:0 24px 0 24px; font-family:Calibri,Arial,Helvetica,sans-serif&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;span style=&quot;font-size:25px;Font-family: Calibri, Arial, Helvetica, sans-serif;;color: #004c97;&quot;&gt;Annual Review Update Verification Reminder&lt;/span&gt;&lt;/b&gt;&lt;br&gt; &lt;br&gt;&lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt;Dear {!TaskOwnerName}&lt;/span&gt;&lt;br&gt; &lt;br&gt; &lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt;This is a reminder to verify updates to the annual review request submitted by {!$Record.Primary_Participant_Firstname__c} for {!$Record.Property_Address__c}.&lt;/span&gt; &lt;br&gt; &lt;br&gt;&lt;hr style=&quot;width: 600px; border: 0px; border-top: solid 1.5px; color: #004c97;&quot; align=&quot;left&quot;&gt; &lt;br&gt; &lt;a href=&quot;{!$Setup.BaseURL__c.Portal_Base_URL__c}/participants/s/&quot;&gt;&lt;span style=&quot;padding: 9px 41px 8px 42px; margin: 10px 4px 10px 0px; background-color: #004c97; border: none; color: white; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; Font-family: Calibri, Arial, Helvetica, sans-serif;&quot;&gt;Verify updates&amp;nbsp;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+
+
+&lt;table style=&quot;width:650px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;hr style=&quot;width:600px; border:0px; border-top:solid 1.5px; color: #004c97;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;width:650px; padding:0 24px 0 24px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;span style=&quot;width: 300px; height: 24px; margin: 0px 0px 8px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: 0px; color: rgb(0, 76, 151);&quot;&gt;sro.vic.gov.au&amp;nbsp; &amp;nbsp; &amp;nbsp; Phone (03) 7020 1549&lt;/span&gt; &lt;p&gt;&lt;span style=&quot;font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 14px; color: rgb(0, 76, 151); width: 300px; height: 19px; margin: 8px 0px 0px;&quot;&gt;© State of Victoria (State Revenue Office)&lt;br aria-hidden=&quot;true&quot;&gt;GPO Box 1641 Melbourne Victoria 3001&amp;nbsp; Australia&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;span style=&quot;width: 256px; height: 24px; margin: 0px 0px 8px 25px; padding: 0px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; color: rgb(0, 76, 151);&quot;&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/victoriastategovernmentlogo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;victoria-state-government-logo&quot; height=&quot;51&quot; title=&quot;victoria-state-government-logo&quot; width=&quot;90&quot; style=&quot;max-width:1191.68px; width:90px; height:51px&quot;&gt; &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>VerificationReminder</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;5&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;table style=&quot;width:650px; height:70px; margin:0 0 24.8px; padding:25.6px 25px 24.4px; background-color:#004c97&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/sro_header_logologo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;sro_header_logologo&quot; height=&quot;71&quot; title=&quot;SRO Victoria&quot; width=&quot;110&quot; style=&quot;max-width:1191.68px; width:110px; height:71px&quot;&gt; &lt;p&gt;&lt;span style=&quot;width: 368px; height: 38px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 28px; color: rgb(255, 255, 254); margin: 29.4px 67px 4.9px 0px;&quot;&gt;Victorian Homebuyer Fund&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;table style=&quot;width:600px; margin:0 24px 0 24px; font-family:Calibri,Arial,Helvetica,sans-serif&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;span style=&quot;font-size:25px;Font-family: Calibri, Arial, Helvetica, sans-serif;;color: #004c97;&quot;&gt;Annual Review Verification Reminder&lt;/span&gt;&lt;/b&gt;&lt;br&gt; &lt;br&gt;&lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt;Dear {!TaskOwnerName}&lt;/span&gt;&lt;br&gt; &lt;br&gt; &lt;span style=&quot;color:#212121; font-size:14px;&quot;&gt; This is a reminder to verify the annual review request submitted by {!$Record.Primary_Participant_Firstname__c} for {!$Record.Property_Address__c}. &lt;/span&gt; &lt;br&gt; &lt;br&gt;&lt;hr style=&quot;width: 600px; border: 0px; border-top: solid 1.5px; color: #004c97;&quot; align=&quot;left&quot;&gt; &lt;br&gt; &lt;a href=&quot;{!$Setup.BaseURL__c.Portal_Base_URL__c}/participants/s/&quot;&gt;&lt;span style=&quot;padding: 9px 41px 8px 42px; margin: 10px 4px 10px 0px; background-color: #004c97; border: none; color: white; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; Font-family: Calibri, Arial, Helvetica, sans-serif;&quot;&gt;Verify annual review&amp;nbsp;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color:#212121; font-size:14px; width:600px; word-wrap:break-word; display: inline-block;&quot;&gt;If you have not logged into the portal before, please contact the State Revenue Office to finish setting up your account.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+
+
+&lt;table style=&quot;width:650px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;hr style=&quot;width:600px; border:0px; border-top:solid 1.5px; color: #004c97&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;width:650px; padding:0 24px 0 24px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;span style=&quot;width: 300px; height: 24px; margin: 0px 0px 8px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: 0px; color: rgb(0, 76, 151);&quot;&gt;sro.vic.gov.au&amp;nbsp; &amp;nbsp; &amp;nbsp; Phone (03) 7020 1549&lt;/span&gt; &lt;p&gt;&lt;span style=&quot;font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 14px; color: rgb(0, 76, 151); width: 300px; height: 19px; margin: 8px 0px 0px;&quot;&gt;© State of Victoria (State Revenue Office)&lt;br aria-hidden=&quot;true&quot;&gt;GPO Box 1641 Melbourne Victoria 3001&amp;nbsp; Australia&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;span style=&quot;width: 256px; height: 24px; margin: 0px 0px 8px 25px; padding: 0px; font-family: Calibri, Arial, Helvetica, sans-serif, serif, EmojiFont; font-size: 18px; color: rgb(0, 76, 151);&quot;&gt;&lt;img data-imagetype=&quot;External&quot; src=&quot;{!$Setup.BaseURL__c.Org_URL__c}/file-asset-public/victoriastategovernmentlogo?oid={!$Organization.Id}&quot; align=&quot;right&quot; alt=&quot;victoria-state-government-logo&quot; height=&quot;51&quot; title=&quot;victoria-state-government-logo&quot; width=&quot;90&quot; style=&quot;max-width:1191.68px; width:90px; height:51px&quot;&gt; &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>TaskEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TaskOwnerName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>UpdateVerificationReminderEmail</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+    <variables>
+        <name>UpdateVerificationReminderEmailCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+    <variables>
+        <name>VerificationReminderEmail</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+    <variables>
+        <name>VerificationReminderEmailCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+</Flow>

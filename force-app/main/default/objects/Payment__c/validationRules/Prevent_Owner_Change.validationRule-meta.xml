@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Owner_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT($Profile.Name = &quot;System Administrator&quot;),  
+ISCHANGED( OwnerId),
+OR (
+ISPICKVAL(PRIORVALUE( Status__c ), &apos;Cancelled&apos;), ISPICKVAL(PRIORVALUE( Status__c ), &apos;Request Expired&apos;),
+ISPICKVAL(PRIORVALUE( Status__c ), &apos;Payment Received&apos;)
+))</errorConditionFormula>
+    <errorMessage>Sorry, you cannot change ownership of the record.</errorMessage>
+</ValidationRule>

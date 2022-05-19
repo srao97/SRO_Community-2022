@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Published by MuleSoft when it receives a response message from Service Victoria in relation to a Demand Service, or when a BPAY payment event has been identified.  Salesforce subscribes to these platform event messages to update existing payment records.</description>
+    <eventType>HighVolume</eventType>
+    <label>Payment Response</label>
+    <pluralLabel>Payment Responses</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

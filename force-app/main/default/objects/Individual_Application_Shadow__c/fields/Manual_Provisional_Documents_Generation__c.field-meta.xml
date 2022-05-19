@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Provisional_Documents_Generation__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; +
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=[Provisional+Approval+Notice]a0M5P000001O05HUAS,[Letter+of+Support+ - +Provisional+Approval]a0M5P000001O05BUAS,[National+Mortgage+Form+ - +Provisional+Approval]&quot; + Template_ID__c +
+&quot;&amp;qmode=SalesforceFile&quot; +
+&quot;&amp;DS7=12&quot; +
+&quot;&amp;FP0=1&quot; +
+&quot;&amp;APDF=0&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Manual Provisional Documents Generation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

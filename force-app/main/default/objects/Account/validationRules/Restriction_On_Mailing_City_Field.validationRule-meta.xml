@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriction_On_Mailing_City_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(PersonMailingCity)&amp;&amp; $RecordType.Name = &quot;Person Account&quot;</errorConditionFormula>
+    <errorDisplayField>PersonMailingCity</errorDisplayField>
+    <errorMessage>Please provide the Mailing City</errorMessage>
+</ValidationRule>

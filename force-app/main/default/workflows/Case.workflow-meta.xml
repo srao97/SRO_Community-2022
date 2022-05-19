@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Rejected</fullName>
+        <description>Case Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Duplicate_Applicant_Case_Closed</fullName>
+        <description>Duplicate Applicant Case Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SROEmailTemplates/Duplicate_Applicant_Case_closed_1623730336280</template>
+    </alerts>
+    <alerts>
+        <fullName>Renovation_Approved_Panel_Financier</fullName>
+        <description>Renovation Approved - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Renovation_Approval_Panel_Financier_1633990680535</template>
+    </alerts>
+    <alerts>
+        <fullName>VHF_Notify_Case_Owner_of_Provisional_Approval</fullName>
+        <description>VHF : Notify Case Owner of Provisional Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/VHF_Notify_Case_Owner_of_Provisional_Approval_1618460682779</template>
+    </alerts>
+    <alerts>
+        <fullName>VHF_Provisional_Application_Submission_Confirmation</fullName>
+        <description>VHF Provisional Application Submission Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aneesh.ayyappankutty@sro.vic.gov.au</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/VHF_Provisional_Application_Submission_Confirmation_1618471794448</template>
+    </alerts>
+    <alerts>
+        <fullName>VHF_Request_for_Information</fullName>
+        <description>VHF Request for Information</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Request_Further_Information_1618304051557</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assign_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>VHF_Loan_Approval_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Assign Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_Awaiting_Final_Application</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Final Application</literalValue>
+        <name>Set Status Awaiting Final Application</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Substatus_Pending</fullName>
+        <field>Sub_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Set Substatus Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Bypass_Validation</fullName>
+        <description>VHF-1712</description>
+        <field>BypassValidation__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Bypass Validation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Reset_Status</fullName>
+        <field>Reset_Status__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Reset Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>VHF_Loan_Approval_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_substatus_Pending</fullName>
+        <field>Sub_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update Case substatus Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Option_to_None</fullName>
+        <description>Update the Participation Agreement Option on Case back to None.</description>
+        <field>Participation_Agreement_Option__c</field>
+        <name>Update Option to None</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Windfall_Gains_Read_Only</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Participation_Agreement</fullName>
+        <apiVersion>52.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_Participation_Agreement_for_Signing__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Participation Agreement</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Program_Exit_Document</fullName>
+        <apiVersion>54.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Program_Exit_Document__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Program Exit Document</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Property_Sale_Payout_Document</fullName>
+        <apiVersion>54.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Property_Sale_Payout_Document__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Property Sale Payout Document</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Lock the Record after Payment Requested</fullName>
+        <actions>
+            <name>Update_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Payment Requested</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Participation Agreement for eSignature</fullName>
+        <actions>
+            <name>Update_Option_to_None</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Participation_Agreement</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL(Participation_Agreement_Option__c ,&apos;With eSignature&apos;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Exit Document</fullName>
+        <actions>
+            <name>Program_Exit_Document</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( OR( Record_Type_Name__c =&apos;Final Payment&apos;, Record_Type_Name__c =&apos;Early Payment&apos;, Record_Type_Name__c =&apos;Property Sale&apos;), ISPICKVAL(Status, &apos;Mortgage Discharged&apos;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Property Sale Payout Document Generation</fullName>
+        <actions>
+            <name>Property_Sale_Payout_Document</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( Record_Type_Name__c =&apos;Property Sale&apos;, ISPICKVAL(Status, &apos;Awaiting Settlement&apos;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reset Case Validation Bypass</fullName>
+        <actions>
+            <name>Uncheck_Bypass_Validation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.BypassValidation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>VHF-1712</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Case Status</fullName>
+        <actions>
+            <name>Assign_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Status_Awaiting_Final_Application</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Substatus_Pending</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Uncheck_Reset_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Final Application</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reset_Status__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Check_Ownership</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Check Ownership</subject>
+    </tasks>
+</Workflow>

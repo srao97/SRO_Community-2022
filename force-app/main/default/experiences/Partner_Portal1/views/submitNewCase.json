@@ -1,0 +1,53 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "062b8fc6-c445-4f98-b2d0-4500b0d0c5a1",
+  "label" : "Submit New Case",
+  "regions" : [ {
+    "id" : "b93bc92d-c253-40ef-ac44-153a163e28b5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/NewCase",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFNewCaseEnglish",
+      "id" : "4833c673-acc4-4935-9c5f-a18a235b4d79",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "80cbb88d-0f38-4891-93aa-8731038cf339",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "93d71135-6d0e-4a3d-ac5d-053542fd0aba",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Submit New Case"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6b402c4b-7ed6-4e8a-9558-efa59a9450d8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "62ed500a-47e6-43a2-86f1-556746821224",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-submit-new-case"
+}

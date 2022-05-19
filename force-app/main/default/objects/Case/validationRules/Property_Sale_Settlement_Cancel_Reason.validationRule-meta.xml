@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sale_Settlement_Cancel_Reason</fullName>
+    <active>true</active>
+    <description>VHF-2662</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Status , &quot;Cancelled Settlement&quot;) &amp;&amp; ISBLANK(Settlement_Cancellation_Reason__c),
+NOT(BypassValidation__c) ,
+$RecordType.DeveloperName=&quot;Property_Sale&quot;,
+$Profile.Name = &quot;VHF VGSO Community Plus User&quot;)</errorConditionFormula>
+    <errorDisplayField>Settlement_Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Please populate Settlement Cancellation Reason</errorMessage>
+</ValidationRule>

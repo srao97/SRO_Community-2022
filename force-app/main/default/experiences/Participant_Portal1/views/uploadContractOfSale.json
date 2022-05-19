@@ -1,0 +1,53 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "6f63438d-b8fa-4898-b12c-3464097df3c2",
+  "label" : "UploadContractOfSale",
+  "regions" : [ {
+    "id" : "45e22052-2bf0-48b6-b855-a7798eb81132",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/UploadContractOfSale",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFUploadContractOfSaleEnglish",
+      "id" : "35aa1e54-fbe2-4719-83a6-3d332013fcd2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5d7d4599-06eb-4521-8852-c304532729d0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2788f802-4d01-4406-99ad-bb982a1c7750",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "UploadContractOfSale"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d77f9fff-1f83-4b77-a5ff-696119648f05",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e5146c37-9dba-4c26-894a-60382b1aca87",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-uploadcontractofsale"
+}

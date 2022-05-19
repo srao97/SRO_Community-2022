@@ -1,0 +1,10 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "45f4d736-4ee4-45e2-9c6b-5c433cb199c5",
+  "headMarkup" : "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<link rel=\"stylesheet\" href=\"/sfsites/c/resource/Main_style/Main_Style/style.css?v=1\" type=\"text/css\"/>",
+  "id" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Community Template",
+  "type" : "appPage"
+}

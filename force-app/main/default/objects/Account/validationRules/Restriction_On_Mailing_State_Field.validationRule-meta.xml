@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriction_On_Mailing_State_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( PersonMailingState)&amp;&amp; $RecordType.Name = &quot;Person Account&quot;</errorConditionFormula>
+    <errorDisplayField>PersonMailingState</errorDisplayField>
+    <errorMessage>Please select the Mailing State/Province</errorMessage>
+</ValidationRule>

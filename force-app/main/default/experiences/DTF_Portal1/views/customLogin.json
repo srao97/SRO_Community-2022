@@ -1,0 +1,118 @@
+{
+  "appPageId" : "e841f6c0-3e2c-4657-b253-81adb470ae15",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "700d547d-0c2c-4295-9f53-a5eb185c8b82",
+  "label" : "Custom Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "da6c4913-8785-4e2a-8d54-fe5f52c1437d",
+          "columns" : [ {
+            "UUID" : "ee550bed-cc95-4ae4-bee7-44e2ac4f26fb",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "c3dfef81-ff82-46ef-81a1-e467d6b3c3e3",
+            "columnKey" : "65921",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "6e19eac5-0885-44a8-ab10-eb5462e8a42b",
+            "columnKey" : "4bde6",
+            "columnName" : "Column 3",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "da6c4913-8785-4e2a-8d54-fe5f52c1437d",
+      "regions" : [ {
+        "id" : "ee550bed-cc95-4ae4-bee7-44e2ac4f26fb",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<center>\n    <h1 class=\"contentCaption slds-p-horizontal_large slds-p-vertical_small\">\n    \tVictorian Homebuyer Fund<br>DTF Portal\n\t</h1>\n</center>\n\n<div class=\"formHeaderCustom\"> \n    <h2>Log In</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b9211409-1726-4583-a1fd-17c7ca8dfa93",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "forgotPasswordLabel" : "Forgot your password?",
+            "forgotPasswordUrl" : "/ForgotPassword",
+            "loginButtonLabel" : "Log in",
+            "passwordLabel" : "Password",
+            "selfRegisterLabel" : "Not a member?",
+            "selfRegisterUrl" : "/SelfRegister",
+            "startUrl" : "",
+            "usernameLabel" : "Username"
+          },
+          "componentName" : "salesforceIdentity:loginForm2",
+          "id" : "d87e3cb1-a1f0-4c7d-aa7f-465186b95a3f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"formFooterCustom\">\n    \n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "284dbbc8-9998-4df2-bc50-8d0963843c58",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c3dfef81-ff82-46ef-81a1-e467d6b3c3e3",
+        "regionLabel" : "Column 2",
+        "regionName" : "65921",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "6e19eac5-0885-44a8-ab10-eb5462e8a42b",
+        "regionLabel" : "Column 3",
+        "regionName" : "4bde6",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "95a091d6-5dcc-4b75-9fb0-b1cb685b9a82",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d9c2dc9b-995e-4d39-935f-f13106441a3d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "acc3c1c3-f74b-4f82-a42c-3af13cd51bd0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "6GeCvqFbh6JkAmgsNSjk7bb2ML42Pf",
+  "type" : "view",
+  "viewType" : "login-home"
+}

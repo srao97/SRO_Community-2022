@@ -1,0 +1,74 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "3962d74e-6814-418f-b3df-33d559809f82",
+  "label" : "Form Submit",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "95613ba4-246d-4eb8-a39f-3e42884a0b45",
+          "columns" : [ {
+            "UUID" : "db12c895-aba4-4376-b05e-1c5dc9b9e520",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "95613ba4-246d-4eb8-a39f-3e42884a0b45",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "dir" : "ltr",
+            "inline" : false,
+            "inlineLabel" : "Launch SRO/VHFApplicationV2",
+            "inlineVariant" : "brand",
+            "layout" : "lightning",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:sROVHFApplicationV2English",
+          "id" : "7a2a0b50-b52f-4b1a-b396-79d6551098c3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "db12c895-aba4-4376-b05e-1c5dc9b9e520",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d73f8eb9-c7d6-4f1a-83e0-e2608e7d4327",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Form Submit"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "857d6f94-b78e-496c-bac4-d081e7d95c96",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c7c3634c-a7fd-48fe-b0ed-f9018b95414d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "6GeCvqFbh6JkAmgsNSjk7bb2ML42Pf",
+  "type" : "view",
+  "viewType" : "custom-form-submit"
+}

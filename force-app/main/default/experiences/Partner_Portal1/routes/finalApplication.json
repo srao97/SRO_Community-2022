@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "dd56016c-4a45-4cf8-b606-46ed14652580",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "edd35fe2-c11c-48b9-8b65-81b873365cc9",
+  "label" : "FinalApplication",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-finalapplication",
+  "type" : "route",
+  "urlPrefix" : "finalapplication"
+}

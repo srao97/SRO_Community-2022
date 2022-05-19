@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Edit_Property</fullName>
+    <active>true</active>
+    <description>Prevents non admin users editing the Property field on Annual Review records.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+    Property__c   &lt;&gt;  PRIORVALUE(   Property__c   ),
+   NOT($Profile.Name = &quot;System Administrator&quot;), NOT($Profile.Name = &apos;VHF Participant Community Plus User&apos;)
+)</errorConditionFormula>
+    <errorMessage>You cannot change the Property field on Annual Review records.</errorMessage>
+</ValidationRule>

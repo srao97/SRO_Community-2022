@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EZProtect4SF__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The current status for the scan of the file.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>It identifies if the doc is  pending being scanned, is it in the process of being scanned. Is the scan complete, or did it error out.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Pending Upload</fullName>
+                <default>false</default>
+                <label>Pending Upload</label>
+            </value>
+            <value>
+                <fullName>Pending Scan</fullName>
+                <default>false</default>
+                <label>Pending Scan</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+            <value>
+                <fullName>File Deleted</fullName>
+                <default>false</default>
+                <label>File Deleted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,52 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "4cdcd5d0-e934-41f7-86ce-4d40c7a8b569",
+  "label" : "Submit Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "inline" : false,
+        "inlineLabel" : "Launch SRO/VHFFinalApproval",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:sROVHFFinalApprovalEnglish",
+      "id" : "202af43a-cb1c-4a63-9a6d-82d4d23391c4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fa56f0f8-c42b-4fc8-9b65-d328c31d6ebe",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "9fbb03be-9289-47fb-985f-7a2dafbf99f1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8905f1f0-f1f0-4c38-a092-892a8dcb80bf",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Submit Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "acfa8e47-6b14-4987-9cc9-f41e190e5f21",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b990e148-6833-43da-acbb-c5ce72d67e02",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-submit-application"
+}

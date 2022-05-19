@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Pricing Procedure Version Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vlocity Calculation Procedure Version Layout (Vlocity 100.1)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pricing Calculation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__CreateNewVersion_Lightning</name>
+    </quickActions>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__CreateNewVersion</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__Simulate</name>
+    </webLinks>
+</CustomObjectTranslation>

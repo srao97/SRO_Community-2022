@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "aee329d5-33d4-41a8-9877-b38115a32015",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "952fee00-87ed-48a5-be9a-18b91351881d",
+  "label" : "LTAAdditionalInformation",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-ltaadditionalinformation",
+  "type" : "route",
+  "urlPrefix" : "ltaadditionalinformation"
+}

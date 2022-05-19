@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_Drop_Down_Selection</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status,&quot;Cancelled&quot;),
+
+(ISBLANK( TEXT (Cancellation_Reason_picklist__c))
+))</errorConditionFormula>
+    <errorDisplayField>Cancellation_Reason_picklist__c</errorDisplayField>
+    <errorMessage>Please select a cancellation reason from Cancellation Reason field</errorMessage>
+</ValidationRule>

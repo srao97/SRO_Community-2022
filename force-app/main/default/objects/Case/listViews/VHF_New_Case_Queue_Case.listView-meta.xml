@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_New_Case_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Provisional Approval</value>
+    </filters>
+    <label>VHF New Case Queue</label>
+    <queue>VHF_New_Case_Queue</queue>
+    <sharedTo>
+        <group>All_SRO_Operations_Users</group>
+    </sharedTo>
+</ListView>

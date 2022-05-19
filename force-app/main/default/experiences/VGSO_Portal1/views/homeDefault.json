@@ -1,0 +1,430 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "bf0c1029-0e5c-4e44-8da1-ca53c4cc6e25",
+  "label" : "Home_Default",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "bdf0d8ea-5138-4403-a56c-2e531dab73ca",
+          "columns" : [ {
+            "UUID" : "ed16047b-08fa-4255-9698-8bfed80593f2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "d0aaad48-4aa3-4573-9e5f-0bc743f71bd1",
+            "columnKey" : "eb0f6",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "bdf0d8ea-5138-4403-a56c-2e531dab73ca",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "800",
+            "recordId" : "01Z2P0000007grKUAQ"
+          },
+          "componentName" : "forceCommunity:dashboard",
+          "id" : "3445170e-cdd5-4a3a-8bab-5fda44d6acab",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ed16047b-08fa-4255-9698-8bfed80593f2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:cfSettlementsDue",
+          "id" : "fec64d71-451b-47b3-9153-5f7d5f440f50",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d0aaad48-4aa3-4573-9e5f-0bc743f71bd1",
+        "regionLabel" : "Column 2",
+        "regionName" : "eb0f6",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "12291fb2-58ef-4d1e-8ed2-f38495a690e3",
+          "columns" : [ {
+            "UUID" : "44fc381e-7ae3-4b9f-9114-0324443dace4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 115
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "12291fb2-58ef-4d1e-8ed2-f38495a690e3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2>My settlements</h2>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "6308afb0-4a82-43eb-9c54-55cf14d1dd30",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "ca50e7ae-12c7-4b93-aafc-aa756c2eda3d",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "e36e07b8-4229-40a4-9db3-b190459b932a",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Due within next 7 days"
+              }, {
+                "UUID" : "52b89243-21e3-4bc2-9b4a-4701ef661af4",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Ready for settlement"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "ca50e7ae-12c7-4b93-aafc-aa756c2eda3d",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : true,
+                "filterName" : "00B2P000000WGF2UAO",
+                "layout" : "STANDARD",
+                "pageSize" : 3,
+                "scope" : "Case",
+                "showActionBar" : false,
+                "showChartsPanel" : true,
+                "showDisplay" : "grid",
+                "showFilterPanel" : true,
+                "showImageIcon" : true,
+                "showManualRefreshButton" : true,
+                "showObjectName" : true,
+                "showPinnedList" : false,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "4aaa02cf-3a73-406a-b6d3-cbaddc6d0e37",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "e36e07b8-4229-40a4-9db3-b190459b932a",
+            "regionLabel" : "Due within next 7 days",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : true,
+                "filterName" : "00B2P000000WGF9UAO",
+                "layout" : "STANDARD",
+                "pageSize" : 5,
+                "scope" : "Case",
+                "showActionBar" : true,
+                "showChartsPanel" : true,
+                "showDisplay" : "showall",
+                "showFilterPanel" : true,
+                "showImageIcon" : true,
+                "showManualRefreshButton" : true,
+                "showObjectName" : true,
+                "showPinnedList" : true,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "d3c6714f-1bff-48a0-aff6-dfbbdebb7da6",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "52b89243-21e3-4bc2-9b4a-4701ef661af4",
+            "regionLabel" : "Ready for settlement",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "44fc381e-7ae3-4b9f-9114-0324443dace4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "da76c9c4-9654-432d-a624-c00441e5abf0",
+          "columns" : [ {
+            "UUID" : "f3dd83b3-c143-4b97-8cf9-c99b00a751ad",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 113
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "da76c9c4-9654-432d-a624-c00441e5abf0",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2>Pending mortgage discharges</h2>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "de5de174-b7ea-4f32-b741-63cc3c336e32",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "83c09f98-ac7f-464d-a335-48a87e10c462",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "9a9fcdd1-a4d1-4878-98f3-aee57ad81ab4",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Sale of Property"
+              }, {
+                "UUID" : "167864b4-d041-475f-907b-bf8332de36e8",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Final Payments"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "83c09f98-ac7f-464d-a335-48a87e10c462",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "actionForPrimaryParticipant" : false,
+                "columnAttributes" : "[{ label: 'Case ID', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false }, { label: 'Case Type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Contact', fieldName: 'Contact_Full_Name__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Property Address', fieldName: 'Property_Address__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:false, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+                "fieldApiNames" : "Id, CaseNumber, Record_Type_Name__c, Status,New_PF_TEXT__c, CreatedDate,Property_ID__c,Current_PF__c, Submitted_Date__c, Property__c,Owner.Name, OwnerName__c, Property_Address__c,contactid,contact.name,Contact_Full_Name__c ",
+                "listTitle" : "",
+                "listType" : "object",
+                "networkURL" : "/vgso/s/",
+                "objectApiName" : "case",
+                "recordFilter" : "Record_Type_Name__c IN ('Property Sale') AND Owner.Name ='Property Sale- VGSO queue'",
+                "recordId" : "{!recordId}",
+                "recordLimit" : 5,
+                "secondLookup" : false,
+                "showPagination" : false,
+                "showViewAll" : true,
+                "viewAllUrl" : "/vgso/s/case/Case/Default?Case-filterId=Property_Sale_VGSO_queue_Case"
+              },
+              "componentName" : "c:customListView",
+              "id" : "39d565b9-7a72-4203-aba6-82aa2551f30a",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "9a9fcdd1-a4d1-4878-98f3-aee57ad81ab4",
+            "regionLabel" : "Sale of Property",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "actionForPrimaryParticipant" : false,
+                "columnAttributes" : "[{ label: 'Case Id', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false },{ label: 'Property Address', fieldName: 'Property_Address__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Case type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:false, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+                "fieldApiNames" : "Id, CaseNumber, Record_Type_Name__c, Status,New_PF_TEXT__c, CreatedDate,Property_ID__c,Current_PF__c, Submitted_Date__c, Property__c,Owner.Name, OwnerName__c, Property_Address__c,contactid,contact.name,Contact_Full_Name__c ",
+                "listTitle" : "",
+                "listType" : "object",
+                "networkURL" : "/vgso/s/",
+                "objectApiName" : "case",
+                "recordFilter" : "Record_Type_Name__c IN ('Final Payment') AND Status ='Final Payment Received'",
+                "recordId" : "{!recordId}",
+                "recordLimit" : 5,
+                "secondLookup" : false,
+                "showViewAll" : true,
+                "viewAllUrl" : "/vgso/s/case/Case/Default?Case-filterId=Mortgage_Discharge_Cases"
+              },
+              "componentName" : "c:customListView",
+              "id" : "c650be37-a4bd-4f53-92a7-8497f1b7f8ce",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "167864b4-d041-475f-907b-bf8332de36e8",
+            "regionLabel" : "Final Payments",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f3dd83b3-c143-4b97-8cf9-c99b00a751ad",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0.01)",
+        "backgroundOverlay" : "rgba(0, 0, 0, 0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "ec426fee-cd1b-4880-8e90-a7e031009ea7",
+          "columns" : [ {
+            "UUID" : "30dbd528-92ab-40fc-b4b9-776051e42be0",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 113
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "ec426fee-cd1b-4880-8e90-a7e031009ea7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2>Pending mortgage re- registration</h2>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "fac7ded8-aab1-4221-887b-a1e8e2434850",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "a22eaf99-9d45-4834-9ce4-0fa0b1641b64",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "aa2bc4c4-2de6-4ea4-8498-78c885753674",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Refinance"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "a22eaf99-9d45-4834-9ce4-0fa0b1641b64",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "actionForPrimaryParticipant" : true,
+                "columnAttributes" : "[{ label: 'Case ID', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false }, { label: 'Case Type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'New PF', fieldName: 'New_PF_TEXT__c',   hideDefaultActions:true, wrapText: true, type: 'text', sortable: false },{ label: 'Property ID', fieldName: 'Property_ID__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Owner', fieldName: 'OwnerName__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Submitted date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:false, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+                "fieldApiNames" : "Id, CaseNumber, Record_Type_Name__c, Status,New_PF_TEXT__c, CreatedDate,Property_ID__c,Current_PF__c, Submitted_Date__c, Property__c,Owner.Name, OwnerName__c",
+                "listTitle" : "",
+                "listType" : "object",
+                "networkURL" : "/vgso/s/",
+                "objectApiName" : "case",
+                "recordFilter" : "Record_Type_Name__c IN ('Refinance') AND status IN ('Confirmed')",
+                "recordId" : "{!recordId}",
+                "recordLimit" : 5,
+                "secondLookup" : true,
+                "showIcon" : false,
+                "showListAction" : false,
+                "showPagination" : true,
+                "showViewAll" : true,
+                "viewAllUrl" : "/vgso/s/case/Case/Default?Case-filterId=Pending_Mortgage_Re_registration"
+              },
+              "componentName" : "c:customListView",
+              "id" : "d92e4c77-2291-4a19-be5a-c95fab4f59ab",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "aa2bc4c4-2de6-4ea4-8498-78c885753674",
+            "regionLabel" : "Refinance",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "30dbd528-92ab-40fc-b4b9-776051e42be0",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5818c60e-8fac-42ef-a411-c7f1b9a5569d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5ce92fe1-d0a5-451f-a0d8-0ca42fe488d8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7eb6cdf5-421e-481a-aff8-1ca0e37a6180",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

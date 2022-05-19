@@ -1,0 +1,80 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_ins-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_ins-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_ins-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-flex-icon data-style-id="state0element1block_element0_child"     record={record}  card={card}  extraclass="slds-icon_container slds-icon-custom-custom16 "  icon-name="custom:custom16"  icon-type="Salesforce SVG"  imgsrc=""  size="medium"  variant="inverse"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element1block_element1_child"     record={record}  card={card}  field-name="ConfirmationNumber"  label="Refinance Confirmation"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"15px"},"value":{"color":"#000000","fontSize":"18px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element2" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element2_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="neutral"  data-conditions='\{"group":[{"field":"Status","id":"state-new-condition-29","operator":"!=","type":"custom","value":"Confirmed"},{"field":"Status","id":"state-new-condition-40","logicalOperator":"&&","operator":"!=","type":"custom","value":"Not Confirmed"},{"field":"Status","id":"state-new-condition-56","logicalOperator":"&&","operator":"!=","type":"custom","value":"Cancelled"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  hide-action-icon="true"  state-action='\{"Community Named Page":{"targetName":"Confirm_Refinance__c"},"displayName":"Confirm Refinance","hasExtraParams":true,"id":"flex-action-1650513342372","openUrlIn":"Current Window","targetParams":{"ContextId":"{recordId}"},"targetType":"Community Named Page","type":"Custom","vlocityIcon":"standard-default"}'  theme="slds" ></vlocity_ins-action>
+      </div><div data-style-id="state0element3" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element3_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element0_child"     record={record}  card={card}  field-name="Status"  label="Status"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element1_child"     record={record}  card={card}  field-name="CreatedDate"  label="Created Date"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_ins-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-flex-icon data-style-id="state0element1block_element0_child"     record={record}  card={card}  extraclass="slds-icon_container slds-icon-custom-custom16 "  icon-name="custom:custom16"  icon-type="Salesforce SVG"  imgsrc=""  size="medium"  variant="inverse"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element1block_element1_child"     record={record}  card={card}  field-name="ConfirmationNumber"  label="Refinance Confirmation"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"15px"},"value":{"color":"#000000","fontSize":"18px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element2" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element2_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="neutral"  data-conditions='\{"group":[{"field":"Status","id":"state-new-condition-29","operator":"!=","type":"custom","value":"Confirmed"},{"field":"Status","id":"state-new-condition-40","logicalOperator":"&&","operator":"!=","type":"custom","value":"Not Confirmed"},{"field":"Status","id":"state-new-condition-56","logicalOperator":"&&","operator":"!=","type":"custom","value":"Cancelled"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  hide-action-icon="true"  state-action='\{"Community Named Page":{"targetName":"Confirm_Refinance__c"},"displayName":"Confirm Refinance","hasExtraParams":true,"id":"flex-action-1650513342372","openUrlIn":"Current Window","targetParams":{"ContextId":"{recordId}"},"targetType":"Community Named Page","type":"Custom","vlocityIcon":"standard-default"}'  theme="slds" ></vlocity_ins-action>
+      </div><div data-style-id="state0element3" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element3_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element0_child"     record={record}  card={card}  field-name="Status"  label="Status"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element1_child"     record={record}  card={card}  field-name="CreatedDate"  label="Created Date"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="text"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_ins-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+      
+      </vlocity_ins-action>
+  
+            <vlocity_ins-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+            
+            </vlocity_ins-action>
+            </div>
+          </template>

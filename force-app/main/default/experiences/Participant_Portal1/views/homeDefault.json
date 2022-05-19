@@ -1,0 +1,115 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "55b74234-5f98-443a-bb1d-c19be3817348",
+  "label" : "Home_Default",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "8bb13fb7-817b-496a-b1f9-246267ef30d0",
+          "columns" : [ {
+            "UUID" : "0274c9a3-033f-4a72-9cec-58d75af786f2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "6a34d23f-6724-43f5-88d3-31b67043df96",
+            "columnKey" : "13868",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8bb13fb7-817b-496a-b1f9-246267ef30d0",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:cfPropertyDetailsCard",
+          "id" : "9b1c3167-0e57-4692-8baa-77bd8b6a2814",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:cfPropertyValuationsDetail",
+          "id" : "76ee6588-3c70-4f33-ade3-aea2165e7581",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "actionButtonLabel" : "New Request",
+            "actionButtonLink" : "/participants/s/submit-request",
+            "actionForPrimaryParticipant" : true,
+            "columnAttributes" : "[{ label: 'Case Id', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true, typeAttributes: { label: { fieldName: 'CaseNumber'}}, sortable: false }, { label: 'Case type', fieldName: 'Record_Type_Name__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Case status', fieldName: 'Status', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+            "fieldApiNames" : "Id, CaseNumber, Record_Type_Name__c, Status, CreatedDate",
+            "listTitle" : "My Cases",
+            "listType" : "object",
+            "objectApiName" : "case",
+            "recordFilter" : "Record_Type_Name__c NOT in ( 'VHF Applications' )",
+            "recordLimit" : 4,
+            "showListAction" : true,
+            "showViewAll" : true,
+            "viewAllUrl" : "/participants/s/case/Case/Default"
+          },
+          "componentName" : "c:customListView",
+          "id" : "caee487f-6104-421f-9a96-b5ea46b32e38",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0274c9a3-033f-4a72-9cec-58d75af786f2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:cfAnnualReviewCTACard",
+          "id" : "1e92912c-7463-49d9-81ef-2d2b0dcbf5af",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6a34d23f-6724-43f5-88d3-31b67043df96",
+        "regionLabel" : "Column 2",
+        "regionName" : "13868",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9571ab7e-9365-437d-97a9-aa9b74549d7c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "693c5d00-2e70-4bb4-bb67-55e493327a72",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "243dac19-f93e-4454-8e96-53c85ab40c7c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

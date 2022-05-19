@@ -1,0 +1,16 @@
+<aura:component controller="FinalAppBtnController"
+                implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:hasRecordId" access="global" >
+    <ltng:require scripts="{!$Resource.Jquery_Min}" afterScriptsLoaded="{!c.handleAfterScriptsLoaded}" />
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="showBtn" type="boolean" default="false"/>
+        <aura:attribute name="showExtendExpButton" type="boolean" />
+    <aura:attribute name="recordId" type="String"/>    
+    <aura:if isTrue="{!v.showBtn}">
+        <div>
+        <lightning:button label="Start final application" onclick="{!c.navigateToForm}"
+                          aura:id="btnx" variant="brand" class="btnNewApp"/>
+        </div>
+    </aura:if>
+   
+</aura:component>

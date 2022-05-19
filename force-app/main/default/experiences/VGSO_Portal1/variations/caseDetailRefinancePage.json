@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "5ba32983-82cc-42d8-bfb9-458080536a8b",
+    "propertyOverrides" : {
+      "activeViewId" : "d19c9098-9970-4af5-a696-d7b0bd4bd809"
+    },
+    "targetId" : "ade4cb25-7e45-49cb-b582-83dd0cec195e",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_Refinance_Page",
+  "id" : "232a76c5-3508-4091-a4bd-0422abea435f",
+  "type" : "experienceVariation"
+}

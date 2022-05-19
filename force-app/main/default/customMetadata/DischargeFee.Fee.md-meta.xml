@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Fee</label>
+    <protected>false</protected>
+    <values>
+        <field>DischargeFee__c</field>
+        <value xsi:type="xsd:double">686.65</value>
+    </values>
+    <values>
+        <field>Discharge_Fees_Multiple_Titles__c</field>
+        <value xsi:type="xsd:double">704.98</value>
+    </values>
+</CustomMetadata>

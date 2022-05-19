@@ -1,0 +1,98 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "79ecd5aa-141d-4d3a-8bec-ef8ebbd312d6",
+  "label" : "applications",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "11871f9b-a1a6-4491-a1c6-c9814e7fefc9",
+          "columns" : [ {
+            "UUID" : "aedfa5dd-da53-4cff-9173-81797305c1c5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "1",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "b03c788f-112a-44ac-b30b-e44b1eec5978",
+            "columnKey" : "0b341",
+            "columnName" : "Column 2",
+            "columnWidth" : "10",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "87625cd2-d4ac-4056-873f-405af43bc5e7",
+            "columnKey" : "422df",
+            "columnName" : "Column 3",
+            "columnWidth" : "1",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "11871f9b-a1a6-4491-a1c6-c9814e7fefc9",
+      "regions" : [ {
+        "id" : "aedfa5dd-da53-4cff-9173-81797305c1c5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "dir" : "ltr",
+            "inline" : false,
+            "inlineLabel" : "Launch SRO/VHFApplicationV2",
+            "inlineVariant" : "brand",
+            "layout" : "lightning",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:sROVHFApplicationV2English",
+          "id" : "6524fb33-93bb-456b-9885-cc86116b90c4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b03c788f-112a-44ac-b30b-e44b1eec5978",
+        "regionLabel" : "Column 2",
+        "regionName" : "0b341",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "87625cd2-d4ac-4056-873f-405af43bc5e7",
+        "regionLabel" : "Column 3",
+        "regionName" : "422df",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c9beab3a-1415-4765-a068-b647e3ea5e99",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Form Submit"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "20c1bf74-cf5a-4304-b585-d159502d7296",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4a377ae2-b060-4ae4-8363-e22e5439d9bb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "6GeCvqFbh6JkAmgsNSjk7bb2ML42Pf",
+  "type" : "view",
+  "viewType" : "custom-form-submit"
+}

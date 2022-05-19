@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGSO_Visible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True when refinance Case status updated to  &apos;Confirmed&apos; / &apos;Mortgage Re-registered&apos;. Used in sharing rule to share case with VGSO</description>
+    <externalId>false</externalId>
+    <label>VGSO Visible</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

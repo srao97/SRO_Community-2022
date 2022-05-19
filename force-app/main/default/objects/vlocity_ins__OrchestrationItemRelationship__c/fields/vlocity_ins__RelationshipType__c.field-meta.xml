@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins__RelationshipType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of relationship between the pair of orchestration items.</description>
+    <externalId>false</externalId>
+    <label>Relationship Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amend</fullName>
+                <default>false</default>
+                <label>Amend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

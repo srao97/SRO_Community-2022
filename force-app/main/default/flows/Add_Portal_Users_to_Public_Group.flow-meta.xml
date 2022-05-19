@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Portal_User_Type</name>
+        <label>Portal User Type</label>
+        <locationX>710</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Lender_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>profile_name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>VHF Lender Community Plus User</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_Lender_Users_group</targetReference>
+            </connector>
+            <label>Lender User</label>
+        </rules>
+        <rules>
+            <name>DTF_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>profile_name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DTF Community Plus User</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_DTF_Users_group</targetReference>
+            </connector>
+            <label>DTF User</label>
+        </rules>
+        <rules>
+            <name>VGSO_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>profile_name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>VHF VGSO Community Plus User</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_VGSO_Users_Group</targetReference>
+            </connector>
+            <label>VGSO User</label>
+        </rules>
+        <rules>
+            <name>SRO_Finance_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>profile_name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SRO Finance</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_SRO_Finance_Users_group</targetReference>
+            </connector>
+            <label>SRO Finance User</label>
+        </rules>
+        <rules>
+            <name>SRO_Operations_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>profile_name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Operations</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_SRO_Operations_Users_group</targetReference>
+            </connector>
+            <label>SRO Operations User</label>
+        </rules>
+    </decisions>
+    <description>Adds portal users to a public group based on the assigned User Profile</description>
+    <interviewLabel>Add Portal Users to Public Group {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Add Portal Users to Public Group</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Add_User_to_Group</name>
+        <label>Add User to Group</label>
+        <locationX>710</locationX>
+        <locationY>494</locationY>
+        <inputAssignments>
+            <field>GroupId</field>
+            <value>
+                <elementReference>groupId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UserOrGroupId</field>
+            <value>
+                <elementReference>user_record_id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>GroupMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>returns the group id for the All DTF Users group</description>
+        <name>Get_All_DTF_Users_group</name>
+        <label>Get All DTF Users group</label>
+        <locationX>314</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_User_to_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_DTF_Users</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>groupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_All_Lender_Users_group</name>
+        <label>Get All Lender Users group</label>
+        <locationX>50</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_User_to_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_Lender_Users</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>groupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_All_SRO_Finance_Users_group</name>
+        <label>Get All SRO Finance Users group</label>
+        <locationX>842</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_User_to_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_SRO_Finance_Users</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>groupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_All_SRO_Operations_Users_group</name>
+        <label>Get All SRO Operations Users group</label>
+        <locationX>1106</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_User_to_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_SRO_Operations_Users</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>groupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>returns the group id for the All DTF Users group</description>
+        <name>Get_VGSO_Users_Group</name>
+        <label>Get VGSO Users Group</label>
+        <locationX>578</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_User_to_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_VGSO_Portal_users</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>groupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Portal_User_Type</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>groupId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The Profile name of the user record initiating the flow</description>
+        <name>profile_name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the user record that initiated the flow</description>
+        <name>user_record_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Rerun_Batch</name>
+        <label>Rerun Batch</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <actionName>AnnualReviewRerunBatch</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>requestedDate</name>
+            <value>
+                <elementReference>RequestedDate</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>Set_Month_Year</name>
+        <label>Set Month/Year</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignmentItems>
+            <assignToReference>RequestedDate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Month</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RequestedDate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Year</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Rerun_Batch</targetReference>
+        </connector>
+    </assignments>
+    <interviewLabel>Annual Review Rerun Batch {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Annual Review Rerun Batch</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Rerun_Annual_Review</name>
+        <label>Rerun Annual Review</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Set_Month_Year</targetReference>
+        </connector>
+        <fields>
+            <name>instructions</name>
+            <fieldText>&lt;p&gt;Use this tool to manually rerun an executed Annual Review Batch process. Specify which Month and Year eligible properties should be found.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Expected Format: Month = MM, Year = YYYY&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;*Note - This tool will only create Annual Review records for eligible Properties where no Annual Review record exists for the specified period. To create a replacement for a cancelled Annual Review, you can do so directly from the cancelled record.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;*Caution - Ensure Month and Year are correct before proceeding!&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Month</name>
+            <dataType>Number</dataType>
+            <fieldText>Month</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Please enter a valid month MM&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!Month} &gt; 0 &amp;&amp; {!Month} &lt;13</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>Year</name>
+            <dataType>Number</dataType>
+            <fieldText>Year</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+            <validationRule>
+                <errorMessage>&lt;pre class=&quot;ql-syntax&quot; spellcheck=&quot;false&quot;&gt;Please enter a valid year YYYY
+&lt;/pre&gt;</errorMessage>
+                <formulaExpression>{!Year} &gt; 2000 &amp;&amp; {!Year} &lt; 3000</formulaExpression>
+            </validationRule>
+        </fields>
+        <helpText>&lt;p&gt;Use this tool to manually execute the Annual Review Batch Process.&lt;/p&gt;</helpText>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Rerun_Annual_Review</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>RequestedDate</name>
+        <dataType>Number</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+</Flow>

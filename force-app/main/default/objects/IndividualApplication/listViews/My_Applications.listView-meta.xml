@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Applications</fullName>
+    <columns>Name</columns>
+    <columns>ApplicantNames__c</columns>
+    <columns>Status</columns>
+    <columns>ApplicationCase</columns>
+    <columns>Case_Status__c</columns>
+    <columns>AppliedDate</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Applications</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <group>All_Lender_Users</group>
+    </sharedTo>
+</ListView>

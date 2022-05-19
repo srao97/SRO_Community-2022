@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins__Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Source of the earning.</description>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wages</fullName>
+                <default>false</default>
+                <label>Wages</label>
+            </value>
+            <value>
+                <fullName>Rental Income</fullName>
+                <default>false</default>
+                <label>Rental Income</label>
+            </value>
+            <value>
+                <fullName>Tips</fullName>
+                <default>false</default>
+                <label>Tips</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

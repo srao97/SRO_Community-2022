@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearance_Check</fullName>
+    <active>false</active>
+    <description>Check whether restricted fields being updated are being performed by a SRO Officer  without clearance to update sensitive fields</description>
+    <errorConditionFormula>OR($UserRole.Name = &quot;Branch Technical Officer&quot;, $UserRole.Name  = &quot;Customer Service Officer&quot;,$UserRole.Name  = &quot;Senior Customer Service Officer&quot;, $UserRole.Name = &quot;&quot;) &amp;&amp; OR(ISCHANGED( FirstName), ISCHANGED( MiddleName ), ISCHANGED( LastName), ISCHANGED( PersonBirthdate ),  ISCHANGED( Name ) )</errorConditionFormula>
+    <errorMessage>You must be a team leader or above to update the Name or Date of birth</errorMessage>
+</ValidationRule>

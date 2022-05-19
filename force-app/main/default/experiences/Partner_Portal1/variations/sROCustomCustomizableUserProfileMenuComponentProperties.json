@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "ef43bff8-2aba-4174-a686-c43e310d7236",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "customizableUserProfileMenuEditor" : "Lender_External_Admin_User_Navigation_Bar"
+      }
+    },
+    "targetId" : "6d2f22ca-c3c6-4251-8297-44905b143140",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "SRO_Custom_Customizable_User_Profile_Menu_Component_Properties",
+  "id" : "20d15420-3c5e-4d7c-8bfe-ae4bc2eeea5d",
+  "type" : "experienceVariation"
+}

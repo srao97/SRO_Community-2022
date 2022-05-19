@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ConsoleAdminSearch_Discount</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__NewPromotion</name>
+    </fieldSets>
+    <layouts>
+        <layout>Vlocity EPC Discount Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Effectivity</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Properties</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vlocity EPC Promotion Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Properties</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Duration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Effectivity</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Properties</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__Discount</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__Promotion</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,135 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "id" : "02681521-ef90-4192-b6c5-3edb0dc3ffe1",
+  "label" : "Payment Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "04945d73-62d8-4ed5-aa8c-9bb4f876be65",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9c9b4927-5455-4b7f-b200-f3049dddeaf4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "fc446a3a-5260-4aaf-b930-e92015c56a0e",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "40854937-1daa-4d2b-9eef-d10ae70b8e81",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Detail"
+          }, {
+            "UUID" : "96e7a471-5a98-407e-8674-5c66a4fc9abf",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "fc446a3a-5260-4aaf-b930-e92015c56a0e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "57cbfd98-f9f3-4aa6-8632-879455e16de6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "40854937-1daa-4d2b-9eef-d10ae70b8e81",
+        "regionLabel" : "Detail",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "Payments__r",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "a46f2c2f-70f1-4d7a-8a54-2a4a92c3929a",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "96e7a471-5a98-407e-8674-5c66a4fc9abf",
+        "regionLabel" : "Related",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b1a53fd0-baff-4988-948c-5f99bd6cf706",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "efe8969c-1ebd-4507-b600-89cd15383ecb",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6c0c900e-4cd7-4177-9e19-bc805c239130",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3972bcf7-453c-41c7-be26-dd8e34b6ade0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actionButtonLink" : "",
+        "columnAttributes" : "[{ label: 'Title', fieldName: 'fileUrl', hideDefaultActions:true, wrapText: true, type: 'url', typeAttributes: { label: {fieldName: 'Title'} }, cellAttributes: { iconName: {fieldName: 'icon'}, iconPosition: 'left' }}, { label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }, { type: 'action', typeAttributes: { rowActions: [{label: 'Download', name: 'download'}], menuAlignment: 'right'}} ]",
+        "listIcon" : "standard:file",
+        "listTitle" : "Files",
+        "listType" : "files",
+        "networkURL" : "/participants/s/",
+        "pageSize" : 10,
+        "recordId" : "{!recordId}",
+        "secondLookup" : false,
+        "showIcon" : true,
+        "showPagination" : false,
+        "showViewAll" : true,
+        "viewAllUrl" : "/participants/s/viewallfiles?recordId={!recordId}"
+      },
+      "componentName" : "c:customListView",
+      "id" : "033a44cf-3200-47fb-b929-78f8063501a5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "575c0081-2b5e-416c-b474-c6498631a95a",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a7Y"
+}

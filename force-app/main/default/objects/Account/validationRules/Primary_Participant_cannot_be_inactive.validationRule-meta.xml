@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Participant_cannot_be_inactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>Primary_Participant__pc = true &amp;&amp; (
+ISPICKVAL( IsActiveApplicant__pc , &quot;No&quot;) || Is_Participant__pc = false)</errorConditionFormula>
+    <errorMessage>You can&apos;t mark Primary participant for the property as Inactive. Please mark another participant as the Primary before marking this participant as Inactive</errorMessage>
+</ValidationRule>

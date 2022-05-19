@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "02681521-ef90-4192-b6c5-3edb0dc3ffe1",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "49a334a5-5ef8-4281-95a0-6858de503e50",
+  "label" : "Payment Detail",
+  "objectApiName" : "Payment__c",
+  "routeType" : "detail-a7Y",
+  "type" : "route",
+  "urlPrefix" : "payment"
+}

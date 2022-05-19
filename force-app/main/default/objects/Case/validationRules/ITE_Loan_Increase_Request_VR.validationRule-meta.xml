@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITE_Loan_Increase_Request_VR</fullName>
+    <active>true</active>
+    <description>Cannot update status to ‘Loan increase requested’ if Min &amp; Max approved limits are not set (i.e refinance limits need to be calculated)</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+$RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;,
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Loan Increase Requested&quot;),
+OR(
+ISBLANK(Maximum_payment_amount__c),
+ISBLANK(Minimum_payment_amount__c)
+),
+NOT($Profile.Name = &apos;VHF Participant Community Plus User&apos; ||$Profile.Name =&apos;System Administrator&apos;),
+OR(
+TEXT(PRIORVALUE(Status)) = &quot;New&quot;,
+TEXT(PRIORVALUE(Status)) = &quot;Valuation Requested&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Calculate refinance limits before requesting for loan increase.</errorMessage>
+</ValidationRule>

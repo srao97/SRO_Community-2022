@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Letter_of_Support_1st_Extens_Applicants__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; +
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=[Revised+Letter+of+Support+First+Expiry+Extension+ - +Provisional+Approval]a0M5P000001O05BUAS&quot;+
+&quot;&amp;DS7=12&quot;+
+&quot;&amp;EmailTemplateId=00X2P000000MVSPUA4&quot;+
+&quot;&amp;EmailToID=&quot;+ Contact__c +
+&quot;&amp;EmailRelatedToId=&quot;+Id+
+&quot;&amp;EmailAdditionalTo=&quot;+ApplicantEmail1__c+&quot;,&quot;+ApplicantEmail2__c+&quot;,&quot;+ApplicantEmail3__c+&quot;,&quot;+ApplicantEmail4__c+
+&quot;&amp;qmode=SendEmail&quot;+
+&quot;&amp;SC0=1&amp;SC1=SalesforceFile&amp;apdf=0&amp;FP0=1&quot;+
+&quot;&amp;EmailFromID=0D22P00000000qW&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Letter of Support 1st Extens Applicants</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

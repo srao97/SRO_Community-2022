@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sale_Approved_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+$RecordType.DeveloperName=&quot;Property_Sale&quot;,
+ISCHANGED(Status),
+OR(ISPICKVAL(PRIORVALUE(Status),&quot;New&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;In Review&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Awaiting Information&quot;)),
+ISPICKVAL(Status, &quot;Valuation requested&quot;)
+)</errorConditionFormula>
+    <errorMessage>Valuation can be requested only after the Property of sale request is Approved</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Payment_SRO_Finance_edit_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>$RecordType.DeveloperName=&quot;Final_Payment&quot; &amp;&amp;
+$Profile.Name=&quot;SRO Finance&quot; &amp;&amp;
+NOT( ISNEW() )</errorConditionFormula>
+    <errorMessage>You don&apos;t have permissions to update this case!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revision__c</fullName>
+    <description>This field is used to track when a Major or Minor Update event occurs within an Annual Review</description>
+    <externalId>false</externalId>
+    <label>Revision</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Minor Update Requested</fullName>
+                <default>false</default>
+                <label>Minor Update Requested</label>
+            </value>
+            <value>
+                <fullName>Minor Update Complete</fullName>
+                <default>false</default>
+                <label>Minor Update Complete</label>
+            </value>
+            <value>
+                <fullName>Major Update Requested</fullName>
+                <default>false</default>
+                <label>Major Update Requested</label>
+            </value>
+            <value>
+                <fullName>Major Update Complete</fullName>
+                <default>false</default>
+                <label>Major Update Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

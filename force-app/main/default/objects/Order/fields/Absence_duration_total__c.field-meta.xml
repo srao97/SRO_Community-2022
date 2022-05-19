@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Absence_duration_total__c</fullName>
+    <externalId>false</externalId>
+    <label>Absence duration total</label>
+    <summarizedField>Absence__c.Valid_Absence_Duration_Months__c</summarizedField>
+    <summaryForeignKey>Absence__c.Property__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

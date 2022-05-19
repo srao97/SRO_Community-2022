@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "d6c05a7b-b0c3-41aa-a9a9-b35eadfad6b2",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "25fd8b41-6eb3-4339-a5fb-ce6e5fa6ebc3",
+  "label" : "QuarterReport",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-upload-quarterly-report",
+  "type" : "route",
+  "urlPrefix" : "upload-quarterly-report"
+}

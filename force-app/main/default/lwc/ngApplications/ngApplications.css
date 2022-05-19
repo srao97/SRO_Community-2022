@@ -1,0 +1,22 @@
+.notification-div {
+  background-color: var(--light-ash);
+  border-radius: 6px;
+}
+
+.notification-div .content-div {
+  color: var(--text-blue);
+  flex:4;
+};
+
+.notification-div .content{
+  color: var(--text-blue) !important;
+};
+
+.notification-div .actions-div {
+  flex:3;
+  text-align:center;
+}
+
+.action-right {
+  display: inline-flex;
+}

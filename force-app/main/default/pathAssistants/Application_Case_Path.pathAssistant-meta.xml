@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Application Case Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>Awaiting Final Application</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>Final Approval Requested</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Funds_Transferred_Date__c</fieldNames>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>Funds Transfer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>Provisional Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Dealing_Number__c</fieldNames>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>Settlement</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>VHF_Application_Record_Type</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_Work_Home_Or_Mobile_Phone_Require</fullName>
+    <active>true</active>
+    <description>User must enter one of the 3 phone numbers.</description>
+    <errorConditionFormula>AND (ISBLANK(PersonHomePhone), ISBLANK(PersonMobilePhone), ISBLANK(Phone), $Profile.Name = &apos;Operations&apos;, RecordType.DeveloperName &lt;&gt; &apos;Business&apos;)</errorConditionFormula>
+    <errorMessage>Enter at least one contact number.</errorMessage>
+</ValidationRule>

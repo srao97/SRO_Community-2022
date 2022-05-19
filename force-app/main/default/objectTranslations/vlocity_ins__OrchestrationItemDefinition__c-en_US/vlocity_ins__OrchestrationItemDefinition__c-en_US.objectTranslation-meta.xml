@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Auto Task (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V6</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V7</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Auto Task (Vlocity XOM) Layout V8</layout>
+        <sections>
+            <label></label>
+            <section>Auto Task</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V10</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V11</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V12</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V13</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V6</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V7</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V8</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Callout (Vlocity XOM) Layout V9</layout>
+        <sections>
+            <label></label>
+            <section>Callout</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Response Vlocity Data Raptor Configuration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vlocity Data Raptor Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity Insurance) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Queue</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V6</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V7</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V8</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Task (Vlocity XOM) Layout V9</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manual Task</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V6</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V7</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Item Definition (Vlocity XOM) Layout V8</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity Insurance) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V3</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V4</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V5</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V6</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V7</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V8</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Push Event (Vlocity XOM) Layout V9</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Push Event</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__AutoTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Callout</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__ManualTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__Milestone</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__PullEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__PushEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__SubPlan</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__TimeoutMinValueValidation</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__Debug</name>
+    </webLinks>
+</CustomObjectTranslation>

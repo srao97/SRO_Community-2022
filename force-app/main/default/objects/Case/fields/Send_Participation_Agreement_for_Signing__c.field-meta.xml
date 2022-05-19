@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Participation_Agreement_for_Signing__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; +
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;queryid=[contracts]a0E5P000000d7VUUAY&quot; + 
+&quot;&amp;templateid=[Participation+Agreement]a0M5P000001O05AUAS&quot; + 
+&quot;&amp;qmode=CongaSign&quot; +
+if(CSEmail1__c != null,&quot;&amp;csemail1=&quot;+CSEmail1__c+&quot;&amp;csname1=&quot;+CSName1__c,&apos;&apos;)+
+if(CSEmail2__c != null,&quot;&amp;csemail2=&quot;+CSEmail2__c+&quot;&amp;csname2=&quot;+CSName2__c,&apos;&apos;)+
+if(CSEmail3__c != null,&quot;&amp;csemail3=&quot;+CSEmail3__c+&quot;&amp;csname3=&quot;+CSName3__c,&apos;&apos;)+
+if(CSEmail4__c != null,&quot;&amp;csemail4=&quot;+CSEmail4__c+&quot;&amp;csname4=&quot;+CSName4__c,&apos;&apos;)+
+if(CSEmail5__c != null,&quot;&amp;csemail5=&quot;+CSEmail5__c+&quot;&amp;csname5=&quot;+CSName5__c,&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send Participation Agreement for Signing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

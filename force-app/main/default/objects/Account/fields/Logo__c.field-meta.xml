@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Document_ID__c) , &quot;Logo not uploaded&quot;, IMAGE( $Setup.BaseURL__c.My_Domain_URL__c + &quot;/servlet/servlet.FileDownload?file=&quot;+ Document_ID__c , &apos;Logo&apos;,100,100))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Logo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

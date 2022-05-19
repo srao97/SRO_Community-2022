@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "74fcc674-bcd3-493d-bf7f-810a3991add8",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "7ecc26e0-291a-4a3c-a889-0adb3708baf5",
+  "label" : "Payment Related List",
+  "objectApiName" : "Payment__c",
+  "routeType" : "relatedlist-a7Y",
+  "type" : "route",
+  "urlPrefix" : "payment"
+}

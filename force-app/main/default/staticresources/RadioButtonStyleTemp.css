@@ -1,0 +1,14 @@
+.slds-form-element__control[vlocity_ins-radioGroup_radioGroup_slds] span.slds-radio[vlocity_ins-radioGroup_radioGroup_slds] {
+    padding-left: 0rem !important;
+    text-indent: 0rem !important;
+}
+
+.slds-scope .slds-radio .slds-radio__label,
+.slds-scope .slds-checkbox .slds-checkbox__label{
+    display: inline;
+}
+
+.slds-radio .slds-radio__label,
+.slds-checkbox .slds-checkbox__label{
+    display: inline;
+}

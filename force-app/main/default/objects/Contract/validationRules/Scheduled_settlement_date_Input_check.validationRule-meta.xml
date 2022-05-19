@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduled_settlement_date_Input_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (ISCHANGED(Settlement_Date__c ),
+NOT(ISBLANK( Settlement_Date__c )),
+OR(Settlement_Date__c &lt;= TODAY(),
+Settlement_Date__c - TODAY() &gt; 730),
+$Profile.Name =&apos;Operations&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Settlement_Date__c</errorDisplayField>
+    <errorMessage>Selected date should be later than Today and must be within 2 years of the application submission date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,84 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_ins-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_ins-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_ins-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_default  " style="  background-repeat:repeat;    
+         ">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-flex-icon data-style-id="state0element1block_element0_child"     record={record}  card={card}  extraclass="slds-icon_container slds-icon-standard-orders "  icon-name="standard:orders"  icon-type="Salesforce SVG"  imgsrc=""  size="medium"  variant="inverse"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element1block_element1_child"     record={record}  card={card}  field-name="OrderNumber"  label=" Property"  labelclass=""  placeholder=""  styles='\{"label":{"color":"#000000","fontSize":"15px"},"value":{"color":"#000000","fontSize":"18px"}}'  type="text"  valueclass=""  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element2" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element2_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="neutral"  data-conditions='\{"group":[{"field":"IsActiveProperty","id":"state-new-condition-0","operator":"==","type":"custom","value":"true"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  icon-size="small"  state-action='\{"Community Named Page":{"targetName":"Submit_New_Case__c"},"displayName":"New Case","hasExtraParams":true,"id":"flex-action-1649311157240","openUrlIn":"Current Window","targetParams":{"address":"{Property_Address__c}","propertyId":"{Id}","propertyNumber":"{OrderNumber}"},"targetType":"Community Named Page","type":"Custom","vlocityIcon":""}'  theme="slds" ></vlocity_ins-action>
+      </div><div data-style-id="state0element3" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element3_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element0_child"     record={record}  card={card}  field-name="Property_Address__c"  label="Property Address"  labelclass=""  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px","textAlign":""}}'  type="text"  valueclass=""  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element1_child"     record={record}  card={card}  currency="AUD"  field-name="Property_Purchase_Price__c"  label="Property Purchase Price"  locale="en-AU"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="currency"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element2" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element2_child"     record={record}  card={card}  currency="AUD"  field-name="Assessed_Property_Value__c"  label="Assessed Property Value"  locale="en-AU"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="currency"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_ins-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_default  " style="  background-repeat:repeat;    
+         ">
+          <div data-style-id="state0element0" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element1" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-flex-icon data-style-id="state0element1block_element0_child"     record={record}  card={card}  extraclass="slds-icon_container slds-icon-standard-orders "  icon-name="standard:orders"  icon-type="Salesforce SVG"  imgsrc=""  size="medium"  variant="inverse"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element1block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element1block_element1_child"     record={record}  card={card}  field-name="OrderNumber"  label=" Property"  labelclass=""  placeholder=""  styles='\{"label":{"color":"#000000","fontSize":"15px"},"value":{"color":"#000000","fontSize":"18px"}}'  type="text"  valueclass=""  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div><div data-style-id="state0element2" class="" data-rindex={rindex} style=""><vlocity_ins-action data-style-id="state0element2_child"  tracking-obj={_childCardTrackingObj}   state-obj={record}  record={record}  card={card}  button-variant="neutral"  data-conditions='\{"group":[{"field":"IsActiveProperty","id":"state-new-condition-0","operator":"==","type":"custom","value":"true"}],"id":"state-condition-object","isParent":true}'  display-as-button="true"  icon-size="small"  state-action='\{"Community Named Page":{"targetName":"Submit_New_Case__c"},"displayName":"New Case","hasExtraParams":true,"id":"flex-action-1649311157240","openUrlIn":"Current Window","targetParams":{"address":"{Property_Address__c}","propertyId":"{Id}","propertyNumber":"{OrderNumber}"},"targetType":"Community Named Page","type":"Custom","vlocityIcon":""}'  theme="slds" ></vlocity_ins-action>
+      </div><div data-style-id="state0element3" class="" data-rindex={rindex} style="">
+    <vlocity_ins-block data-style-id="state0element3_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds" ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element3block_element0" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element0_child"     record={record}  card={card}  field-name="Property_Address__c"  label="Property Address"  labelclass=""  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px","textAlign":""}}'  type="text"  valueclass=""  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element1" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element1_child"     record={record}  card={card}  currency="AUD"  field-name="Property_Purchase_Price__c"  label="Property Purchase Price"  locale="en-AU"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="currency"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element3block_element2" class="" data-rindex={rindex} style=""><vlocity_ins-output-field data-style-id="state0element3block_element2_child"     record={record}  card={card}  currency="AUD"  field-name="Assessed_Property_Value__c"  label="Assessed Property Value"  locale="en-AU"  placeholder=""  styles='\{"label":{"color":"#5C5C5C","fontSize":"14px"},"value":{"fontSize":"16px"}}'  type="currency"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_ins-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+      
+      </vlocity_ins-action>
+  
+            <vlocity_ins-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}>
+            
+            </vlocity_ins-action>
+            </div>
+          </template>

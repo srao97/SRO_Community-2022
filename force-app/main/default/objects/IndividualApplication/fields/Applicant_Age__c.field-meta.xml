@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_Age__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If all applicants are 18 years or older at the time of settlement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If all applicants are 18 years or older at the time of settlement</inlineHelpText>
+    <label>Applicants 18 years or older</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

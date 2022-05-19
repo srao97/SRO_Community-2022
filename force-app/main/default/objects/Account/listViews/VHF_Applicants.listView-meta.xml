@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_Applicants</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PC_BIRTHDATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>PC_ADDRESS2_STATE</columns>
+    <columns>PC_ADDRESS2_STREET</columns>
+    <columns>PC_ADDRESS2_ZIP</columns>
+    <columns>IsActiveApplicant__pc</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.PersonAccount</value>
+    </filters>
+    <label>VHF Applicants</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

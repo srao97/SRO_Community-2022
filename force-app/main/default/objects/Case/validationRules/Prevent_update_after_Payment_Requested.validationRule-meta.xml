@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_update_after_Payment_Requested</fullName>
+    <active>true</active>
+    <description>The Case can&apos;t be updated as it is Payment Requested!</description>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp; ISPICKVAL(Status,&quot;Payment Requested&quot;) &amp;&amp; NOT(ISCHANGED(Status)) &amp;&amp; ( ($RecordType.DeveloperName=&quot;Windfall_Gains&quot;) || ($RecordType.DeveloperName=&quot;Final_Payment&quot;) || 
+($RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;)) &amp;&amp;
+NOT(ISCHANGED(BypassValidation__c)) &amp;&amp;
+$Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorMessage>The case is locked and can&apos;t be updated!</errorMessage>
+</ValidationRule>

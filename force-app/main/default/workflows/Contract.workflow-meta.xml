@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Final_Application_Approval_Panel_Financier</fullName>
+        <description>Final Application Approval - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Final_Application_Approval_Panel_Financier_1625030018236</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Application_Cancellation_Panel_Financier</fullName>
+        <description>Final Application Cancellation - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Final_Application_Cancellation_Panel_Financier_1626630163344</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Application_Rejection_Panel_Financier</fullName>
+        <description>Final Application Rejection - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Final_Application_Rejection_Panel_Financier_1625448370583</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Application_Settlement_Completed_Panel_Financier</fullName>
+        <description>Final Application Settlement Completed - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Settlement_Completed_Notification_PFO_1632280695167</template>
+    </alerts>
+    <alerts>
+        <fullName>Funds_Transferred_Notification_to_VGSO</fullName>
+        <description>Funds Transferred Notification to VGSO</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>All_VGSO_Portal_users</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Funds_Transferred_Notification_VGSO_1626320613697</template>
+    </alerts>
+    <alerts>
+        <fullName>Settlement_Cancellation_Panel_Financier</fullName>
+        <description>Settlement Cancelled - Panel Financier</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Panel_Finance_Officer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Cancelled_Settlement_PFO_1632719524354</template>
+    </alerts>
+    <alerts>
+        <fullName>Settlement_Cancellation_Panel_Financier_FinanceTeam</fullName>
+        <ccEmails>finance@sro.vic.gov.au</ccEmails>
+        <ccEmails>Kimberley.dunbar@sro.vic.gov.au</ccEmails>
+        <description>Settlement Cancelled - FinanceTeam</description>
+        <protected>false</protected>
+        <senderAddress>no-reply@sro.vic.gov.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SROEmailTemplates/Cancelled_Settlement_SRO_Finance_1629343738200</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Reset_Validation_Bypass</fullName>
+        <field>BypassValidation__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Validation Bypass</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Final_Approval_Completed</fullName>
+        <apiVersion>52.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Final_Application_Documents_Conga__c</fields>
+        <fields>Id</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>vhf.integration@sro.vic.gov.au</integrationUser>
+        <name>Final Approval Completed</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Final Approval Completed</fullName>
+        <actions>
+            <name>Final_Approval_Completed</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reset Final Validation Bypass</fullName>
+        <actions>
+            <name>Reset_Validation_Bypass</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.BypassValidation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Resets BypassValidation checkbox that was set by process builder[VHF-1685]</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

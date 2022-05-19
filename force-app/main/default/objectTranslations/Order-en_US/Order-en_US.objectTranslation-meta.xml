@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Properties</value>
+    </caseValues>
+    <layouts>
+        <layout>Mobile Order (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order (Vlocity Insurance) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order (Vlocity Insurance) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jeopardy Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Long Term Absences</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Value</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Renovation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Unused: Do not edit</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Participant Portal Property Layout</layout>
+        <sections>
+            <label></label>
+            <section>Unused: Do not edit</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renovation layout</layout>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VGSO Portal Property Layout</layout>
+        <sections>
+            <label></label>
+            <section>Unused: Please do not edit</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Calculate_Payment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Case_Property</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__CreatingContract</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__PickFrameContract_LEX</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__SubmitOrderForInsurance</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__UpdatingContracts</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__ViewOrchestrationPlan</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_activate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_on_Program_Exit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Panel_Financier_Name_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Lender_update_Account_or_PF_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Users_creating_records_manually</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Create_Renovation_Case</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Case</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__CreatingContractAloha</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__DecomposeOrder</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__GenerateDocumentPDF</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__ViewDecomposedOrder</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__ViewOrchestrationPlan</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__XOMOnSubmitOrder</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>vlocity_ins__XOMSubmitOrder</name>
+    </webLinks>
+</CustomObjectTranslation>

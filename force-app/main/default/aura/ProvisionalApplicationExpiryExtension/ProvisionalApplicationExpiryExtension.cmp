@@ -1,0 +1,37 @@
+<!-- Created by : Nayana
+     Called by lightning action to extend the expiry date 
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,lightning:availableForFlowActions,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="CalculateProvisionalExpiryDates" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init }"/>
+    <aura:attribute name="extendedDate" type="String"/>
+	<aura:attribute name="applicationID" type="String"/> 
+    <aura:attribute name="extendTRUE" type="boolean"/>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+        <div >
+            <div class="slds-modal__header">
+                <h2 id="modal-heading-01" class="slds-text-heading--medium slds-p-bottom_xx-small">Extend Expiry Date</h2>
+            </div>
+            <aura:if isTrue = "{!v.extendTRUE == true}" >
+            <div class="slds-card__body slds-card__body_inner slds-p-top_medium" id="modal-content-id-1">
+                <p style="font-size:16px;">Your new provisional application expiry date will be on
+                    <lightning:formattedDateTime aura:id="dt" value="{!v.extendedDate}" day="numeric" month="numeric" year="numeric"/>.
+                    <br/> <br/>
+                    Do you wish to continue? 
+                </p>
+            </div><br/>
+            </aura:if>
+            <aura:if isTrue = "{!v.extendTRUE == false}" >
+                <div class="slds-card__body slds-card__body_inner slds-p-top_medium" id="modal-content-id-1">
+                <p style="font-size:16px;">{!v.extendedDate}<!-- extendedDate param holds the message in this scenario-->
+                </p>
+            </div><br/>
+            </aura:if>
+            <div class="slds-modal__footer"> 
+                <lightning:button variant="Neutral" class="slds-button" label="Cancel" onclick="{!c.handleCancel}"/>
+                <aura:if isTrue = "{!v.extendTRUE == true}" >
+                <lightning:button variant="Brand" class="slds-button " label="Continue" onclick="{!c.handleSave}" />
+                </aura:if>
+            </div>
+        </div>
+    </section>
+</aura:component>

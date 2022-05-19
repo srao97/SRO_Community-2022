@@ -1,0 +1,24 @@
+{
+  "forgotPasswordRouteId" : "25ed8db1-e48a-4f48-a0f8-b864881fc6d9",
+  "isAvailableToGuests" : false,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : true,
+  "loginAppPageId" : "e841f6c0-3e2c-4657-b253-81adb470ae15",
+  "mainAppPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "preferredDomain" : "homebuyer.sro.vic.gov.au",
+  "selfRegistrationRouteId" : "03933ef1-655f-4d5c-aab9-727a28da727a",
+  "trustedSitesForScript" : [ {
+    "id" : "7ab64a79-5ed7-4558-a1bb-a9070b401f5b",
+    "isActive" : true,
+    "trustedSiteName" : "homebuyer",
+    "trustedSiteUrl" : "https://homebuyer.sro.vic.gov.au",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "5b91c956-8ba9-47be-a83f-fbbd93304b63",
+    "isActive" : true,
+    "trustedSiteName" : "experiencedomain",
+    "trustedSiteUrl" : "https://srovic.force.com/",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

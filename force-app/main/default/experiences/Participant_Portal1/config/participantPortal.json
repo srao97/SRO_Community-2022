@@ -1,0 +1,18 @@
+{
+  "forgotPasswordRouteId" : "7ed7115e-03a3-46c7-ab56-bb67fc325b48",
+  "isAvailableToGuests" : false,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : true,
+  "loginAppPageId" : "c6fa2b25-afcd-491a-a468-1560de35cc2d",
+  "mainAppPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "e29ceb45-29d4-40ec-a49f-0f2573b4c7dd",
+  "trustedSitesForScript" : [ {
+    "id" : "1d759b05-2217-4f77-8888-1f7b7fb5b063",
+    "isActive" : true,
+    "trustedSiteName" : "Dev",
+    "trustedSiteUrl" : "https://victoriasro--vhfr3dev.lightning.force.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

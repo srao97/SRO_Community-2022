@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "062b8fc6-c445-4f98-b2d0-4500b0d0c5a1",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "e71a7cc9-f236-4985-8de2-63d6f5385e86",
+  "label" : "Submit New Case",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-submit-new-case",
+  "type" : "route",
+  "urlPrefix" : "submit-new-case"
+}

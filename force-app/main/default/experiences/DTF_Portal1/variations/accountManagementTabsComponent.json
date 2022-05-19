@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "21bfbe19-6adc-4f0a-9567-629090531560",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "3fbf8eeb-849a-4c87-808f-25f06a1a1e89",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Account_Management_Tabs_Component",
+  "id" : "f685c244-133d-4846-bc7a-e05f0fc06094",
+  "type" : "experienceVariation"
+}

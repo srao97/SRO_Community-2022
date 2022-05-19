@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "5f90883b-31fc-4075-bb1b-edefc89e0173",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "722beb0e-89aa-42d3-9b7b-929d2a4aa62a",
+  "label" : "ViewAllFiles",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-viewallfiles",
+  "type" : "route",
+  "urlPrefix" : "viewallfiles"
+}

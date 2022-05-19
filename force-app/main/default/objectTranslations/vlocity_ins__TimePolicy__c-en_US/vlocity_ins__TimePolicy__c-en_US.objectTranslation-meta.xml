@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__NewTimePolicy</name>
+    </fieldSets>
+    <layouts>
+        <layout>Vlocity EPC Time Policy Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Delay</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Effectivity</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Proratable</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

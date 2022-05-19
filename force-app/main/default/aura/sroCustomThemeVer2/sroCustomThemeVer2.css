@@ -1,0 +1,63 @@
+.THIS .navmenu {
+    position: relative;
+    float: right;
+}
+
+.THIS .navigation {
+    position: relative;
+    float: left;
+    width: auto;
+}
+
+.THIS p {
+    color: var(--text-light);
+}
+
+.THIS .menuX {
+    background-color: var(--header-light);
+    padding: 0rem 0.5rem;
+    height: 60px;
+    color: var(--text-light);
+}
+
+.THIS .profileMenuRegion {
+    padding-top: 5px;
+}
+
+.THIS button.slds-button_icon {
+    color: var(--text-light);
+}
+
+.THIS .newHeader {
+    clear: both;
+}
+
+.THIS .themeLogoMobile,
+.THIS .themeNav {
+    display: inline-flex;
+}
+
+.THIS .themeLogo {
+    display: none;
+}
+
+.THIS a,
+.THIS a:hover {
+    color: var(text-light);
+}
+
+@media (min-width: 768px) {
+    .THIS .themeLogo {
+        display: inline-flex;
+    }
+    .THIS .menuX {
+        padding: 0rem 0.5rem !important;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .THIS .themeLogoMobile {
+        display: none;
+    }
+}

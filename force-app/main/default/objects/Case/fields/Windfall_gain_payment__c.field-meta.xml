@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Windfall_gain_payment__c</fullName>
+    <description>Amount the participant is willing to pay towards reducing the state&apos;s share in the property from the windfall gain</description>
+    <externalId>false</externalId>
+    <label>Windfall gain payment</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

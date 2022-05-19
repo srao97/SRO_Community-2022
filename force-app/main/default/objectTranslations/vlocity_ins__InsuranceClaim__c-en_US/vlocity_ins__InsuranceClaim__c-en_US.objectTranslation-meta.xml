@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ClientClaimList</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__ClientClaimListSF1</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__FieldsAvailableInRules</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__PolicyClaimList</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__PolicyClaimListSF1</name>
+    </fieldSets>
+    <layouts>
+        <layout>Claim (Vlocity 2.7)</layout>
+        <sections>
+            <label></label>
+            <section>Claim Explorer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Claim Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>vlocity_ins__PCPersonalLines</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,217 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "bf0c1029-0e5c-4e44-8da1-ca53c4cc6e25",
+  "label" : "Home_NoQuarterlyReport",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "12291fb2-58ef-4d1e-8ed2-f38495a690e3",
+          "columns" : [ {
+            "UUID" : "44fc381e-7ae3-4b9f-9114-0324443dace4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "12291fb2-58ef-4d1e-8ed2-f38495a690e3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"action_new_application\" style=\"margin-top:-8rem; z-index:999;\">\n    <a href=\"https://www.youtube.com/watch?v=YGE5euSZnbI\" target=\"_blank\">\n        <button class=\"ctaBtnOne slds-button slds-truncate\" style=\"color:white;font-size:18px;text-decoration:underline;\">Lender's Portal Demo Video\n        </button>&nbsp;&nbsp;<img style=\"color:white;\" src=\"/sfsites/c/resource/VideoIcon\" />\n    </a>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "6308afb0-4a82-43eb-9c54-55cf14d1dd30",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "44fc381e-7ae3-4b9f-9114-0324443dace4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "bdf0d8ea-5138-4403-a56c-2e531dab73ca",
+          "columns" : [ {
+            "UUID" : "ed16047b-08fa-4255-9698-8bfed80593f2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "c3062dd2-3778-4be6-a982-6631b866622e",
+            "columnKey" : "d49f0",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "bdf0d8ea-5138-4403-a56c-2e531dab73ca",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O2P000000XpgE",
+            "showRefreshButton" : false,
+            "showTitle" : true
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "8c34b6f2-bc00-4868-b42b-a2675461ba83",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ed16047b-08fa-4255-9698-8bfed80593f2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O2P000000XpgN",
+            "showRefreshButton" : false,
+            "showTitle" : true
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "faeaf498-9dfb-4ef7-93a3-8f249478cac9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c3062dd2-3778-4be6-a982-6631b866622e",
+        "regionLabel" : "Column 2",
+        "regionName" : "d49f0",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "8ca25949-f2fb-4807-abd6-6194b4e984cf",
+          "columns" : [ {
+            "UUID" : "3796557e-88b1-4019-9efa-8db548fc349d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8ca25949-f2fb-4807-abd6-6194b4e984cf",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:sroPartnerCommunityCustomLogo",
+          "id" : "5018925d-dfc8-4dd6-985f-bee7af6c1ae0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "enableInlineEdit" : false,
+            "filterName" : "00B2P000000VfIJUA0",
+            "layout" : "STANDARD",
+            "pageSize" : 3,
+            "scope" : "IndividualApplication",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : false,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "9ef26fc5-b28e-461a-b561-76acda7d8694",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "columnAttributes" : "[{ label: 'Refinance Confirmation Number', fieldName: 'linkName', type: 'url', hideDefaultActions:true, wrapText: true,typeAttributes: { label: { fieldName: 'Name'}}, sortable: false }, { label: 'Property address', fieldName: 'Property_Address__c',   hideDefaultActions:true, wrapText: true,type: 'text', sortable: false }, { label: 'Status', fieldName: 'Status__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false }, { label: 'Current PF', fieldName: 'Current_PF__c', type: 'text', hideDefaultActions:true, wrapText: true,  sortable: false },{ label: 'Created date', fieldName: 'CreatedDate', type: 'date', hideDefaultActions:true, wrapText: true, sortable: true, typeAttributes:{month: \"2-digit\", day: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\"} }]",
+            "fieldApiNames" : "Id, Name, Property_Address__c, Status__c, Current_PF__c, CreatedDate",
+            "listTitle" : "Awaiting Refinance Confirmation",
+            "listType" : "object",
+            "networkURL" : "/lenders/s/",
+            "objectApiName" : "confirmation__c",
+            "recordFilter" : "",
+            "recordId" : "{!recordId}",
+            "recordLimit" : 5,
+            "secondLookup" : false,
+            "showViewAll" : true,
+            "viewAllUrl" : "/lenders/s/confirmation/Confirmation__c/Default?Confirmation__c-filterId=Awaiting_Refinance_Confirmation"
+          },
+          "componentName" : "c:customListView",
+          "id" : "31f81874-8096-4faa-890d-88c837ada5d2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3796557e-88b1-4019-9efa-8db548fc349d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5818c60e-8fac-42ef-a411-c7f1b9a5569d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5ce92fe1-d0a5-451f-a0d8-0ca42fe488d8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7eb6cdf5-421e-481a-aff8-1ca0e37a6180",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

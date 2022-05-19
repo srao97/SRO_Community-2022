@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Refinance Confirmation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Refinance Confirmations</value>
+    </caseValues>
+    <layouts>
+        <layout>Confirmation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confirmation Layout - Participant Portal</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confirmation Layout - SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Home Loan Refinance Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confirmation Layout - SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confirmation Layout - SRO Panel Financier</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confirmation Layout - VGSO</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Refinance Confirmation ID</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Users_creating_records_manually</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Confirm_Refinance</name>
+    </webLinks>
+</CustomObjectTranslation>

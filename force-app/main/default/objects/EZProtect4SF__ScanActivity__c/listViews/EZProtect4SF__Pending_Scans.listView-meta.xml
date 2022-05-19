@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EZProtect4SF__Pending_Scans</fullName>
+    <columns>NAME</columns>
+    <columns>EZProtect4SF__TargetType__c</columns>
+    <columns>EZProtect4SF__TargetOwnerId__c</columns>
+    <columns>EZProtect4SF__TargetCreatedById__c</columns>
+    <columns>EZProtect4SF__Status__c</columns>
+    <columns>EZProtect4SF__RelatedRecord__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EZProtect4SF__Status__c</field>
+        <operation>equals</operation>
+        <value>Pending, Pending Upload, Pending Scan</value>
+    </filters>
+    <label>Pending Scans</label>
+</ListView>

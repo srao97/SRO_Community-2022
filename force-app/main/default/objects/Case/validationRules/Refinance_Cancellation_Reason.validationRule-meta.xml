@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_Cancellation_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+AND(ISPICKVAL(Status , &quot;Cancelled&quot;), ISBLANK(TEXT(Cancellation_Reason__c)),
+($RecordType.DeveloperName=&quot;Refinance&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Cancelled&quot;),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Refinanced - Same PF&quot;),
+NOT(OR($Profile.Name = &quot;VHF VGSO Community Plus User&quot;,$Profile.Name = &quot;VHF Participant Community Plus User&quot; ,$Profile.Name = &quot;System Administrator&quot;,$Profile.Name =&quot;SRO Finance&quot;))
+))</errorConditionFormula>
+    <errorDisplayField>Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Please populate Cancellation Reason</errorMessage>
+</ValidationRule>

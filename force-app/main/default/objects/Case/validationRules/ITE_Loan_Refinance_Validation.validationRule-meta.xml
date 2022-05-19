@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITE_Loan_Refinance_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+$RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;,
+ISPICKVAL(Status, &quot;Awaiting Information&quot;),
+(TEXT(PRIORVALUE(Status)) = &quot;Loan Increase Requested&quot;),
+NOT(
+$Profile.Name = &apos;VHF Participant Community Plus User&apos; ||$Profile.Name =&apos;System Administrator&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Invalid status update as the case is awaiting participant input on Loan</errorMessage>
+</ValidationRule>

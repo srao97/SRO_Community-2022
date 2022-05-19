@@ -1,0 +1,53 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "2922bfd3-a007-46a2-a5be-35a2f45c170a",
+  "label" : "ReportRefinanceOutcome",
+  "regions" : [ {
+    "id" : "de428832-4d50-4a9e-bafc-b95c6196453a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/ReportRefinanceOutcome",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFReportRefinanceOutcomeEnglish",
+      "id" : "8af49320-2d04-4d14-bdf9-292ae4fd33d5",
+      "renderPriority" : "HIGH",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "90cc93ea-f085-4890-afb0-dee27775ffca",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3e37689c-9d34-4f2a-b1fc-217bdd28c988",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "ReportRefinanceOutcome"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2cdbd603-61a4-4950-bde4-b6fc4c4f3494",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "10d1b005-e620-4f7b-8822-cd8e0bf81b6a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-reportrefinanceoutcome"
+}

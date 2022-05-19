@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mortgage_Settlement_Date_Check_VGSO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(ISPICKVAL(Status,&quot;Mortgage Discharged&quot;),$RecordType.DeveloperName=&quot;Property_Sale&quot;,
+ISBLANK( Settlement_Date_Property_Sale__c )
+)</errorConditionFormula>
+    <errorDisplayField>Settlement_Date_Property_Sale__c</errorDisplayField>
+    <errorMessage>Please provide a value for Settlement Date - Property Sale!</errorMessage>
+</ValidationRule>

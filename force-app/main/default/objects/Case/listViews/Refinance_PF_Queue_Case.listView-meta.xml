@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_PF_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Refinancing_with_same_PF__c</columns>
+    <columns>Current_PF__c</columns>
+    <columns>New_PF_TEXT__c</columns>
+    <columns>Property__c</columns>
+    <columns>Submitted_Date__c</columns>
+    <columns>OwnerName__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>Refinance - PF Queue</label>
+    <queue>Refinance_PF_Queue</queue>
+    <sharedTo>
+        <group>All_Operations_Profile_Users</group>
+        <group>All_SRO_Operations_Users</group>
+    </sharedTo>
+</ListView>

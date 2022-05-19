@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MortgageRegDate_GreaterThan_RefConfDate</fullName>
+    <active>true</active>
+    <description>The mortgage re-registration date should be after Refinance Confirmation Date</description>
+    <errorConditionFormula>AND (
+ISPICKVAL(Status,&quot;Mortgage Re-Registered&quot;),
+$Profile.Name = &quot;VHF VGSO Community Plus User&quot;,
+NOT(ISCHANGED(BypassValidation__c)), 
+Mortgage_Re_registration_date__c &lt;  Refinance_Confirmed_Date__c 
+)</errorConditionFormula>
+    <errorDisplayField>Mortgage_Re_registration_date__c</errorDisplayField>
+    <errorMessage>The mortgage re-registration date should be after the date on which refinance was confirmed</errorMessage>
+</ValidationRule>

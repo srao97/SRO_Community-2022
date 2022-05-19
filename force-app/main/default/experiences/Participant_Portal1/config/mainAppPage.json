@@ -1,0 +1,10 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "9cf85bea-e195-4fd0-9fdf-9ef01ea772e5",
+  "headMarkup" : "<script src=\"/sfsites/c/resource/Jquery_Min\"></script>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<link rel=\"stylesheet\" href=\"/sfsites/c/resource/Main_style/Main_Style/style.css?v=1\" type=\"text/css\"/>",
+  "id" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Community Template",
+  "type" : "appPage"
+}

@@ -1,0 +1,109 @@
+{
+  "appPageId" : "c6fa2b25-afcd-491a-a468-1560de35cc2d",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "812efe90-1fee-4be5-b1d0-66f931c1e987",
+  "label" : "Login-2",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6003c079-75c0-4f72-8d4a-2687e6e487ae",
+          "columns" : [ {
+            "UUID" : "d1992748-98f8-498e-a997-75c72ec5fbce",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "cf96b19e-cc45-4bc2-8420-f0af57779449",
+            "columnKey" : "d62c6",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "2c40a02a-c70c-44d1-9e2b-f5e2366cc17f",
+            "columnKey" : "4ce48",
+            "columnName" : "Column 3",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6003c079-75c0-4f72-8d4a-2687e6e487ae",
+      "regions" : [ {
+        "id" : "d1992748-98f8-498e-a997-75c72ec5fbce",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<center>\n    <h1 class=\"contentCaption slds-p-horizontal_large slds-p-vertical_small\">\n    \tVictorian Homebuyer Fund<br>Participant Portal\n\t</h1>\n</center>\n\n<div class=\"formHeaderCustom\"> \n    <h2>Log In</h2>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "77665fac-647e-4af3-9824-428f5776c4eb",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "forgotPasswordLabel" : "Forgot your password?",
+            "forgotPasswordUrl" : "/ForgotPassword",
+            "loginButtonLabel" : "Log in",
+            "passwordLabel" : "Password",
+            "selfRegisterLabel" : "Not a member?",
+            "selfRegisterUrl" : "/SelfRegister",
+            "startUrl" : "/s",
+            "usernameLabel" : "Username"
+          },
+          "componentName" : "salesforceIdentity:loginForm2",
+          "id" : "af271ec3-2dd7-4138-93cc-f6d6264d2667",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "cf96b19e-cc45-4bc2-8420-f0af57779449",
+        "regionLabel" : "Column 2",
+        "regionName" : "d62c6",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "2c40a02a-c70c-44d1-9e2b-f5e2366cc17f",
+        "regionLabel" : "Column 3",
+        "regionName" : "4ce48",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8c5bcb8f-7e39-44a7-aa2c-2d9cdb46ad13",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cbb201f6-f277-4965-8a85-f5b964eecbe5",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f6943140-e84d-46ad-854d-244052fb8122",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "login-home"
+}

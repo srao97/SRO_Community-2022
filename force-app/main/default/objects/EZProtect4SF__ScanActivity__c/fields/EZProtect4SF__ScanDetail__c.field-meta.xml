@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EZProtect4SF__ScanDetail__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains detailed information about the threat.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The results of the scan, including the document type and identyfying if the documet was found to be safe or if a threat, then the type of threat.</inlineHelpText>
+    <label>Scan Detail</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

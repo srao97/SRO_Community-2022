@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_amount_to_be_transferred__c</fullName>
+    <description>Field calculated as (Final Shared Equity Contribution + Registration fee + PEXA fee)
+Used by SRO Finance to view the total amount to be transferred and in VGSO email templates.</description>
+    <externalId>false</externalId>
+    <formula>VHF_Contribution__c + 112.40 + 59.07</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total amount = Final Shared Equity Contribution +  $112.40 Registration fee + $59.07 PEXA fee</inlineHelpText>
+    <label>Total amount to be transferred</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

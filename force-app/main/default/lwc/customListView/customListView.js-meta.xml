@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+
+            <property name="listType" label="List Type" type="String" datasource="object, files" default="object" required="true"></property>
+            <property name="networkURL" label="Network URL" type="String" placeholder="/participants/s/" default="/participants/s/"></property>
+            <property name="listTitle" label="List Title" type="String"></property>
+            <property name="showIcon" label="Show List Icon" type="Boolean"></property>
+            <property name="listIcon" label="List Icon" type="String" placeholder="standard:file"></property>
+            <property name="showListAction" label="Show List Action" type="Boolean"></property>
+            <property name="actionButtonLabel" label="List Action Label" type="String"></property>
+            <property name="actionButtonLink" label="List Action Link" type="String"></property>
+            <property name="actionForPrimaryParticipant" label="Show Action for Primary Participant Only" type="Boolean" description="Check this if only primary participant need to see the action button" />
+            <property name="showViewAll" label="Show View All" type="Boolean"></property>
+            <property name="viewAllUrl" label="View All Link" type="String"></property>
+            <property name="recordId" label="Record Id" type="String" description="Will take the value {!recordId} to show related lists"/>
+            <property name="secondLookup" label="Is there a second Link?" type="Boolean" default="false" description="This is used if there are 2 URL's in the list" />
+            <property name="secondObjName" label="Second Object Name (For Second Link and Object Type Only)" type="String" placeholder="contact" />
+            <property name="secondObjField" label="Field API name of the Second Link" type="String" />
+            <property name="objectApiName" label="Object Api Name (For Object Type Only)" description="this field is case sensitive. Make sure you type the correct Api Name of the object" placeholder="case" type="String"/>
+            <property name="fieldApiNames" label="Field Api Names (For Object Type Only)" description="Please use comma to seperate the fields" type="String" />
+            <property name="recordFilter" label="Record Filter (For Object Type Only)" description="To be written in the WHERE clause for the SOQL Query" type="String" />
+            <property name="columnAttributes" type="String" label="Column Attributes" description="please use the lightning datatable columns template"></property>
+            <property name="recordLimit" label="Record Limit (For Object Type only)" description="Number of records to show" type="Integer" />
+            <property name="showPagination" label="Enable Pagination" type="Boolean" description="Indicates if records should be paged or not"></property>
+            <property name="pageSize" label="Page Size" type="Integer" description="The number of records to display in a page"></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

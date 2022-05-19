@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refinance_Early_Payment_Reason_Required</fullName>
+    <active>true</active>
+    <description>When an Refinance Early Payment is required, we need to have a Early Payment Reason for Status = Refinance non PF</description>
+    <errorConditionFormula>AND(NOT(BypassValidation__c),
+AND(ISPICKVAL(Status, &quot;Early Payment Required&quot;), 
+ISBLANK(Early_payment_reason__c ),
+$RecordType.DeveloperName=&quot;Refinance&quot;),
+NOT( OR(TEXT(PRIORVALUE(Status)) = &quot;Cancelled&quot;,TEXT(PRIORVALUE(Status)) = &quot;Mortgage Re-registered&quot; )),
+
+NOT(OR($Profile.Name = &quot;VHF VGSO Community Plus User&quot;,$Profile.Name = &quot;VHF Participant Community Plus User&quot; ,$Profile.Name = &quot;System Administrator&quot;,$Profile.Name =&quot;SRO Finance&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Early_payment_reason__c</errorDisplayField>
+    <errorMessage>Please provide the reason for early payment</errorMessage>
+</ValidationRule>

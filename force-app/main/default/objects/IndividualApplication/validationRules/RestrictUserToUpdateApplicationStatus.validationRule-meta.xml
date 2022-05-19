@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictUserToUpdateApplicationStatus</fullName>
+    <active>true</active>
+    <description>Restrict Users ToUpdate ApplicationStatus when status is Settled</description>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp; ISCHANGED(Status) &amp;&amp; NOT(BypassValidation__c) &amp;&amp;(ISPICKVAL(PRIORVALUE(Status), &quot;Settled&quot;) || (ISPICKVAL( Status ,&quot;Settled&quot;)))</errorConditionFormula>
+    <errorMessage>Application Status Can not be updated</errorMessage>
+</ValidationRule>

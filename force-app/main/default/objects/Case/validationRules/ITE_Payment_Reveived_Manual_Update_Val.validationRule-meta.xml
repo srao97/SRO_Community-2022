@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITE_Payment_Reveived_Manual_Update_Val</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+NOT(TEXT(PRIORVALUE(Status)) = &quot;Cancelled&quot;),
+$RecordType.DeveloperName=&quot;Income_Threshold_Exceeded&quot;,
+ISPICKVAL(Status, &quot;Payment received&quot;),
+NOT(
+$Profile.Name = &apos;VHF Participant Community Plus User&apos; ||$Profile.Name =&apos;System Administrator&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Case is automatically updated to Payment received when the payment is allocated</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "79ecd5aa-141d-4d3a-8bec-ef8ebbd312d6",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "6521bd3a-7a5d-44be-90e0-85e03b314f68",
+  "label" : "Application",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-form-submit",
+  "type" : "route",
+  "urlPrefix" : "applications"
+}

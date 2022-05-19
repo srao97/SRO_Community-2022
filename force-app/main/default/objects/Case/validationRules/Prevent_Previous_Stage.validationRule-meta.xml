@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Previous_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>CASE(Status,
+&quot;New&quot;,1, 
+&quot;Provisional Approval&quot;,2, 
+&quot;Awaiting Final Application&quot;,3, 
+&quot;Final Approval Requested&quot;,4,
+&quot;Funds Transfer&quot;,5, 
+&quot;Settlement&quot;,6, 
+&quot;Closed&quot;,7, 
+0)
+ &lt; 
+CASE( PRIORVALUE(Status),
+&quot;New&quot;,1, 
+&quot;Provisional Approval&quot;,2, 
+&quot;Awaiting Final Application&quot;,3, 
+&quot;Final Approval Requested&quot;,4,
+&quot;Funds Transfer&quot;,5, 
+&quot;Settlement&quot;,6, 
+&quot;Closed&quot;,7, 
+0)
+&amp;&amp; 
+$RecordType.DeveloperName=&quot;VHF_Application_Record_Type&quot;</errorConditionFormula>
+    <errorMessage>Case can not be moved back to previous stage!</errorMessage>
+</ValidationRule>

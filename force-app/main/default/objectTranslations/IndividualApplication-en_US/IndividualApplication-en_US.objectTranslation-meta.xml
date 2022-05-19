@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Provisional Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Provisional Applications</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin Prov App Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DTF Portal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Individual Application Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lender Portal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VGSO Portal Application Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VHF Application Layout</layout>
+        <sections>
+            <label></label>
+            <section>Application Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Extend_Expiry_Date</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Applications</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Application_Cancellation_Status_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Reason_Drop_Down_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Direct_Update_of_App_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Previous_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_manual_expiry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_reason_update_after_rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_update_after_expiry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Provide_Cancellation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RestrictUserToUpdateApplicationStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Select_Rejection_Reason_when_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Users_cannot_update_case_lookup</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Conga_test</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Application</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Send_with_Conga</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Submit_Final_Application</name>
+    </webLinks>
+</CustomObjectTranslation>

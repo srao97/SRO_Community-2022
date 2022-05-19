@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "4ac3cb54-1af7-4e41-899f-fe13f6a4b191",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "7337a83c-666b-4502-8bd2-b1a057e851ed",
+  "label" : "Confirm Refinance",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-confirm-refinance",
+  "type" : "route",
+  "urlPrefix" : "confirm-refinance"
+}

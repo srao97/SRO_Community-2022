@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Orchestration Scenario (Vlocity XOM) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orchestration Scenario (Vlocity XOM) Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__ValidateOrchestrationScenario</name>
+    </validationRules>
+</CustomObjectTranslation>

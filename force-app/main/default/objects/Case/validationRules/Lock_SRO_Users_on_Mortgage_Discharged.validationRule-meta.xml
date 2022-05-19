@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_SRO_Users_on_Mortgage_Discharged</fullName>
+    <active>true</active>
+    <description>When a Final Payment case status is &quot;Mortgage Discharged&quot;,
+Then lock the case for editing.</description>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp;
+((ISPICKVAL(Status,&quot;Mortgage Discharged&quot;)&amp;&amp; NOT(ISCHANGED(Status))) || (ISPICKVAL(PRIORVALUE(Status),&quot;Mortgage Discharged&quot;) &amp;&amp; ISCHANGED(Status))  ) &amp;&amp; 
+$RecordType.DeveloperName=&quot;Final_Payment&quot; &amp;&amp;
+NOT(ISCHANGED(BypassValidation__c)) &amp;&amp;
+$Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorMessage>The case is locked and can&apos;t be updated!</errorMessage>
+</ValidationRule>

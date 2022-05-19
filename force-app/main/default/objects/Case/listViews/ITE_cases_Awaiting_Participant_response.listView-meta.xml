@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITE_cases_Awaiting_Participant_response</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Loan_increased_requested_date__c</columns>
+    <columns>Property__c</columns>
+    <columns>Annual_Review__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Loan Increase Requested</value>
+    </filters>
+    <filters>
+        <field>Loan_increased_requested_date__c</field>
+        <operation>lessThan</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <filters>
+        <field>Loan_increased_requested_date__c</field>
+        <operation>equals</operation>
+        <value>N_DAYS_AGO:90</value>
+    </filters>
+    <label>ITE cases-Awaiting Participant response</label>
+    <sharedTo>
+        <group>All_SRO_Operations_Users</group>
+    </sharedTo>
+</ListView>

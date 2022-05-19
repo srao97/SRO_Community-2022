@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_create_when_property_inactive</fullName>
+    <active>true</active>
+    <description>A case record cannot be created if the property is inactive</description>
+    <errorConditionFormula>AND( ISNEW() , 
+ OR(
+     NOT(ISBLANK( Property__c )) &amp;&amp; Property__r.IsActive__c = false,
+     NOT(ISBLANK( Annual_Review__r.Property__c )) &amp;&amp;  Annual_Review__r.Property__r.IsActive__c = false
+    )      
+)</errorConditionFormula>
+    <errorMessage>A case record cannot be created if the property is inactive</errorMessage>
+</ValidationRule>

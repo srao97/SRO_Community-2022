@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_cannot_be_reactivated</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(IsActiveApplicant__pc), &quot;No&quot;) &amp;&amp; ( ISPICKVAL(IsActiveApplicant__pc, &quot;Yes&quot;) ||  Is_Participant__pc =true)</errorConditionFormula>
+    <errorMessage>You can&apos;t activate an Inactive Participant</errorMessage>
+</ValidationRule>

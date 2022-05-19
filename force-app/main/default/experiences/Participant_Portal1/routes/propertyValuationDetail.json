@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "e1b751eb-31ea-47a0-83e9-776faeff0624",
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "configurationTags" : [ ],
+  "id" : "e79fcc5b-d2d0-4237-a0a6-7390c3ea1f34",
+  "label" : "Property Valuation Detail",
+  "objectApiName" : "Property_Valuation__c",
+  "routeType" : "detail-a7d",
+  "type" : "route",
+  "urlPrefix" : "property-valuation"
+}

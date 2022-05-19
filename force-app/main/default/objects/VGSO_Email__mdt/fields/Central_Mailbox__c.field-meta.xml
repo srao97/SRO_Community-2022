@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Mailbox__c</fullName>
+    <description>Normally CPTWorkRequests@vgso.vic.gov.au, can be set to a test email address</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Central Mailbox</label>
+    <required>true</required>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

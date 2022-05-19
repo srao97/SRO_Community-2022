@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>Attachment_1_Form_Clause_19_Distur</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Attachment 1 Form - Clause 19 Disturbance Payment Ballarat Relocation - February 2021 .docx</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

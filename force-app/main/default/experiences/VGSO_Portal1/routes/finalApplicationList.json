@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "1495b15d-88fe-4983-84ef-84b2b36e9143",
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "configurationTags" : [ ],
+  "id" : "1a307af4-8635-4629-bf23-8979adbee195",
+  "label" : "Final Application List",
+  "routeType" : "list-800",
+  "type" : "route",
+  "urlPrefix" : "contract"
+}

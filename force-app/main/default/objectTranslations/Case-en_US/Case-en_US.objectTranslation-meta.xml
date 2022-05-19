@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__StoryFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins__UpdateCaseWidget</name>
+    </fieldSets>
+    <layouts>
+        <layout>Admin Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Duplicate Case Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Threshold Exceeded Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LTA Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Loan Increase Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Duplicate Application Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Duplicate Application Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Duplicate Application Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Final Payment Layout - Participant Portal</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Final Payment Request Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Final Payment Layout - SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Final Payment Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Discharge Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Final Payment Layout - SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Final Payment Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Discharge Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Final Payment Layout - VGSO</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Final Payment Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Discharge Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ITE-Participant</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Threshold Exceeded Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Loan Increase Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ITE-SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Threshold Exceeded Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Loan Increase Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ITE-SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Income Threshold Exceeded Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Loan Increase Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lender Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Long Term Absence Layout</layout>
+        <sections>
+            <label></label>
+            <section>Long Term Absence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Long Term Absence Layout - Participant Portal</layout>
+        <sections>
+            <label></label>
+            <section>Long Term Absence Request Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mobile Case (Vlocity 2.5)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Sale Layout</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract of Sale Calculation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Settlement and Mortgage Discharge Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Sale Layout - Participant Portal</layout>
+        <sections>
+            <label></label>
+            <section>Contract of Sale Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Valuation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Settlement and Mortgage Discharge Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Sale Layout - SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract of Sale Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Settlement and Mortgage Discharge Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Sale Layout - SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract of Sale Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Settlement and Mortgage Discharge Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Sale Layout - VGSO</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract of Sale Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sale of Property Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Settlement and Mortgage Discharge Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refinance - Participant</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refinance - SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refinance - SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refinance - SRO Panel Financier(current)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refinance - VGSO</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Home Loan Refinance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renovation Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Not For Use</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Renovation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VGSO Portal Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Settlement Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VHF SRO Finance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voluntary Payments Layout - Participant Portal</layout>
+        <sections>
+            <label></label>
+            <section>Property valuation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Voluntary partial payment request information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voluntary Payments Layout - SRO Finance</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Voluntary Partial Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voluntary Payments Layout - SRO Officer</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Voluntary Partial Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WFG SRO Finance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Windfall Gain Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Windfall Gain Case Layout Readonly</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Windfall Gain Case Layout-VGSO</layout>
+        <sections>
+            <label></label>
+            <section>Calculation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Windfall Gain Case Participants</layout>
+        <sections>
+            <label></label>
+            <section>Valuation Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Windfall Gain Request Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Calculate_Windfall_Gain</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Generate_Payout_Document</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ITE_LIECalculation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ITE_SEICalculation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Participation_Agreement_for_Signature</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Proportional_Interest_Amount_Calculation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Provisional_Documents_Generation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Request_Payment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Send_Participation_Agreement_for_eSignature</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Shared_Equity_Interest_Calculation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>email</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>vlocity_ins__NewChildCase</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Duplicate_Application_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Early_Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Final_Early_Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Final_Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Income_Threshold_Breach</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Income_Threshold_Exceeded</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Long_Term_Absence</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Property_Sale</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Refinance</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Renovations</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Application_Processing</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Application_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Exceptions</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Loan_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Participant</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Property_Sale</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Settlement</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>VHF_Transfer_Funds</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Voluntary_Payments</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Windfall_Gains</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Windfall_Gains_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>vlocity_ins__MobilePhoneCase</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Actual_Sett_Date_Can_Not_Be_InFuture</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Actual_settlement_Blank_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Approval_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Reason_Comments_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Reason_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Reason_Validation_VP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_create_when_property_inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Case_Cancellation_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Case_Cancellation_Reason_Required_VP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Early_Payment_Reason_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Final_Payment_Mortgage_Discharge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Final_Payment_Received_Manual_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Final_Payment_Received_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Final_Payment_SRO_Finance_edit_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Final_Pmt_MortgageDischarge_transition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Funds_Transferred_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Funds_Transferred_Date_Validation_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Cancellation_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Cancellation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Cannot_Request_Validations</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Invalid_Satus_Update_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Loan_Increase_Request_VR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Loan_Not_Refinanced_VR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Loan_Refinance_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_New_Awaiting_Case_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Payment_Reveived_Manual_Update_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_Prevent_Update_After_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ITE_SRO_Finance_edit_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LTA_Case_Status_Change_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LTA_New_Case_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LT_Prevent_Update_After_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Case_on_Payment_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Case_on_Refinance_Early_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Officer_on_Final_Payment_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_SRO_Users_on_Mortgage_Discharged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_SRO_Users_on_Refinance_Not_Confirme</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mandate_Participant_Agreement_Sign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MortgageDischarge_mandatory_fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MortgageRegDate_GreaterThan_RefConfDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MortgageRegistrationDate_cannotbeblank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MortgageRegistrationDt_CanNotBe_InFuture</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Dealing_Number_Check_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Dicharge_Date_Check_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Dicharge_Settle_Date_Check_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Dicharge_date_in_future_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Discharge_Date_max_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Discharge_Date_min_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Mortgage_Settlement_Date_Check_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Payment_Case_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Please_Specify_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Direct_Update_of_Case_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Particpant_Updt_Status_Substatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Previous_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Renovations_Case_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Status_Update_Voluntary_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Update_to_Payment_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Update_to_Payment_Requested</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Users_creating_records_manually</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_status_update_after_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_update_after_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_update_after_Payment_Requested</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_update_after_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_update_after_Staus_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Approved_Awaiting_Cont_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Approved_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Awaiting_Settlement_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Awaiting_Settlement_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Cancel_Settlement_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Cancellation_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Cancellation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Prevent_Update_After_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Rejection_Reason_Commt_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Rejection_Reason_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_SRO_Opeartion_Update_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Settle_COS_dt_check_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Settle_date_in_After_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Settle_date_in_future_VGSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Settlement_Cancel_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sale_Valuation_Requested_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinace_Prevent_update_after_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Cancellation_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Cancellation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Early_Payment_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Early_Payment_Required_Val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Mortgage_Reregister_Lock_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_Same_PF_Lock_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_VGSO_cancel_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_VGSO_mortgage_reregistration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refinance_manual_status_update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Rejection_Reason_Comments_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Rejection_Reason_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Actual_Settlement_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Case_Close_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Case_Close_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Case_Reason_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Funds_Transferred_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Case_Status_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Case_Sub_Status_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_case_update_SRO_Finance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Settlement_date_Can_Not_Before_FT_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VGSO_Prevent_non_settlement_cases_update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VP_Case_Status_can_not_move_back</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VP_Participant_Case_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>WFG_Cancellation_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>WFG_Case_Status_can_not_move_back</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>CongaSign_sendForSignature</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_FINAL_APPROVAL_LETTER</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Generate_Payout_Arjun_Testing</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Participation_Agreement_without_Signature</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Check_Ownership</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

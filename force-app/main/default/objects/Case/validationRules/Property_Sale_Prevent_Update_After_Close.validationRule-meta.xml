@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sale_Prevent_Update_After_Close</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp;
+((ISPICKVAL(PRIORVALUE(Status),&quot;Rejected&quot;))
+||(ISPICKVAL(PRIORVALUE(Status),&quot;Cancelled&quot;))
+||(ISPICKVAL(PRIORVALUE(Status),&quot;Cancelled Settlement&quot;))
+||(ISPICKVAL(PRIORVALUE(Status),&quot;Mortgage Discharged&quot;)))
+&amp;&amp; $RecordType.DeveloperName=&quot;Property_Sale&quot;
+&amp;&amp; NOT(ISCHANGED(BypassValidation__c))&amp;&amp;
+$Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorMessage>The case is locked and can&apos;t be updated!</errorMessage>
+</ValidationRule>

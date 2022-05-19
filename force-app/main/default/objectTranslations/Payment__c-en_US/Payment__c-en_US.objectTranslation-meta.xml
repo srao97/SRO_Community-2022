@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payments</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Participant Payment Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>To Be Removed</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SRO Finance Officer Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SRO Officer Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VGSO Payment Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transaction Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Re_Issue_Payment_Request</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Date_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cancellation_Reason_when_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Do_not_allowing_creating_records</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lock_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Payment_Received_Fields_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Payment_Registered_Fields_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Owner_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validate_Status_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

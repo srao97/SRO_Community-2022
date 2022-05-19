@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WFG_Case_Status_can_not_move_back</fullName>
+    <active>true</active>
+    <description>Case can not be moved back to previous stage!</description>
+    <errorConditionFormula>CASE(Status,
+&quot;New&quot;,1,
+&quot;In Review&quot;,2,
+&quot;Awaiting Information&quot;,3,
+&quot;Valuation Requested&quot;,4,
+&quot;Cancelled&quot;,5,
+&quot;Payment Requested&quot;,6,
+&quot;Payment Received&quot;,7,
+0)
+&lt;
+CASE( PRIORVALUE(Status),
+&quot;New&quot;,1,
+&quot;In Review&quot;,2,
+&quot;Awaiting Information&quot;,3,
+&quot;Valuation Requested&quot;,4,
+&quot;Cancelled&quot;,5,
+&quot;Payment Requested&quot;,6,
+&quot;Payment Received&quot;,7,
+0)
+&amp;&amp;
+$RecordType.DeveloperName=&quot;Windfall_Gains&quot;
+&amp;&amp;
+NOT(
+$Profile.Name = &apos;VHF Participant Community Plus User&apos; ||$Profile.Name =&apos;SRO Finance&apos;||$Profile.Name = &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorMessage>Invalid status update</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Windfall_gain_amount__c</fullName>
+    <description>Windfall gain amount</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Windfall gain amount that the participant received</inlineHelpText>
+    <label>Windfall gain amount</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

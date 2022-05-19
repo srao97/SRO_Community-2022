@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandate_Participant_Agreement_Sign</fullName>
+    <active>false</active>
+    <description>VHF-2299: Mandate Participation Agreement Sign</description>
+    <errorConditionFormula>IF( 
+    AND(
+	    CS_Transaction_Complete__c = FALSE,
+		$RecordType.DeveloperName=&quot;VHF_Application_Record_Type&quot;,
+		OR(
+		   ISPICKVAL(Status,&quot;Funds Transfer&quot;), 
+		   AND(ISPICKVAL(Status,&quot;Final Approval Requested&quot;), 
+		       ISPICKVAL(Sub_Status__c,&quot;Completed&quot;)
+		       )
+		   )
+		), 
+TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>Participation agreement must be executed and signed before proceeding.</errorMessage>
+</ValidationRule>

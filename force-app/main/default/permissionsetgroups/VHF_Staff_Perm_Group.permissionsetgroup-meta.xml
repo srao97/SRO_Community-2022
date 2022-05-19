@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Baseline Permission Sets assigned for VHF staff</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>VHF Staff Perm Group</label>
+    <permissionSets>PublicSectorAccessPSL</permissionSets>
+    <permissionSets>SRO_User_Delegated_External_User_Admin</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

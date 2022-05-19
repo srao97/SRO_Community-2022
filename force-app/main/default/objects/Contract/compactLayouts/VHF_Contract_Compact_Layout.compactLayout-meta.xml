@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_Contract_Compact_Layout</fullName>
+    <fields>ContractNumber</fields>
+    <fields>AccountId</fields>
+    <fields>Status</fields>
+    <fields>IndividualApplicationId__c</fields>
+    <fields>ApplicationCaseId__c</fields>
+    <fields>Case_Status__c</fields>
+    <fields>Processing_Officer__c</fields>
+    <label>VHF Contract Compact Layout</label>
+</CompactLayout>

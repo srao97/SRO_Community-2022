@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Active_Web_TrackingConfiguration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Effective_Start_Date_and_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Max_Age_Greater_Than_Zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Oldest_EffectiveEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Oldest_EffectiveStartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__TrackingConfig_With_Internal_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>vlocity_ins__Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

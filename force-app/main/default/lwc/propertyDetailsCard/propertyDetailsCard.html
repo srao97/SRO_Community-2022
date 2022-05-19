@@ -1,0 +1,76 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <lightning-card>
+        <h3 slot="title">
+            {title}
+        </h3>
+        <template if:true={response}>
+            <div>
+                <lightning-layout multiple-rows class="slds-m-around_small">
+                    <lightning-layout-item flexibility="auto">
+                        <div class="slds-m-around_xx-small">
+                            <p>
+                                <span style="font-size: 14px;">{column1Label}</span>
+                                <template if:true={column1HelpText}>
+                                    <span class="slds-m-left_xxx-small"><lightning-helptext content={column1HelpText}></lightning-helptext></span>
+                                </template>
+                            </p>
+                            <p style="font-size:20px;">
+                                <lightning-formatted-rich-text value={response.column1Value}></lightning-formatted-rich-text>
+                            </p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto">
+                        <div class="slds-m-around_xx-small">
+                            <p>
+                                <span style="font-size: 14px;">{column2Label}</span>
+                                <template if:true={column2HelpText}>
+                                    <span class="slds-m-left_xxx-small"><lightning-helptext content={column2HelpText}></lightning-helptext></span>
+                                </template>
+                            </p>
+                            <p style="font-size:20px;">{response.column2Value}</p>
+                        </div>
+                    </lightning-layout-item>
+                    
+                        <template if:true={hightlightColumn3}>
+                            <lightning-layout-item style="text-align: right;" alignment-bump="right" flexibility="auto">
+                            <div class="slds-m-around_xx-small" style="text-align: right !Important;">
+                                <p>
+                                    <span style="text-align:right;font-size:14px;">{column3Label}</span>
+                                    <template if:true={column3HelpText}>
+                                        <span class="slds-m-left_xxx-small"><lightning-helptext content={column3HelpText}></lightning-helptext></span>
+                                    </template>
+                                </p>
+                                <p style="font-size:20px;text-align:right;font-weight:bold;">{response.column3Value}</p>
+                            </div>
+                            </lightning-layout-item>
+                        </template>
+                        <template if:false={hightlightColumn3}>
+                            <lightning-layout-item>
+                            <div class="slds-m-around_xx-small">
+                                <p>
+                                    <span style="font-size: 14px;">{column3Label}</span>
+                                    <template if:true={column3HelpText}>
+                                        <span class="slds-m-left_xxx-small"><lightning-helptext content={column3HelpText}></lightning-helptext></span>
+                                    </template>
+                                </p>
+                                <p style="font-size:20px;">{response.column3Value}</p>
+                            </div>
+                        </lightning-layout-item>
+                        </template>
+                </lightning-layout>
+            </div>
+        </template>
+        <template if:false={response}>
+            <p>Sorry, no information found to display.</p>
+        </template>
+            <div>
+                <template if:true={showViewAll}>
+                <p class="slds-m-top_xxx-small slds-m-left_medium"><a style="color:var(--primary);" href={viewAllUrl}>View All</a></p>
+            </template>
+            </div>
+        
+    </lightning-card>
+</template>

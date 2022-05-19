@@ -1,0 +1,53 @@
+{
+  "appPageId" : "ac902730-29a7-442e-8d54-e4e2a0fba482",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "0a4b6384-c847-49ef-ab2d-710e08f974e2",
+  "label" : "AnnualReviewMinorUpdate",
+  "regions" : [ {
+    "id" : "7b4e62c9-cf82-406f-825a-564c87bf2ebb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dir" : "ltr",
+        "flexipageRegionWidth" : "LARGE",
+        "inline" : false,
+        "inlineLabel" : "Launch VHF/AnnualReviewMinorUpdate",
+        "inlineVariant" : "brand",
+        "layout" : "lightning",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:vHFAnnualReviewMinorUpdateEnglish",
+      "id" : "debc7ebc-27b4-431a-b361-ee1e269743c7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ff42d6e9-4778-4a47-9443-93b58a10368e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "28eb9749-5e68-4378-8730-d21848ed8687",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AnnualReviewMinorUpdate"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f33a32ca-4aed-4cf2-b733-83162d01185d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "16842a94-37da-4e70-828d-eac2dd99bc15",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-annualreviewminorupdate"
+}

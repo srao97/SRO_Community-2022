@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sale_SRO_Opeartion_Update_Val</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISCHANGED(BypassValidation__c)),
+ISCHANGED(Status),
+$RecordType.DeveloperName=&quot;Property_Sale&quot;,
+OR(ISPICKVAL(Status, &quot;Mortgage Discharged&quot;),ISPICKVAL(Status, &quot;Cancelled Settlement&quot;)),
+$Profile.Name = &quot;Operations&quot;
+)</errorConditionFormula>
+    <errorMessage>Status will be updated by VGSO once the decision is taken on settlement</errorMessage>
+</ValidationRule>

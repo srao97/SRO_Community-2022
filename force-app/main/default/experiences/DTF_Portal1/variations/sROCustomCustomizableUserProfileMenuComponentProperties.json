@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "204b8464-e55a-48fa-8840-d9e0e2495e46",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "customizableUserProfileMenuEditor" : "DTF_External_Admin_User_Navigation_Bar"
+      }
+    },
+    "targetId" : "6d2f22ca-c3c6-4251-8297-44905b143140",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "SRO_Custom_Customizable_User_Profile_Menu_Component_Properties",
+  "id" : "3ee1a664-46e4-4f30-ac7b-4d7f2d0b95e6",
+  "type" : "experienceVariation"
+}

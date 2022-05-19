@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_all_Applications_with_DTF</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Provides view access for all Individual Applications to DTF Public User Group</description>
+        <label>Share all Applications with DTF</label>
+        <sharedTo>
+            <group>All_DTF_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VGSO_Share_Provisional_Application</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>VHF-1180</description>
+        <label>VGSO:Share Provisional Application</label>
+        <sharedTo>
+            <group>All_VGSO_Portal_users</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Final_Application_Status__c</field>
+            <operation>equals</operation>
+            <value>Funds Transferred</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Final_Application_Status__c</field>
+            <operation>equals</operation>
+            <value>Settled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Final_Application_Status__c</field>
+            <operation>equals</operation>
+            <value>Cancelled Settlement</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>BankAus_Share_All_Apps_with_Managers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BankAus - Share All Apps with Managers</label>
+        <sharedTo>
+            <portalRole>BankAustraliaCustomerManager</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>BankAustraliaCustomerManager</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Bendigo_Share_All_Apps_with_Managers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Bendigo - Share All Apps with Managers</label>
+        <sharedTo>
+            <portalRole>BendigoBankCustomerManager</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>BendigoBankCustomerManager</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

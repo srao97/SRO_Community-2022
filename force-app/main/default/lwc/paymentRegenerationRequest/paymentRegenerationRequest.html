@@ -1,0 +1,94 @@
+<template>
+    <template if:true={showError}>
+        <lightning-quick-action-panel header="Sorry, cannot proceed with the request">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item  flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={errorIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px;" class="slds-m-around_small slds-text-heading_small">
+                            {errorMessage}
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+    <!-- Payment Regeneration Confirmation Screen Start -->
+    <template if:true={regenerate}>
+        <lightning-quick-action-panel header="Confirm payment request re-issue">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={warningIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px" class="slds-m-around_small slds-text-heading_small">This will create a new payment request and notify the intended payer. <br/> Are you sure?</div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-layout horizontal-align="spread">
+                    <lightning-layout-item>
+                        <lightning-button variant="neutral" label="Cancel" onclick={handleCancel}></lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item>
+                        <lightning-button variant="brand" class="slds-m-left_x-small" label="Send Payment Request" onclick={generatePaymentRequest}></lightning-button>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+    <!-- Payment Regeneration Confirmation Screen End -->
+    <!--Payment Confirmation Screeen Start-->
+    <template if:true={paymentRecordCreated}>
+        <lightning-quick-action-panel header="Confirm payment request re-issue">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <lightning-icon icon-name="action:approval" alternative-text="Submitted" title="Submitted"></lightning-icon>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px" class="slds-m-around_small slds-text-heading_small">
+                            Payment request {paymentId}: has been successfully generated.
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+    <!-- Payment Confirmation Screen End-->
+    <!-- Payment Validation Error Screen Start-->
+    <template if:true={validationError}>
+        <lightning-quick-action-panel header="Fix errors before re-issuing payment request">
+            <lightning-layout vertical-align="center" class="x-large">
+                <lightning-layout-item  flexibility="auto" padding="around-small">
+                    <div style="text-align: center;">
+                        <img src={errorIconUrl}>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight:bold;font-size:18px;" class="slds-m-around_small slds-text-heading_small">Sorry, you cannot re-issue the payment request until:</div>
+                        <div class="slds-align_absolute-center">
+                            <ul style="text-align:left" class="slds-m-around_medium">
+                                <template for:each={errorList} for:item="error" for:index="index">
+                                    <li style="list-style-type:disc;font-size:14px;" class="slds-m-around_small" key={error.index}>{error}</li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div slot="footer">
+                <lightning-button variant="brand" class="slds-m-left_x-small" label="Close" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </template>
+    <!-- Payment Validation Error Screen End-->
+</template>

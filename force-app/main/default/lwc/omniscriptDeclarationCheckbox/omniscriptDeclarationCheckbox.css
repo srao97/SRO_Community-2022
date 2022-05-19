@@ -1,0 +1,9 @@
+:host {
+    /* --sds-c-input-text-color: black !important;
+    --sds-c-input-label-color: black !important;
+    --sds-c-input-checkbox-color: black !important;
+    --sds-c-input-color: black !important;
+    --sds-c-checkbox-label-color: black !important;
+    --sds-c-label-text-color: black !important; */
+    --lwc-colorTextLabel:black !important;
+  }

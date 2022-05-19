@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mortgage_Re_register_Queue_Confirmation</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Mortgage Re-register Queue</label>
+    <queue>Mortgage_Re_register_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

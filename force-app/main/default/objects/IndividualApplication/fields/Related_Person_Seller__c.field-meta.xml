@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Person_Seller__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the property is being bought from a related person</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the property is being bought from a related person</inlineHelpText>
+    <label>Related Person Seller</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

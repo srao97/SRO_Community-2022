@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notify_AHV__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If AHV needs to be notified of any updates to the application</description>
+    <externalId>false</externalId>
+    <label>Notify AHV</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,59 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "ab225611-3e37-4c93-8ff7-642830d5f7da",
+  "label" : "TutorialVideo",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "fa7b9f53-78e2-4f07-90af-07f75831e2f1",
+          "columns" : [ {
+            "UUID" : "5eecb10d-0dc4-4174-9839-8dbb8394b6ac",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "fa7b9f53-78e2-4f07-90af-07f75831e2f1",
+      "regions" : [ {
+        "id" : "5eecb10d-0dc4-4174-9839-8dbb8394b6ac",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "91be6b1c-cef1-4230-859e-cd7acc5b10b7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "TutorialVideo"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3e90a0bf-50d3-4dc2-beae-b74649696df2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73e13f31-4bdc-4dbe-9f75-9aacc71835ca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-tutorialvideo"
+}

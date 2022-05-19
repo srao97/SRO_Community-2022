@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Individual_Application_Shadow</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shadow Applications</value>
+    </caseValues>
+    <layouts>
+        <layout>Individual_Application_Shadow Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>CongaSign_sendForSignature</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_Conga_Test_Button</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_IndividualApplicationShadow</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_Participation_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_TESTMERGEFIELDSCONGA</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_TroubleshootingSolution</name>
+    </webLinks>
+</CustomObjectTranslation>

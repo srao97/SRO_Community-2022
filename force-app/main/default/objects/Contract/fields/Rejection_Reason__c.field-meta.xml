@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejection Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Property is in an ineligible location</fullName>
+                <default>false</default>
+                <label>Property is in an ineligible location</label>
+            </value>
+            <value>
+                <fullName>Identification documents were not provided</fullName>
+                <default>false</default>
+                <label>Identification documents were not provided</label>
+            </value>
+            <value>
+                <fullName>Discrepancies between application and contract details</fullName>
+                <default>false</default>
+                <label>Discrepancies between application and contract details</label>
+            </value>
+            <value>
+                <fullName>Certificate of Occupancy was not provided</fullName>
+                <default>false</default>
+                <label>Certificate of Occupancy was not provided</label>
+            </value>
+            <value>
+                <fullName>Contract of Sale was not provided</fullName>
+                <default>false</default>
+                <label>Contract of Sale was not provided</label>
+            </value>
+            <value>
+                <fullName>Applicant is not an Australian Citizen or PR holder</fullName>
+                <default>false</default>
+                <label>Applicant is not an Australian Citizen or PR holder</label>
+            </value>
+            <value>
+                <fullName>Applicant deposit contribution is less than 3.5%</fullName>
+                <default>false</default>
+                <label>Applicant deposit contribution is less than 3.5%</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Applicant is not an Australian Citizen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Applicant is not an Australian Citizen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

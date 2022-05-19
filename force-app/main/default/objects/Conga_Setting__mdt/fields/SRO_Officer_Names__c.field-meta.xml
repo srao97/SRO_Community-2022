@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SRO_Officer_Names__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>SRO Officer Names</label>
+    <required>false</required>
+    <securityClassification>Public</securityClassification>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rebecca Tacey</fullName>
+                <default>false</default>
+                <label>Gary Yip</label>
+            </value>
+            <value>
+                <fullName>Damian Stevens</fullName>
+                <default>false</default>
+                <label>Damian Stevens</label>
+            </value>
+            <value>
+                <fullName>Levi Davison</fullName>
+                <default>false</default>
+                <label>Levi Davison</label>
+            </value>
+            <value>
+                <fullName>Timothy McGrath</fullName>
+                <default>false</default>
+                <label>Timothy McGrath</label>
+            </value>
+            <value>
+                <fullName>Erin Gillespie</fullName>
+                <default>false</default>
+                <label>Erin Gillespie</label>
+            </value>
+            <value>
+                <fullName>Hamish Porter</fullName>
+                <default>false</default>
+                <label>Hamish Porter</label>
+            </value>
+            <value>
+                <fullName>Mithu Dasgupta</fullName>
+                <default>false</default>
+                <label>Mithu Dasgupta</label>
+            </value>
+            <value>
+                <fullName>Irfat Begum</fullName>
+                <default>false</default>
+                <label>Irfat Begum</label>
+            </value>
+            <value>
+                <fullName>Andrew Bulluss</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Andrew Bulluss</label>
+            </value>
+            <value>
+                <fullName>Aneesh Ayyappankutty</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aneesh Ayyappankutty</label>
+            </value>
+            <value>
+                <fullName>Brendan Harrison</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brendan Harrison</label>
+            </value>
+            <value>
+                <fullName>Caitlin Caligari</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Caitlin Caligari</label>
+            </value>
+            <value>
+                <fullName>Cassie Sporton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cassie Sporton</label>
+            </value>
+            <value>
+                <fullName>DEMO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DEMO</label>
+            </value>
+            <value>
+                <fullName>Dudley Robens</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dudley Robens</label>
+            </value>
+            <value>
+                <fullName>Jacqui Stepnell</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jacqui Stepnell</label>
+            </value>
+            <value>
+                <fullName>Manish Jhingran</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manish Jhingran</label>
+            </value>
+            <value>
+                <fullName>Mark Gittins</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mark Gittins</label>
+            </value>
+            <value>
+                <fullName>Matthew Saliba</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Matthew Saliba</label>
+            </value>
+            <value>
+                <fullName>Michael Walker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Michael Walker</label>
+            </value>
+            <value>
+                <fullName>Paul McKee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paul McKee</label>
+            </value>
+            <value>
+                <fullName>Piyush Bedi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Piyush Bedi</label>
+            </value>
+            <value>
+                <fullName>Sandra Phan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sandra Phan</label>
+            </value>
+            <value>
+                <fullName>Tim McGrath</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tim McGrath</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

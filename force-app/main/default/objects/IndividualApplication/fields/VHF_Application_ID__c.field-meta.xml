@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VHF_Application_ID__c</fullName>
+    <description>If Loan Account Number is supplied, the value is AppId+Loan Account Number, otherwise it is just Application ID.  Field should be marked as Unique as part of configuration</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Loan_Account_Number__c),  Name, Name &amp; &quot;-&quot; &amp;  Loan_Account_Number__c )</formula>
+    <label>VHF Application ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

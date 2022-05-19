@@ -1,0 +1,77 @@
+{
+  "appPageId" : "f285de97-7a38-4f20-a6c5-9a524a19dbcc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "da8ea48d-2f80-4bb0-b763-0734b1bf566b",
+  "label" : "Quarterly Report Detail",
+  "regions" : [ {
+    "id" : "450ac5e0-032f-4ff7-a7c9-a508373a8e3b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "f33e45a7-4c75-4d2d-99b9-eba0016b0fd9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cardHeight" : 600,
+        "column1" : "Panel_Financier_Name__c",
+        "column10" : "none",
+        "column2" : "Title",
+        "column3" : "Year__c",
+        "column4" : "Quarter__c",
+        "column5" : "Panel_Finance_Officer__c",
+        "column6" : "LastModifiedDate",
+        "column7" : "none",
+        "column8" : "none",
+        "column9" : "none",
+        "community" : "Community",
+        "communityComponentWidth" : "LARGE",
+        "downloadFiles" : true,
+        "icon" : "standard:report",
+        "includeNotes" : false,
+        "label" : "Quarterly Reports",
+        "minMobileColumns" : 3,
+        "pageSize" : 10,
+        "recordId" : "{!recordId}",
+        "uploadFiles" : false,
+        "viewFile" : true
+      },
+      "componentName" : "efl:fileCardCommunity",
+      "id" : "369dfc8d-f67e-4b93-a522-0aafff3b2efd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "edbcfc90-12c6-4bf7-8dfd-e5e1bf5645d3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "f98abec5-9a7d-4cfa-801a-27299302a105",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8665597d-01e8-486e-8fd2-2d0b90da3eb3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "452b61c5-4951-46ed-abeb-dd0a178e00f6",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a7Z"
+}

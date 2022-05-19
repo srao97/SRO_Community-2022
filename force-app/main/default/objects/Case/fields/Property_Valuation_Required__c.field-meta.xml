@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Valuation_Required__c</fullName>
+    <description>VHF-3481</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( Property__r.Valuation_Date__c ),
+Property__r.Actual_Settlement_Date__c + 90 &lt; IF(ISPICKVAL(Origin , &apos;Annual Review&apos;),  Annual_Review__r.Submitted_Date__c , DATEVALUE(CreatedDate)),
+Property__r.Valuation_Date__c + 90 &lt; IF(ISPICKVAL(Origin , &apos;Annual Review&apos;),  Annual_Review__r.Submitted_Date__c , DATEVALUE(CreatedDate))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valuation Required</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Officer_on_Final_Payment_Received</fullName>
+    <active>true</active>
+    <description>The Case can&apos;t be updated by SRO officer as it is Final Payment Received</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Status),&quot;Final Payment Received&quot;) &amp;&amp; $RecordType.DeveloperName=&quot;Final_Payment&quot; &amp;&amp;
+NOT(ISCHANGED(BypassValidation__c)) &amp;&amp; NOT(ISCHANGED( OwnerId )) &amp;&amp;
+($Profile.Name =&quot;Operations&quot; || 
+!( ($Profile.Name =&quot;VHF VGSO Community Plus User&quot; || $Profile.Name =&quot;System Administrator&quot;) &amp;&amp; ISPICKVAL(Status,&quot;Mortgage Discharged&quot;))
+)</errorConditionFormula>
+    <errorMessage>The case is locked and can&apos;t be updated!</errorMessage>
+</ValidationRule>

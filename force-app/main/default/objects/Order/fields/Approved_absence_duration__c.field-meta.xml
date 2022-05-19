@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_absence_duration__c</fullName>
+    <externalId>false</externalId>
+    <label>Approved absence duration</label>
+    <summarizedField>Absence__c.Duration__c</summarizedField>
+    <summaryFilterItems>
+        <field>Absence__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Absence__c.Property__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>
