@@ -1,6 +1,6 @@
 /*******************************************************************************************
 * @Name         AnnualReviewBatch 
-* @Author       Sebastian Antons <santon@salesforce.com>
+* @Author       Sebastian Anton <santon@salesforce.com>
 * @Date         31/08/2021
 * @Description  This class when executed via scheduled job creates Annual Review records for valid 
                 Property records which are linked to an Active Primary Participant
